@@ -2411,6 +2411,8 @@
 	 */
 	jQuery(document).ready(function() {
 		if(jQuery('#jsFullPage').length) {
+			var scrolledSection;
+
 			jQuery('#jsFullPage').pagepiling({
 				direction: 'vertical',
 				verticalCentered: true,
@@ -2441,29 +2443,68 @@
 				afterLoad: function(anchorLink, index){
 					var slides = jQuery(".full-page-section");
 
+					scrolledSection = index;
+
 					if(slides.eq(index-1).hasClass('full-page-section--white')) {
 						jQuery('.page-header').removeClass('page-header--white');
 						jQuery('.page-header').addClass('page-header--black');
 						jQuery('.page-header').removeClass('page-header--semi-white');
+
+						jQuery('#pp-nav .counter').addClass('counter--black');
 					} else if(slides.eq(index-1).hasClass('full-page-section--semi-white')) {
 						jQuery('.page-header').addClass('page-header--semi-white');
 						jQuery('.page-header').removeClass('page-header--white');
 						jQuery('.page-header').removeClass('page-header--black');
-					} else {
+
+						jQuery('#pp-nav .counter').addClass('counter--black');
+					} else if(slides.eq(index-1).hasClass('full-page-section--semi-yellow')) {
+						jQuery('.page-header').removeClass('page-header--semi-white');
 						jQuery('.page-header').removeClass('page-header--white');
 						jQuery('.page-header').addClass('page-header--black');
+
+						jQuery('#pp-nav .counter').addClass('counter--black');
+					} else {
+						jQuery('.page-header').addClass('page-header--white');
+						jQuery('.page-header').removeClass('page-header--black');
 						jQuery('.page-header').removeClass('page-header--semi-white');
+
+						jQuery('#pp-nav .counter').removeClass('counter--black');
+					}
+
+					if(index < 10) {
+						jQuery('#pp-nav .counter').text('0' + index);
+					} else {
+						jQuery('#pp-nav .counter').text(index);
 					}
 				},
 				afterRender: function(){
 					jQuery('.page-header').addClass('page-header--white');
 					jQuery('.page-header').removeClass('page-header--black');
+
+					if(jQuery('#pp-nav').length) {
+						jQuery('#pp-nav').append('<div class="counter">01</div>');
+					}
 				},
 			});
 
 			$('.modal').on('shown.bs.modal',function(){      //correct here use 'shown.bs.modal' event which comes in bootstrap3
 				$(this).find('iframe').attr('src', $(this).attr('data-video'));
-			})
+			});
+
+			jQuery(window).bind('mousewheel DOMMouseScroll', function(event){
+				var slides = jQuery(".full-page-section");
+
+				if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+					jQuery('footer.page-footer').removeClass('scrolledTop');
+				}
+				else {
+					if(scrolledSection == slides.length) {
+						jQuery('footer.page-footer').addClass('scrolledTop');
+					} else {
+						jQuery('footer.page-footer').removeClass('scrolledTop');
+					}
+				}
+			});
 		}
 	});
 

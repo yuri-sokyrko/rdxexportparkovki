@@ -3154,6 +3154,74 @@
   background-color: #FAD756;
   opacity: 1;
 }
+
+#pp-nav {
+  margin-top: 0 !important;
+  transform: translateY(-50%) !important;
+}
+
+#pp-nav.left {
+  left: 30px;
+}
+
+#pp-nav .counter {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+
+  font-family: 'Montserrat' sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.51;
+}
+
+#pp-nav .counter--black {
+  color: #0B0F21;
+}
+
+#pp-nav ul {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+}
+
+#pp-nav ul li {
+  flex: 1 1 auto;
+  margin: 0;
+}
+
+#pp-nav ul li a {
+  display: block;
+  width: 2px;
+  height: 100%;
+  border: none;
+  background-color: #FAD756;
+  opacity: .2;
+}
+
+#pp-nav ul li a.active {
+  background-color: #FAD756;
+  opacity: 1;
+}
+
+#pp-nav ul li a span {
+  display: none !important;
+}
+
+footer.page-footer {
+  transition: all .7s ease-in;
+  position: relative;
+  z-index: 9;
+}
+
+footer.page-footer.scrolledTop {
+  transform: translateY(calc(-100% + 1px));
+}
 /*---------------------------------------------------------------------*/
 /*                                 Yuri EOF                            */
 /*---------------------------------------------------------------------*/
