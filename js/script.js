@@ -2406,4 +2406,44 @@
 
 	});
 
+	/**
+	 * Home JS
+	 */
+	jQuery(document).ready(function() {
+		if(jQuery('#jsFullPage').length) {
+			jQuery('#jsFullPage').pagepiling({
+				direction: 'vertical',
+				verticalCentered: true,
+				sectionsColor: [],
+				anchors: [],
+				scrollingSpeed: 700,
+				easing: 'swing',
+				loopBottom: false,
+				loopTop: false,
+				css3: true,
+				navigation: {
+				    // 'textColor': '#000',
+				    // 'bulletsColor': '#000',
+				    'position': 'left',
+				    // 'tooltips': ['section1', 'section2', 'section3', 'section4']
+				},
+				normalScrollElements: null,
+				normalScrollElementTouchThreshold: 5,
+				touchSensitivity: 5,
+				keyboardScrolling: true,
+				sectionSelector: '.full-page-section',
+				animateAnchor: false,
+	
+				//events
+				onLeave: function(index, nextIndex, direction){},
+				afterLoad: function(anchorLink, index){},
+				afterRender: function(){},
+			});
+
+			$('.modal').on('shown.bs.modal',function(){      //correct here use 'shown.bs.modal' event which comes in bootstrap3
+				$(this).find('iframe').attr('src', $(this).attr('data-video'));
+			})
+		}
+	});
+
 }());
