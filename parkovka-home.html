@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:100,300,400,700,900">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700%7CRoboto:100,300,400,700,900">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css" integrity="sha512-W9OWS8dgpQBw5Hb+tbMto1BMsHvYOXT/AFBGvASCPUJleaEdpOAN5lzgj9RrTbo3YrlR+m9xdOBccp8F+SFyQg==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
@@ -61,16 +61,16 @@
                       <li><a href="#">Процесс сотрудничества</a></li>
                     </ul>
                   </li>
-                  <li class="rd-navbar--has-dropdown rd-navbar-submenu rdxtopmenu"><a href="#">О компании</a>
+                  <li class="rd-navbar--has-dropdown rd-navbar-submenu rdxtopmenu semi-white"><a href="#">О компании</a>
                     <ul class="rd-navbar-dropdown rdx-wpatch-240">
                       <li><a href="#">О проекте</a></li>
                       <li><a href="#">Нормативные документы</a></li>
                       <li><a href="#">F.A.Q.</a></li>
                     </ul>
                   </li>
-                  <li class="rdxtopmenu"><a href="#ID_of_the_section">Новости</a></li>
-                  <li class="rdxtopmenu"><a href="#ID_of_the_section">Контакты</a></li>
-                  <li class="rdxtopmenu"><a href="#">RU</a>
+                  <li class="rdxtopmenu semi-white"><a href="#ID_of_the_section">Новости</a></li>
+                  <li class="rdxtopmenu semi-white"><a href="#ID_of_the_section">Контакты</a></li>
+                  <li class="rdxtopmenu semi-white"><a href="#">RU</a>
                     <ul class="rd-navbar-dropdown">
                       <li><a href="#">EN</a></li>
                       <li><a href="#">UA</a></li>
@@ -156,24 +156,23 @@
                 <div class="col-md-12">
                   <p class="full-page-section__subtitle">Для бизнес-клиентов</p>
                   <h3 class="full-page-section__title">Оборудование<br> вашего паркинга</h3>
-
                 </div>
                 <div class="col-md-5">
                   <ul class="nav nav-tabs business-section__tabs" id="bisunessTab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active" id="business-tab-1" data-toggle="tab" href="#parkomat" role="tab" aria-controls="home" aria-selected="true">Паркоматы</a>
+                      <a class="nav-link active" id="business-tab-1" data-toggle="tab" href="#parkomat" role="tab" aria-controls="parkomat" aria-selected="true">Паркоматы</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="business-tab-2" data-toggle="tab" href="#shlagbaum" role="tab" aria-controls="profile" aria-selected="false">Шлагбаумы</a>
+                      <a class="nav-link" id="business-tab-2" data-toggle="tab" href="#shlagbaum" role="tab" aria-controls="shlagbaum" aria-selected="false">Шлагбаумы</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="business-tab-3" data-toggle="tab" href="#locations" role="tab" aria-controls="contact" aria-selected="false">Оборудование<br> закрытых локаций</a>
+                      <a class="nav-link" id="business-tab-3" data-toggle="tab" href="#locations" role="tab" aria-controls="locations" aria-selected="false">Оборудование<br> закрытых локаций</a>
                     </li>
                   </ul>
                   <a href="#" class="more-link">Подробнее</a>
                 </div>
                 <div class="col-md-7">
-                  <div class="tab-content business-section__tabs-content" id="bisunessTabContent">
+                  <div class="tab-content business-section__tabs-content" id="businessTabContent">
                     <div class="tab-pane fade show active" id="parkomat" role="tabpanel" aria-labelledby="business-tab-1">
                       <div class="tab-item">
                         <div class="text">Паркоматы, выпускаемые Parkt Service Group, доказали свою надежность, защищенность от несанкционированного доступа и устойчивость к попыткам порчи. Этого удалось добиться не принося в жертву удобство для водителя.</div>
@@ -204,7 +203,65 @@
             </div>
           </div>
 
-          <div id="section_3" class="full-page-section" style="background-color: #333;"></div>
+          <div id="section_3" class="full-page-section full-page-section--semi-white driver-section">
+            <div class="container container-fluid">
+              <div class="row spacing-30">
+                <div class="col-md-6">
+                  <p class="full-page-section__subtitle">Для водителей</p>
+                  <h3 class="full-page-section__title">Оплачивайте парковку в 3 клика<br> с <span>UNIP</span> не выходя из машины!</h3>
+                  <ul class="nav nav-tabs driver-section__tabs" id="driverTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="driver-tab-1" data-toggle="tab" href="#chooseMap" role="tab" aria-controls="chooseMap" aria-selected="true">Выберите парковку на карте</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="driver-tab-2" data-toggle="tab" href="#fillInfo" role="tab" aria-controls="fillInfo" aria-selected="false">Заполните информацию</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="driver-tab-3" data-toggle="tab" href="#clickStart" role="tab" aria-controls="clickStart" aria-selected="false">Нажмите "Старт" - Все! </a>
+                    </li>
+                  </ul>
+                  <a href="#" class="more-link">Подробнее</a>
+                </div>
+                <div class="col-md-6">
+                  <div class="tab-content driver-section__tabs-content" id="driverTabContent">
+                    <div class="tab-pane fade show active" id="chooseMap" role="tabpanel" aria-labelledby="driver-tab-1">
+                      <div class="tab-item">
+                        <div class="text">Найдите нужную Вам парковку на карте или с помощью поиска по адресу</div>
+                        <div class="img-wrapper">
+                          <img src="images/img-driver-1.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="fillInfo" role="tabpanel" aria-labelledby="driver-tab-2">
+                      <div class="tab-item">
+                        <div class="text">Выберите удобный для Вас способ оплаты, длительность парковки и авто, которое хотите припарковать.</div>
+                        <div class="img-wrapper">
+                          <img src="images/img-driver-2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="clickStart" role="tabpanel" aria-labelledby="driver-tab-3">
+                      <div class="tab-item">
+                        <div class="text">Ваше авто припарковано. Система уведомит Вас об окончании парковки</div>
+                        <div class="img-wrapper">
+                          <img src="images/img-driver-3.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="driver-section__download">
+                    <div class="text">UNIP App доступно для iPhone и Android</div>
+                    <a href="#" class="market-link">
+                      <img src="images/icon-market-1.svg" alt="">
+                    </a>
+                    <a href="#" class="market-link">
+                      <img src="images/icon-market-2.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div id="section_4" class="full-page-section" style="background-color: #333;"></div>
 
@@ -384,7 +441,6 @@
 
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script async="" src="https://www.youtube.com/iframe_api"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js" integrity="sha512-FcXc9c211aHVJEHxoj2fNFeT8+wUESf/4mUDIR7c31ccLF3Y6m+n+Wsoq4dp2sCnEEDVmjhuXX6TfYNJO6AG6A==" crossorigin="anonymous"></script> -->
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
 </body>

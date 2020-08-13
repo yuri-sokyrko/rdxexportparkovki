@@ -2398,16 +2398,27 @@
 }
 
 .page-header--white .header-logo--black,
-.page-header--black .header-logo--white {
+.page-header--black .header-logo--white,
+.page-header--semi-white .header-logo--white {
   display: none;
 }
 
-.page-header--black .rd-navbar-absolute .rd-navbar-nav > li > a {
+.page-header--black .rd-navbar-absolute .rd-navbar-nav > li > a,
+.page-header--semi-white .rd-navbar-absolute .rd-navbar-nav > li > a {
   color: #000;
 }
 
-.page-header--black .rd-navbar-absolute .rd-navbar-nav > li .rd-navbar-submenu-toggle::after {
+.page-header--semi-white .rd-navbar-absolute .rd-navbar-nav > li.semi-white > a {
+  color: #fff;
+}
+
+.page-header--black .rd-navbar-absolute .rd-navbar-nav > li .rd-navbar-submenu-toggle::after,
+.page-header--semi-white .rd-navbar-absolute .rd-navbar-nav > li .rd-navbar-submenu-toggle::after {
   color: #000 !important;
+}
+
+.page-header--semi-white .rd-navbar-absolute .rd-navbar-nav > li.semi-white .rd-navbar-submenu-toggle::after {
+  color: #fff !important;
 }
 
 .page-header--black .rdxheadphone {
@@ -2435,6 +2446,21 @@
 
 .full-page-section--white {
   background-color: #fff;
+}
+
+.full-page-section--semi-white {
+  background-color: #fff;
+}
+
+.full-page-section--semi-white::before {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #0B0F21;
 }
 
 .full-page-section--round-decor::before {
@@ -2477,6 +2503,24 @@
   line-height: 36px;
   color: #0B0F21;
   text-align: left;
+}
+
+.full-page-section__title span {
+  display: inline-block;
+  position: relative;
+}
+
+.full-page-section__title span::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15px;
+  background-color: #FAD756;
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .hero-section {
@@ -2856,7 +2900,138 @@
   right: -74px;
 }
 
+.driver-section .container-fluid {
+  max-width: 100% !important;
+  padding: 0 75px !important;
+}
 
+.driver-section__tabs {
+  border: none;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 75px;
+}
+
+.driver-section__tabs .nav-item {
+  margin-bottom: 40px;
+}
+
+.driver-section__tabs .nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.driver-section__tabs .nav-link {
+  display: block;
+  border: none;
+  position: relative;
+  padding: 0 0 0 32px;
+  background-color: transparent;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0B0F21;
+  transition: all .3s ease-in;
+}
+
+.driver-section__tabs .nav-link::before {
+  content: '';
+  display: block;
+  height: 12px;
+  width: 12px;
+  background: transparent url(../images/icon-tab.svg) no-repeat center / contain;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: all .3s ease-in;
+}
+
+.driver-section__tabs .nav-link.active {
+  color: #0B0F21;
+  background-color: transparent;
+  opacity: 1;
+  font-weight: 500;
+}
+
+.driver-section__tabs .nav-link.active::before {
+  background: transparent url(../images/icon-tab-active.svg) no-repeat center / contain;
+}
+
+.driver-section__tabs ~ .more-link {
+  margin-top: 160px;
+  margin-bottom: -160px;
+}
+
+.driver-section__tabs-content .tab-item {
+  padding-left: 90px;
+}
+
+.driver-section__tabs-content .tab-item .text {
+  display: block;
+  max-width: 180px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.driver-section__tabs-content .tab-item .img-wrapper {
+  display: block;
+  max-width: 368px;
+  margin-top: -158px;
+  margin-left: 100px;
+}
+
+.driver-section__download {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 16px;
+  padding-left: 90px;
+}
+
+.driver-section__download .text {
+  display: block;
+  flex: 0 1 auto;
+  margin-right: calc(49px - 14px);
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.driver-section__download .market-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 110px;
+  height: 35px;
+  margin-left: 14px;
+  transition: all .3s ease-in;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px rgba(151, 151, 151, 0.303486);
+}
+
+.driver-section__download .market-link img {
+  width: 100%;
+  max-width: 83px;
+}
+
+.driver-section__download .market-link:hover {
+  opacity: 0.5;
+}
 /*---------------------------------------------------------------------*/
 /*                                 Yuri EOF                            */
 /*---------------------------------------------------------------------*/

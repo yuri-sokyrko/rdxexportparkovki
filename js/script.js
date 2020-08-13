@@ -2444,9 +2444,15 @@
 					if(slides.eq(index-1).hasClass('full-page-section--white')) {
 						jQuery('.page-header').removeClass('page-header--white');
 						jQuery('.page-header').addClass('page-header--black');
+						jQuery('.page-header').removeClass('page-header--semi-white');
+					} else if(slides.eq(index-1).hasClass('full-page-section--semi-white')) {
+						jQuery('.page-header').addClass('page-header--semi-white');
+						jQuery('.page-header').removeClass('page-header--white');
+						jQuery('.page-header').removeClass('page-header--black');
 					} else {
 						jQuery('.page-header').addClass('page-header--white');
 						jQuery('.page-header').removeClass('page-header--black');
+						jQuery('.page-header').removeClass('page-header--semi-white');
 					}
 				},
 				afterRender: function(){
