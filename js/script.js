@@ -2450,8 +2450,8 @@
 						jQuery('.page-header').removeClass('page-header--white');
 						jQuery('.page-header').removeClass('page-header--black');
 					} else {
-						jQuery('.page-header').addClass('page-header--white');
-						jQuery('.page-header').removeClass('page-header--black');
+						jQuery('.page-header').removeClass('page-header--white');
+						jQuery('.page-header').addClass('page-header--black');
 						jQuery('.page-header').removeClass('page-header--semi-white');
 					}
 				},
