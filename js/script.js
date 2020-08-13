@@ -2435,9 +2435,24 @@
 				animateAnchor: false,
 	
 				//events
-				onLeave: function(index, nextIndex, direction){},
-				afterLoad: function(anchorLink, index){},
-				afterRender: function(){},
+				onLeave: function(index, nextIndex, direction){
+					
+				},
+				afterLoad: function(anchorLink, index){
+					var slides = jQuery(".full-page-section");
+
+					if(slides.eq(index-1).hasClass('full-page-section--white')) {
+						jQuery('.page-header').removeClass('page-header--white');
+						jQuery('.page-header').addClass('page-header--black');
+					} else {
+						jQuery('.page-header').addClass('page-header--white');
+						jQuery('.page-header').removeClass('page-header--black');
+					}
+				},
+				afterRender: function(){
+					jQuery('.page-header').addClass('page-header--white');
+					jQuery('.page-header').removeClass('page-header--black');
+				},
 			});
 
 			$('.modal').on('shown.bs.modal',function(){      //correct here use 'shown.bs.modal' event which comes in bootstrap3
