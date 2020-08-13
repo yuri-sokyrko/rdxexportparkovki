@@ -2992,7 +2992,7 @@
 }
 
 .driver-section__tabs-content .tab-item {
-  padding-left: 750px;
+  padding-left: 75px;
 }
 
 .driver-section__tabs-content .tab-item .text {
@@ -3060,7 +3060,7 @@
 }
 
 .results-section__infographic {
-  padding: 0 0 0 90px;
+  padding: 0 0 0 75px;
 }
 
 .results-section__infographic ul {
@@ -3097,6 +3097,62 @@
   font-size: 14px;
   line-height: 17px;
   color: #0B0F21;
+}
+
+.partners-section {
+  padding: 0 75px;
+}
+
+.partners-section .text-container {
+  max-width: 360px;
+}
+
+.partners-section .more-link {
+  margin-top: 178px;
+}
+
+.partners-section__slider .carousel-inner {
+  max-width: 650px;
+  margin-right: 40px;
+  margin-left: auto;
+}
+
+.partners-section__slider .carousel-indicators {
+  position: static;
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
+  margin: 150px -10px 0;
+}
+
+.partners-section__slider .carousel-indicators li {
+  position: relative;
+  margin: 0 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #979797;
+  opacity: 0.2;
+  transition: all .3s ease-in;
+  cursor: pointer;
+}
+
+.partners-section__slider .carousel-indicators li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+.partners-section__slider .carousel-indicators li.active {
+  background-color: #FAD756;
+  opacity: 1;
 }
 /*---------------------------------------------------------------------*/
 /*                                 Yuri EOF                            */
