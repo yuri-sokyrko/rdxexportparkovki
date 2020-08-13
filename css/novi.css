@@ -1,0 +1,2391 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Montserrat'), url('../fonts/Montserrat.woff') format('woff');
+  }
+  
+  [data-novi-id="0"] {
+  text-decoration: underline;
+  }
+  
+  .zazan-container {
+  max-width: 1440px;
+  /* Override bootstrap maximum width */
+  }
+  
+  
+  .container {
+  max-width: 1200px;
+  /* Override bootstrap maximum width */
+  }
+  
+  .content-box {
+  padding: 1rem 0.5rem;
+  text-align: center;
+  
+  }
+  
+  
+  [data-novi-id="3"] {
+  text-transform: lowercase;
+  }
+  
+  [data-novi-id="2"] {
+  text-decoration: underline;
+  text-transform: uppercase;
+  }
+  
+  [data-novi-id="1"] {
+  text-decoration: underline;
+  }
+  
+  [data-novi-id="0"] {
+  
+  text-transform: lowercase;
+  
+  }
+  
+  .bg-gray-dark-rdx-footer {
+  
+  background-color: rgb(11, 15, 33);
+  
+  }
+  
+  
+  .page-footer {
+  background: #0B0F21;
+  
+  }
+  
+  .page-footer-minimal,
+  .novi-background {
+  
+  background-color: rgb(11, 15, 33);
+  
+  }
+  
+  
+  h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #FFFFFF;
+  
+  
+  }
+  
+  
+  .rdxfooter-menu {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  
+  color: #FFFFFF;
+  
+  
+  }
+  
+  
+  
+  .rdxmenubottomitems {
+  padding-top: 20px;
+  }
+  
+  .rdxmenubottomitems2 {
+  padding-top: 0px;
+  font-size: 11px;
+  }
+  
+  
+  .rdxaboutpartnershead {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 44px;
+  
+  }
+  
+  
+  .rdxaboutpartnersp {
+  margin-top: 74px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  
+  }
+  
+  
+  .rdxhowtop {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  
+  }
+  
+  
+  .rdxaboutpartnerspe {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #0B0F21;
+  
+  
+  }
+  
+  
+  
+  .rdxaboutpartnerspepercent {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 78px;
+  color: #0B0F21;
+  padding-left: 60px;
+  
+  background: url("../images/arrowdown.png") no-repeat left;
+  
+  }
+  
+  
+  .rdxaboutpartnerspemln {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 78px;
+  color: #0B0F21;
+  padding-left: 20px;
+  
+  margin-top: 80px;
+  
+  }
+  
+  
+  
+  
+  
+  .rdxaboutpartners {
+  margin-bottom: 80px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-right: 0px;
+  }
+  
+  
+  .rdxtext370 {
+  max-width: 370px;
+  }
+  
+  
+  .rdxtext450 {
+  max-width: 450px;
+  }
+  
+  
+  .rdxnopadding {
+  
+  padding: 0px;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .rdxaboutachiveshead {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 44px;
+  
+  
+  color: #0B0F21;
+  }
+  
+  
+  h3 .rdxaboutachiveshead {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 44px;
+  
+  
+  color: #0B0F21 !important;
+  
+  
+  
+  }
+  
+  
+  .rdxaboutachivesheady {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 44px;
+  
+  
+  
+  color: #0B0F21 !important;
+  }
+  
+  
+  h3 .rdxaboutachivesheady {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 44px;
+  
+  
+  color: #0B0F21 !important;
+  
+  
+  
+  }
+  
+  .rdxaboutachivesheadmini {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 4px solid #F2E450;
+  width: 180px;
+  
+  
+  margin-bottom: 63px;
+  }
+  
+  
+  
+  .rdxaboutachivesheadp {
+  margin-top: 100px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  
+  }
+  
+  
+  
+  .rdxachitxth {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+  /* identical to box height */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  .rdxachitxt {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  
+  .rdxachilayeritem {
+  
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  width: 50%;
+  background: #fff;
+  left: 50%;
+  padding: 50px 50px;
+  text-align: left;
+  
+  
+  }
+  
+  
+  
+  .rdxcaptionitem {
+  
+  text-align: left;
+  
+  }
+  
+  
+  .isotope-item {
+  
+  
+  border-radius: 20px 0px 20px 0px;
+  height: 215px !important;
+  float: left;
+  left: 0px;
+  /* background: rgb(255, 255, 255); */
+  display: block;
+  padding-right: 40px !important;
+  
+  
+  
+  margin-bottom: 60px;
+  }
+  
+  
+  .thumbnail-classic-rdxmod {
+  border-radius: 20px 0px 20px 0px;
+  height: 215px;
+  margin-left: -15px;
+  }
+  
+  
+  
+  a .thumbnail-classic-rdxmod {
+  
+  height: 215px;
+  
+  
+  }
+  
+  
+  
+  .rdxwhitebox {
+  background: #fff;
+  padding: 20px 5px;
+  }
+  
+  
+  
+  .rdxyelowbox {
+  background: #FAD756;
+  padding: 20px 5px;
+  border-radius: 10px;
+  }
+  
+  
+  .rdxmln {
+  
+  font-size: 36px;
+  font-style: normal;
+  
+  }
+  
+  
+  .rdxpremln {
+  
+  
+  font-style: normal;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 59px;
+  /* identical to box height */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  
+  
+  .rdxgrivnasign {
+  
+  
+  margin-top: 60px;
+  margin-left: 130px;
+  position: absolute;
+  
+  
+  }
+  
+  
+  .rdxaboutpartnerspemlnpost {
+  color: #fff;
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  margin-left: 80px;
+  
+  }
+  
+  
+  .rdxqcite {
+  
+  text-align: left;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  margin-top: 35px;
+  
+  
+  }
+  
+  
+  .rdxfloatleftimage {
+  text-align: left;
+  }
+  
+  
+  
+  .yebo {
+  
+  background: #FAD756;
+  border-radius: 20px 0px 20px 0px;
+  
+  padding-left: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  }
+  
+  .rdxbenef {
+  /* Bullets big */
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  }
+  
+  
+  
+  .rdxmission {
+  
+  /* H3 */
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  /* or 120% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  }
+  
+  
+  
+  .rdxmissiontxt {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display:flex;
+  align-items:center;
+  /* or 150% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  
+  }
+  
+  
+  .rdxaboutslider {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 60px;
+  /* or 111% */
+  
+  
+  color: #FFFFFF;
+  
+  text-align: left;
+  float: left;
+  left: 0px;
+  min-width: 80%;
+  
+  }
+  
+  
+  
+  .rdxtopmenu {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  
+  color: #FFFFFF;
+  margin: 0px 25px;
+  
+  }
+  
+  
+  .rdxtopmenutrans {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  
+  color: #000;
+  margin: 0px 25px;
+  
+  }
+  
+  
+  
+  
+  .rd-navbar-static.rd-navbar-default.rd-navbar--is-stuck .rd-navbar-inner {
+  display: none;
+  }
+  
+  .rd-navbar-static.rd-navbar--is-clone {
+  
+  display: none;
+  
+  }
+  
+  
+  .rdx-bg-white {
+  background-color: #fff;
+  }
+  
+  
+  .rdxbreadcrumbs {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 24px;
+  
+  
+  }
+  
+  
+  .rdxeadthee {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 44px;
+  
+  }
+  
+  
+  .rdxheadtwo {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 60px;
+  /* or 111% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  
+  
+  .rdxeadfour {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 2;
+  /* or 120% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  
+  .rdxeadfourdots {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  background: url(../images/yellowdots2.png);
+  background-position: 0px 5px;
+  color: #0B0F21;
+  margin: 0px;
+  padding: 28px 32px;
+  margin-left:-32px;
+  }
+  
+  .rdxeadfourdots2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  background: url(../images/yellowdots2.png);
+  background-position: 0px 5px;
+  color: #0B0F21;
+  margin: 0px;
+  padding: 28px 32px;
+  display:inline-block;
+  }
+  
+  .rdxehadthreedots {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 50px;
+  background: url(../images/yellowdots2.png);
+  background-position: 0px 5px;
+  color: #0B0F21;
+  margin: 0px;
+  padding: 28px 32px;
+  
+  
+  }
+  
+  p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  
+  color: #0B0F21;
+  
+  }
+  
+  .rdxspacer05 {
+  height: 5px;
+  display: block;
+  }
+  
+  .rdxspacer10 {
+  height: 10px;
+  display: block;
+  }
+  
+  .rdxspacer20 {
+  height: 20px;
+  display: block;
+  }
+  
+  .rdxspacer30 {
+  height: 30px;
+  display: block;
+  }
+  
+  .rdxspacer40 {
+  height: 40px;
+  display: block;
+  }
+  
+  
+  .rdxspacer50 {
+  height: 50px;
+  display: block;
+  }
+  
+  
+  
+  .rdx-black-btn {
+  
+  background-color: #000;
+  color: #fff;
+  text-transform: none;
+  
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+  
+  
+  }
+  
+  .rdx-big-black-btn {
+  
+  background-color: #000;
+  color: #fff;
+  text-transform: none;
+  
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+  
+  padding: 1.3rem 3.8rem;
+  }
+  
+  .rdx-black-btn:hover {
+  
+  background-color: #FAD756 !important;
+  color: #000 !important;
+  text-transform: none;
+  font-family: Montserrat;
+  
+  }
+  
+  
+  .rdx-big-black-btn:hover {
+  
+  background-color: #FAD756 !important;
+  color: #000 !important;
+  text-transform: none;
+  font-family: Montserrat;
+  
+  }
+  
+  
+  .rdx-black-transparent-menu {
+  
+  background-color: none;
+  color: #000;
+  font-family: Montserrat;
+  
+  }
+  
+  
+  .rdxtopmenutrans>a {
+  color: #000 !important;
+  font-family: Montserrat;
+  
+  }
+  
+  
+  .rdxtopmenucontainer>li:nth-child(1) {
+  
+  float: left;
+  }
+  
+  .rdxtopmenucontainer>li:nth-child(2) {
+  
+  float: left;
+  }
+  
+  
+  
+  .rdxtopmenucontainer>li:nth-child(3) {
+  
+  float: left;
+  }
+  
+  
+  
+  .rdxtopmenucontainer>li:nth-child(4) {}
+  
+  
+  
+  .rdxtopmenucontainer>li:nth-child(5) {}
+  
+  
+  
+  .rdxtopmenucontainer>li:nth-child(6) {}
+  
+  
+  
+  .rdxtopmenucontainer>li:nth-child(7) {}
+  
+  
+  
+  .rdxfootersocial2,
+  .rdxfootersocial1 {
+  
+  margin: 0px 25px 0 0px;
+  font-size: 10px;
+  
+  
+  }
+  
+  
+  
+  .rdxfooterfix {
+  
+  padding-top: 85px;
+  BACKGROUND-COLOR: RED !IMPORTANT;
+  
+  }
+  
+  
+  .rdxfootercolumnfix {
+  
+  
+  margin: 80px 30px;
+  
+  }
+  
+  .rdxuppsy {
+  
+  color: #fff;
+  text-align: right;
+  float: left;
+  
+  }
+  
+  
+  .rdxboxtransfix {
+  
+  border: 0px !important;
+  
+  
+  }
+  
+  
+  .rdxbenefitshead {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 44px;
+  line-height: 44px;
+  /* or 100% */
+  
+  text-align: center;
+  
+  /* Dark */
+  
+  color: #0B0F21 !important;
+  }
+  
+  
+  .rdxbenefitsheadwl {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 44px;
+  line-height: 44px;
+  /* or 100% */
+  
+  text-align: left;
+  
+  /* Dark */
+  
+  color: #fff !important;
+  }
+  
+  
+  
+  .rdxformhead {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 44px;
+  line-height: 44px;
+  /* or 100% */
+  
+  text-align: left;
+  
+  /* Dark */
+  
+  color: #0B0F21 !important;
+  }
+  
+  .rdxbenefitspatch {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+  
+  text-align: center;
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  
+  
+  .rdxbenefitspatchhead {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+  
+  text-align: center;
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  
+  
+  .rdxfancyfooterform {
+  
+  /* Dark */
+  padding: 60px 60px 110px;
+  background: #0B0F21;
+  border-radius: 10px;
+  
+  /* Dark */
+  
+  
+  /* Dark */
+  margin-bottom: 40px;
+  
+  }
+  
+  
+  .rdxfancyfooterformhead {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+  
+  
+  color: #FFFFFF;
+  
+  }
+  
+  
+  .box-rdx-contacts {
+  
+  
+  text-align: left;
+  
+  }
+  
+  
+  .rdxheaderlink {
+  display: block;
+  /* text-align: left; */
+  /* float: left; */
+  margin-top: 30px;
+  font-family: Montserrat;
+  color: #FFFFFF;
+  text-align: left;
+  float: left;
+  left: 185px;
+  min-width: 80%;
+  bottom: 70px;
+  position: absolute;
+  }
+  
+  
+  
+  .rdxheaderlinknoma {
+  display: block;
+  /* text-align: left; */
+  /* float: left; */
+  margin-top: 30px;
+  font-family: Montserrat;
+  color: #FFFFFF;
+  text-align: left;
+  float: left;
+  min-width: 80%;
+  position: absolute;
+  }
+  
+  .rdxheaderlinknoma a:hover{
+    color:#fad756;
+  }
+  
+  
+  
+  .rdxliactive {
+  
+  background: url('../images/listitem_active.png');
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  background-position: 0px 5px;
+  
+  
+  }
+  
+  
+  
+  .rdxlipass {
+  
+  background: url('../images/listitem_pass.png');
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  background-position: 0px 5px;
+  
+  }
+  
+  
+  
+  .rdxboldp {
+  
+  font-weight: 600;
+  
+  }
+  
+  .rdxdwnprez,
+  .rdxdwnprez:hover {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  /* identical to box height */
+  background: url('../images/bgbtn_pdf_b.png');
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+  color: #000;
+  padding-left: 60px;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: 270px;
+  text-decoration: underline;
+  border: 0px;
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
+  }
+  
+  
+  .rdxdwnprez:hover {}
+  
+  .rdxdwnprez>SPAN:HOVER {
+  PADDING-BOTTOM: 7PX;
+  BORDER-BOTTOM: 2PX SOLID #000;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .rdxbenefsel {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  /* identical to box height */
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+  color: #000;
+  padding-left: 60px;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: 270px;
+  text-decoration: underline;
+  border: 0px;
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
+  }
+  
+  
+  .rdxbenefsel>SPAN {
+  PADDING-BOTTOM: 7PX;
+  BORDER-BOTTOM: 2PX SOLID #fff;
+  }
+  
+  
+  
+  
+  
+  
+  .rdxyellowbuttonplay {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  /* identical to box height */
+  background: #fad756 url('../images/bgbtn_play_b.png');
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  color: #000;
+  padding-left: 50px;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: 270px;
+  border: 0px;
+  }
+  
+  
+  .rdxyellowbuttonplay:hover {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  /* identical to box height */
+  background: #0b0f21 url('../images/bgbtn_play.png');
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  color: #fff;
+  padding-left: 50px;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: 270px;
+  border: 0px;
+  }
+  
+  .rdxblackbuttonplay,
+  .rdxblackbuttonplay12 {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  /* identical to box height */
+  background: #0b0f21 url('../images/bgbtn_play.png');
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: 270px;
+  }
+  
+  .rdxblackbuttonplay12 {
+    font-size: 12px !important;
+  }
+  
+  .rdxblackbuttonplay:hover,
+  .rdxblackbuttonplay12:hover {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  /* identical to box height */
+  background: #fad756 url('../images/bgbtn_play_b.png');
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  color: #000;
+  padding-left: 50px;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: 270px;
+  }
+  
+  .rdxyellowbuttonlocation {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  /* identical to box height */
+  background: #fad756 url('../images/bgbtn_location_b.png');
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  color: #000;
+  padding-left: 50px;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: 270px;
+  border: 0px;
+  }
+  
+  
+  .rdxyellowbuttonlocation:hover {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  /* identical to box height */
+  background: #0b0f21 url('../images/bgbtn_location_w.png');
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  color: #fff;
+  padding-left: 50px;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: 270px;
+  border: 0px;
+  }
+  
+  .rdxblackbuttonpdf {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  /* identical to box height */
+  background: #0b0f21 url('../images/bgbtn_pdf.png');
+  background-repeat: no-repeat;
+  background-position: 17px 14px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: 270px;
+  }
+  
+  
+  .rdxblackbuttonpdf:hover {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  /* identical to box height */
+  background: #fad756 url('../images/bgbtn_pdf_b.png');
+  background-repeat: no-repeat;
+  background-position: 17px 14px;
+  color: #000;
+  padding-left: 50px;
+  text-transform: none;
+  display: block;
+  float: left;
+  width: 270px;
+  }
+  
+  
+  
+  
+  
+  
+  /* ------------ menu ------------ */
+  
+  .rd-navbar-static.rd-navbar-default .rd-navbar-nav>li>.rd-navbar-dropdown {
+  background: #FAD756;
+  background-image: url(../images/bkbg.png);
+    background-repeat: no-repeat;
+  background-size: 50% 2px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: -3px;
+  margin-left: 0px;
+  }
+  
+  
+  .rd-navbar-static .rdxtopmenu>li>a {
+  
+  border: 10px solid #ff0000;
+  
+  
+  
+  }
+  
+  
+  .rd-navbar-static .rdxtopmenu>.rd-navbar-dropdown>li {
+  border: 0px !important;
+  }
+  
+  
+  
+  .rd-navbar-static .rdxtopmenutrans>.rd-navbar-dropdown>li {
+  border: 0px !important;
+  }
+  
+  
+  .rd-navbar-static .rd-navbar-dropdown {
+  width: auto;
+  }
+  
+  
+  .rd-navbar-static .rd-navbar-dropdown>li>a {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height, or 123% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  
+  
+  .rdx-wpatch-180 {
+  width: 180px !important;
+  }
+  
+  
+  
+  .rdx-wpatch-256 {
+  width: 256px !important;
+  }
+  
+  
+  .rdx-wpatch-240 {
+  width: 240px !important;
+  }
+  
+  
+  
+  .rd-navbar-static .rd-navbar-dropdown>li>a {
+  
+  padding: 7px 20px;
+  
+  }
+  
+  
+  .rdxheadphone {
+  position: absolute;
+  float: right;
+  right: 40px;
+  margin-top: 38px;
+  color: #fff;
+  background-image: url(../images/fill-1.svg);
+  background-repeat: no-repeat;
+  padding-left: 42px;
+  padding-top: 0px;
+  background-position: 10px 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: right;
+  }
+  
+  
+  
+  .rdxheadphoneb {
+  position: absolute;
+  float: right;
+  right: 40px;
+  margin-top: 38px;
+  color: #000;
+  
+  background-image: url(../images/fill-1-2.svg);
+  background-repeat: no-repeat;
+  padding-left: 42px;
+  padding-top: 0px;
+  background-position: 10px 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: right;
+  }
+  
+  
+  .rdxpatchfooterform {
+  
+  background: none !important;
+  color: #fff !important;
+  border-bottom: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 0px;
+  
+  
+  
+  }
+  
+  
+  .rdxpatchfooterforml {
+  
+  background: none !important;
+  color: #fff !important;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  /* or 214% */
+  
+  
+  color: #FFFFFF;
+  
+  opacity: 0.5;
+  
+  }
+  
+  
+  
+  
+  .rdxsubmitoffer {
+  
+  background-color: #fff !important;
+  color: #000 !important;
+  margin-top: 50px;
+  
+  
+  }
+  
+  
+  .rd-navbar-absolute .rd-navbar-nav>li .rd-navbar-submenu-toggle::after {
+  color: #ff0000;
+  }
+  
+  
+  .rdxtopmenu>.rd-navbar-submenu-toggle::after {
+  color: #fff !important;
+  }
+  
+  
+  .rdxtopmenutrans>.rd-navbar-submenu-toggle::after {
+  color: #000 !important;
+  }
+  
+  
+  
+  .rdxtickettxt {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  
+  }
+  
+  
+  .rdxinputticket {
+  
+  border-color: #171044 !important;
+  border-radius: 5px;
+  width: 215px;
+  text-align: left !important;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  
+  }
+  
+  
+  
+  .rdxselectticket {
+  
+  border-color: #171044 !important;
+  border-radius: 5px;
+  width: 215px;
+  text-align: left !important;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  
+  }
+  
+  .rdxselectticket select>option {
+  color: #ff0000 !important;
+  }
+  
+  .rdxinputticketgo {
+  
+  background-color: #ccc !important;
+  background: #0B0F21 !important;
+  border: 0px solid #171044 !important;
+  border-radius: 8px !important;
+  
+  
+  }
+  
+  .rdxselectticket>option {
+  background-color: #fff !important;
+  
+  }
+  
+  
+  .select2-container--bootstrap.select2-container--focus .select2-selection {
+  background: #fff !important;
+  border: solid 2px #000;
+  border-radius: 5px;
+  width: 215px;
+  
+  }
+  
+  .select2-container--bootstrap .select2-selection--single .select2-selection__arrow {
+  position: absolute;
+  bottom: 0;
+  right: 22px;
+  top: 0;
+  }
+  
+  
+  .select2-container {
+  
+  background: #fff !important;
+  border: solid 2px #000;
+  border-radius: 5px;
+  width: 215px !important;
+  height: 50px !important;
+  
+  
+  }
+  
+  
+  .rdxpaymentactive {
+  font-weight: 600;
+  padding: 22px 14px;
+  background-color: #0B0F21;
+  border-radius: 0px;
+  display: inline-block;
+  border-radius: 50px;
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 24px;
+  
+  /* Yellow */
+  
+  color: #FAD756;
+  }
+  
+  
+  .rdxpaymentpass {
+  font-weight: 600;
+  padding: 22px 14px;
+  background-color: none;
+  border-radius: 0px;
+  display: inline-block;
+  border-radius: 50px;
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  
+  /* Yellow */
+  
+  color: #FAD756;
+  }
+  
+  
+  .rdxbulletbigactive {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  
+  
+  margin-top: 22px;
+  /* or 120% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  opacity: 0.5;
+  
+  }
+  
+  
+  .rdxbulletbigactivestrong {
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  
+  
+  margin-top: 22px;
+  /* or 120% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  
+  .rdxbulletbigactivemini {
+  
+  /* Body 2 */
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  
+  
+  .rdxactivebb {
+  
+  /* Bullets big active */
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  }
+  
+  .novi-background {
+  background: none !important;
+  }
+  
+  
+  .rd-navbar-absolute>.rd-navbar-static {
+  display: none;
+  }
+  
+  
+  .btnrdxpatchfaq {
+  border: none !important;
+  text-transform: none;
+  
+  
+  /* Bullets small */
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  text-align: left;
+  
+  
+  }
+  
+  
+  .rdxcardheaderpatch {
+  border: none !important;
+  margin-top: 10px;
+  
+  
+  /* Body1 */
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  
+  background: url('../images/cross72.png') no-repeat;
+  background-position: center right 30px;
+  
+  
+  }
+  
+  
+  
+  .rdxselectslideszz {
+  
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  
+  text-align: center;
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  margin: 20px 10px;
+  }
+  
+  
+  .rdxybhr {
+  border-top: 2px solid #000;
+  opacity: 5%;
+  }
+  
+  
+  .rdxnovibgpatch {
+  background-color: rgb(247, 247, 247) !important;
+  
+  }
+  
+  
+  .rdxcontactsphonesize {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  /* or 100% */
+  
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  }
+  
+  
+  .rdxgraybox17 {
+  
+  width: 100%;
+  background-color: #F7F7F7;
+  border-radius: 5px;
+  min-height: 100px;
+  margin-top: 20px;
+  padding: 10px
+  }
+  
+  
+  .rdxgraybox17>.rower {
+  margin-top: 20px;
+  }
+  
+  
+  .rdxgraybox17>.rower2 {
+    margin-top: 20px;
+  
+  
+    background: url('../images/arrowactive.png') no-repeat;
+    background-position: center right 30px;
+  
+  
+  
+  }
+  
+  
+  .rdxgraybox17>.rower2s {
+    margin-top: 20px;
+  
+  
+    background: url('../images/arrowpass.png') no-repeat;
+    background-position: center right 30px;
+  
+  
+  
+  }
+  
+  
+  .rdxnewssidepanel {
+    background: #F7F7F7;
+  }
+  
+  
+  .rdxpriserhowtobuylist>p {
+    line-height: 10px;
+  }
+  
+  
+  .rdxpriserhowtobuylist>h3 {
+  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    border-bottom: 4px solid #FAD756;
+    width: 244px;
+  }
+  
+  
+  .rdxprisertown>.col {
+  
+  
+    text-decoration: underline;
+    padding: 3px !important;
+  
+  }
+  
+  .rdxpriserlist>.col {
+  
+  
+    padding: 0px 1px 0px 40px !important;
+    line-height: 20px;
+    margin: 10px 10px 10px 10px !important;
+    color: #000;
+    background-image: url("../images/mark1sign.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  
+    background-position: 0px 0px;
+  
+  }
+  
+  .rdxpriserlist {
+    margin: 5px;
+  
+  }
+  
+  
+  .rdxpriserator {
+    width: 100px;
+  }
+  
+  .rdxpriserator>span {
+    background: #FAD756 !important;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+  
+  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 64px;
+    /* identical to box height, or 160% */
+  
+    text-align: center;
+    /* Dark */
+  
+    color: #0B0F21;
+  
+  }
+  
+  
+  
+  
+  .rdximageryye {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../images/bg-ye.png');
+    background-position: -10px -20px;
+    padding: 60px 40px;
+    border-radius: 20px;
+  }
+  
+  .rdximageryye>img {
+    border-radius: 20px;
+  }
+  
+  
+  
+  .counter-box-header {
+  
+    font-family: Montserrat !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    /* identical to box height */
+  
+    text-transform: none !important;
+    /* Dark */
+  
+    color: #0B0F21 !important;
+  }
+  
+  .counter-box .counter {
+  
+  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+  
+  
+    /* Dark */
+  
+    color: #0B0F21;
+  
+  
+  }
+  
+  
+  
+  .bg-default-primary .row-custom-bordered [class*='col'] {
+    border: 0px;
+  }
+  
+  
+  
+  .rdxpsgunder {
+  
+  
+  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+  
+    width: 300px;
+    /* Dark */
+  
+    color: #0B0F21;
+  
+  
+    border-bottom: 4px solid #FAD756;
+  }
+  
+  
+  .rdxpsgunder2 {
+  
+    /* Bullets big */
+  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+  
+  
+    /* Dark */
+  
+    color: #0B0F21;
+    mix-blend-mode: normal;
+    /* opacity: 0.5; */
+  
+  
+    margin-top: 20px;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .rdxdwnprezax,
+  .rdxdwnprezax:hover {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    background: url(../images/bgbtn_pdf_b.png);
+    background-repeat: no-repeat;
+    background-position: 20px 10px;
+    color: #000;
+    padding-left: 60px;
+    text-transform: none;
+    display: block;
+    float: left;
+    width: 270px;
+    text-decoration: underline;
+    border: 0px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 20px;
+    min-height: 55px;
+  }
+  
+  
+  .rdxpropdf {
+  
+    background-image: url(../images/pdfpro.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    margin: 30px 0px;
+    padding: 0px 70px;
+    min-height: 65px;
+  
+  
+  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+  
+  
+    /* Dark */
+  
+    color: #0B0F21;
+  
+  }
+  
+  
+  .rdxpropdf>span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+  
+  
+    /* Dark */
+  
+    color: #0B0F21;
+  }
+  
+  .rdxpropdfpipi {
+    
+    
+    font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  
+  /* Dark */
+  
+  color: #0B0F21;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  
+  }
+  
+  /***********************************************************************/
+  .btn.btn-effect-ujarak.btn-primary::before, .btn.btn-effect-ujarak.btn-primary-outline::before{
+    background:#fad756;
+  }
+  a:hover, a:focus{
+    color:#fad756;
+  }
+  
+  .rd-navbar-brand{
+    max-width:72px !important;
+  }
+  .form-bordered .form-control{
+    border: 1px solid #ededed;
+  }
+  .attach_file p{
+    color:white;
+    font-size:11px;
+    margin-top:64px;
+  }
+  .inline_img{
+    display:inline-block;
+    vertical-align:middle;
+    padding:10px;
+  }
+  .inline_txt{
+    display:inline-block;
+  }
+  .dll_yellow_back{
+    width: 116px;
+      height: 116px;
+      background: #fad756;
+      display: flex;
+      align-items: center;
+    border-radius: 120px;
+  }
+  .dll_yellow_back img{
+    display:block;
+    margin:0 auto;
+    max-width:64px;
+  }
+  .dll_bg_image{
+    position: absolute;
+      z-index: -1;
+      width: 120%;
+      top: -15%;
+      left: -25%;
+  }
+  .dll_dropdown{
+        width: 100%;
+      text-align: left;
+      padding: 15.2px 19px;
+      border: none;
+      border-bottom: 1px solid white;
+    background: none;
+      border-radius: 0;
+    text-transform:none;
+    box-shadow: none;
+    font-size:14px;
+  }
+  .dll_dropdown:hover{
+    background:transparent !important;
+  }
+  .dll_dropdown::after {
+      display: inline-block;
+    float:right;
+    margin-top:14px;
+      width: 0;
+      height: 0;
+      margin-left: 0.255em;
+      vertical-align: 0.255em;
+      content: "";
+      border-top: 0.3em solid;
+      border-right: 0.3em solid transparent;
+      border-left: 0.3em solid transparent;
+  }
+  .btn-secondary:focus, .btn-secondary.focus {
+      box-shadow: none;
+  }
+  .show .dropdown-menu{
+    display:block !important;
+      width: 100%;
+      background-color: #fad756;
+  }
+  .rdxactivebb_num {
+  font-weight: 900;
+  }
+  .dll_nav_arrows{
+    position:absolute;
+    bottom:0;
+    left:0;
+  }
+  .rd-navbar-fixed.rd-navbar-absolute .rd-navbar-panel:before{
+    background-color:#0B0F21;
+    border-color:#0B0F21;
+  }
+  .rdxpriserhowtobuylist p{
+    font-size:16px;
+  }
+  .dll_how_it_works_dots p{
+    background: url('../images/listitem_pass.png');
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    background-position: 0px 5px;
+  }
+  .c-breadcrumbs{
+  font-family:Montserrat;
+  font-size:11px;
+  line-height: 24px;
+  color: #0B0F21;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  }
+  .c-breadcrumbs a{
+    color: #0B0F21;
+  }
+  ul.c-breadcrumbs li {
+    display:inline;
+  }
+  ul.c-breadcrumbs a.home::after {
+    content:"|";
+    padding: 10px;
+    font-size: 16px;
+  }
+  .dll_img_left{
+    height:546px;
+  }
+  .dll_img_left img{
+    padding:30px;
+    background-color:#fff;
+    box-shadow:0px 0px 5px 1px rgba(0,0,0,0.1);
+    border-radius:10px;
+    position:absolute;
+    right:0;
+  }
+  .dll_img_right{
+    height:546px;
+  }
+  .dll_img_right img{
+    padding:30px;
+    background-color:#fff;
+    box-shadow:0px 0px 5px 1px rgba(0,0,0,0.1);
+    border-radius:10px;
+    position:absolute;
+    left:0;
+  }
+  /***********************************************************************/
