@@ -110,7 +110,7 @@
           <div id="section_1" class="full-page-section hero-section" style="background-image: url(images/bg-home.jpg);">
             <div class="container container-fluid">
               <div class="row spacing-30">
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-12">
                   <div data-caption-animate="fxRotateInRight" class="hero-section__text fxRotateInRight">
                     <h1 class="hero-section__title">Автоматизация системы парковок в Вашем городе</h1>
                     <p class="hero-section__subtitle">Автоматическая система парковок, организованная с учетом всех особенностей и потребностей Вашего города, позволяет разгрузить дороги, повысит уровень комфорта жителей и гостей города и увеличить доходы местного бюджета.</p>
@@ -121,7 +121,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-12">
                   <div  data-caption-animate="fxRotateInLeft" class="hero-infographic fxRotateInLeft">
                     <div class="hero-infographic__list">
                       <ul>
@@ -153,11 +153,11 @@
           <div id="section_2" class="full-page-section full-page-section--white full-page-section--round-decor business-section">
             <div class="container-fluid">
               <div class="row spacing-30">
-                <div class="col-md-12">
+                <div class="col-md-12 d-none d-lg-block d-xl-block">
                   <p class="full-page-section__subtitle">Для бизнес-клиентов</p>
                   <h3 class="full-page-section__title">Оборудование<br> вашего паркинга</h3>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 d-none d-lg-block d-xl-block">
                   <ul class="nav nav-tabs business-section__tabs" id="bisunessTab" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active" id="business-tab-1" data-toggle="tab" href="#parkomat" role="tab" aria-controls="parkomat" aria-selected="true">Паркоматы</a>
@@ -171,7 +171,21 @@
                   </ul>
                   <a href="#" class="more-link">Подробнее</a>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-12 d-block d-lg-none d-xl-none">
+                  <h3 class="business-section__title-mobile">Оборудование вашего паркинга</h3>
+                  <ul class="nav nav-tabs business-section__mobile-tabs" id="bisunessTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="business-tab-1" data-toggle="tab" href="#parkomat" role="tab" aria-controls="parkomat" aria-selected="true">Паркоматы</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="business-tab-2" data-toggle="tab" href="#shlagbaum" role="tab" aria-controls="shlagbaum" aria-selected="false">Шлагбаумы</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="business-tab-3" data-toggle="tab" href="#locations" role="tab" aria-controls="locations" aria-selected="false">Оборудование закрытых локаций</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-7 col-md-12">
                   <div class="tab-content business-section__tabs-content" id="businessTabContent">
                     <div class="tab-pane fade show active" id="parkomat" role="tabpanel" aria-labelledby="business-tab-1">
                       <div class="tab-item">
@@ -198,6 +212,9 @@
                       </div>
                     </div>
                   </div>
+                  <div class="d-block d-lg-none d-xl-none">
+                    <a href="#" class="business-section__link decor-button decor-button--small decor-button--left">Подробнее</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -206,7 +223,7 @@
           <div id="section_3" class="full-page-section full-page-section--semi-white driver-section">
             <div class="container container-fluid">
               <div class="row spacing-30">
-                <div class="col-md-6">
+                <div class="col-lg-6 d-none d-lg-block d-xl-block">
                   <div class="text-container">
                     <p class="full-page-section__subtitle">Для водителей</p>
                     <h3 class="full-page-section__title">Оплачивайте парковку в 3 клика<br> с <span>UNIP</span> не выходя из машины!</h3>
@@ -224,7 +241,7 @@
                     <a href="#" class="more-link">Подробнее</a>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 d-none d-lg-block d-xl-block">
                   <div class="tab-content driver-section__tabs-content" id="driverTabContent">
                     <div class="tab-pane fade show active" id="chooseMap" role="tabpanel" aria-labelledby="driver-tab-1">
                       <div class="tab-item">
@@ -261,6 +278,49 @@
                     </a>
                   </div>
                 </div>
+
+                <div class="col-sm-12 d-block d-lg-none d-xl-none">
+                  <h3 class="driver-section__title-mobile">Оплачивайте парковку в 3 клика с <span>UNIP!</span></h3>
+                  <div class="driver-section__slider-mobile">
+                    <div id="driverMobileCarousel" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="carousel-caption">
+                            <h5>
+                              <span class="carousel-counter">01.</span>
+                              Выберите парковку на карте
+                            </h5>
+                          </div>
+                          <img class="d-block w-100" src="images/img-driver-1.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="carousel-caption">
+                            <h5>
+                              <span class="carousel-counter">02.</span>
+                              Заполните информацию
+                            </h5>
+                          </div>
+                          <img class="d-block w-100" src="images/img-driver-2.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <div class="carousel-caption">
+                            <h5>
+                              <span class="carousel-counter">03.</span>
+                              Заполните информацию
+                            </h5>
+                          </div>
+                          <img class="d-block w-100" src="images/img-driver-3.png" alt="Third slide">
+                        </div>
+                      </div>
+                      <ol class="carousel-indicators">
+                        <li data-target="#driverMobileCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#driverMobileCarousel" data-slide-to="1"></li>
+                        <li data-target="#driverMobileCarousel" data-slide-to="2"></li>
+                      </ol>
+                    </div>
+                  </div>
+                  <a href="#" class="driver-section__link decor-button decor-button--black decor-button--small decor-button--left">Подробнее</a>
+                </div>
               </div>
             </div>
           </div>
@@ -268,14 +328,15 @@
           <div id="section_4" class="full-page-section full-page-section--semi-yellow results-section">
             <div class="container container-fluid">
               <div class="row spacing-30">
-                <div class="col-md-6">
+                <div class="col-lg-6 d-none d-lg-block d-xl-block">
                   <div class="text-container">
                     <p class="full-page-section__subtitle">Наши результаты</p>
                     <h3 class="full-page-section__title">Меняем инфраструктуру<br> страны уже сегодня</h3>
                     <p class="full-page-section__text">Автоматические системы управления парковками, разработанные и внедренные Parkt Service Group, уже реализованы в ряде городов Украины и помогли разгрузить дороги, получить дополнительные средства для развития дорожной инфраструктуры и повысить комфорт горожан.</p>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
+                  <h3 class="full-page-section__title d-block d-lg-none d-xl-none">Меняем инфраструктуру<br> страны уже сегодня</h3>
                   <div class="results-section__infographic">
                     <ul>
                       <li>
@@ -308,7 +369,7 @@
           <div id="section_5" class="full-page-section full-page-section--white partners-section">
             <div class="container container-fluid">
               <div class="row spacing-30">
-                <div class="col-md-5">
+                <div class="col-lg-5 d-none d-lg-block d-xl-block">
                   <div class="text-container">
                     <p class="full-page-section__subtitle">Партнеры</p>
                     <h3 class="full-page-section__title">Нам доверяют<br> Лидеры рынка!</h3>
@@ -316,7 +377,7 @@
                     <a href="#" class="more-link">Подробнее</a>
                   </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-lg-7 d-none d-lg-block d-xl-block">
                   <div class="partners-section__slider">
                     <div id="partnersCarousel" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
@@ -337,6 +398,25 @@
                       </ol>
                     </div>
                   </div>
+                </div>
+                <div class="col-md-12 d-block d-lg-none d-xl-none">
+                  <h3 class="full-page-section__title">Меняем инфраструктуру<br> страны уже сегодня</h3>
+                  <div class="partners-section__slider">
+                    <div id="partnersCarouselMobile" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="images/img-partners-mobile.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/img-partners-mobile.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/img-partners-mobile.png" alt="Third slide">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="partners-section__link decor-button decor-button--black decor-button--small decor-button--left">О проекте</a>
                 </div>
               </div>
             </div>
