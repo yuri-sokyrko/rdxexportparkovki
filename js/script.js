@@ -2495,6 +2495,14 @@ function handler() {
 					} else {
 						jQuery('#pp-nav .counter').text(index);
 					}
+
+					for(var i = 0; i < jQuery('#pp-nav ul li a').length; i++) {
+						if(i < index) {
+							jQuery('#pp-nav ul li a').eq(i).addClass('passed');
+						} else {
+							jQuery('#pp-nav ul li a').eq(i).removeClass('passed');
+						}
+					}
 				},
 				afterRender: function(){
 					jQuery('.page-header').addClass('page-header--white');
@@ -2503,6 +2511,8 @@ function handler() {
 					if(jQuery('#pp-nav').length) {
 						jQuery('#pp-nav').append('<div class="counter">01</div>');
 					}
+
+					jQuery('#pp-nav ul li a').eq(0).addClass('passed');
 				},
 			});
 

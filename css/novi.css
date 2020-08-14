@@ -3229,7 +3229,8 @@
   opacity: .2;
 }
 
-#pp-nav ul li a.active {
+#pp-nav ul li a.active,
+#pp-nav ul li a.passed {
   background-color: #FAD756;
   opacity: 1;
 }
@@ -3245,7 +3246,7 @@ footer.page-footer {
 }
 
 footer.page-footer.scrolledTop {
-  transform: translateY(calc(-100% + 1px));
+  transform: translateY(calc(-100% + 100px));
 }
 
 @media screen and (max-width: 1279px) {
