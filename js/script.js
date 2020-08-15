@@ -2406,4 +2406,137 @@
 
 	});
 
+	/**
+	 * One page Scroll
+	 */
+	jQuery(document).ready(function() {
+		handler();
+	});
 }());
+
+function handler() {	
+	var height_footer = jQuery('footer').outerHeight();	
+	var height_header = jQuery('header').outerHeight();		
+	//$('.content').css({'padding-bottom':height_footer+40, 'padding-top':height_header+40});
+	
+	
+	var viewport_wid = viewport().width;
+	var viewport_height = viewport().height;
+	
+	if (viewport_wid <= 991) {
+		jQuery('.page-header').removeClass('page-header--white');
+		jQuery('.page-header').removeClass('page-header--black');
+		jQuery('.page-header').removeClass('page-header--semi-white');
+		jQuery('footer.page-footer').removeClass('scrolledTop');
+	} else {
+		if(jQuery('#jsFullPage').length) {
+			var scrolledSection;
+
+			jQuery('#jsFullPage').pagepiling({
+				direction: 'vertical',
+				verticalCentered: true,
+				sectionsColor: [],
+				anchors: [],
+				scrollingSpeed: 700,
+				easing: 'swing',
+				loopBottom: false,
+				loopTop: false,
+				css3: true,
+				navigation: {
+				    // 'textColor': '#000',
+				    // 'bulletsColor': '#000',
+				    'position': 'left',
+				    // 'tooltips': ['section1', 'section2', 'section3', 'section4']
+				},
+				normalScrollElements: null,
+				normalScrollElementTouchThreshold: 5,
+				touchSensitivity: 5,
+				keyboardScrolling: true,
+				sectionSelector: '.full-page-section',
+				animateAnchor: false,
+	
+				//events
+				onLeave: function(index, nextIndex, direction){
+					
+				},
+				afterLoad: function(anchorLink, index){
+					var slides = jQuery(".full-page-section");
+
+					scrolledSection = index;
+
+					if(slides.eq(index-1).hasClass('full-page-section--white')) {
+						jQuery('.page-header').removeClass('page-header--white');
+						jQuery('.page-header').addClass('page-header--black');
+						jQuery('.page-header').removeClass('page-header--semi-white');
+
+						jQuery('#pp-nav .counter').addClass('counter--black');
+					} else if(slides.eq(index-1).hasClass('full-page-section--semi-white')) {
+						jQuery('.page-header').addClass('page-header--semi-white');
+						jQuery('.page-header').removeClass('page-header--white');
+						jQuery('.page-header').removeClass('page-header--black');
+
+						jQuery('#pp-nav .counter').addClass('counter--black');
+					} else if(slides.eq(index-1).hasClass('full-page-section--semi-yellow')) {
+						jQuery('.page-header').removeClass('page-header--semi-white');
+						jQuery('.page-header').removeClass('page-header--white');
+						jQuery('.page-header').addClass('page-header--black');
+
+						jQuery('#pp-nav .counter').addClass('counter--black');
+					} else {
+						jQuery('.page-header').addClass('page-header--white');
+						jQuery('.page-header').removeClass('page-header--black');
+						jQuery('.page-header').removeClass('page-header--semi-white');
+
+						jQuery('#pp-nav .counter').removeClass('counter--black');
+					}
+
+					if(index < 10) {
+						jQuery('#pp-nav .counter').text('0' + index);
+					} else {
+						jQuery('#pp-nav .counter').text(index);
+					}
+				},
+				afterRender: function(){
+					jQuery('.page-header').addClass('page-header--white');
+					jQuery('.page-header').removeClass('page-header--black');
+
+					if(jQuery('#pp-nav').length) {
+						jQuery('#pp-nav').append('<div class="counter">01</div>');
+					}
+				},
+			});
+
+			$('.modal').on('shown.bs.modal',function(){      //correct here use 'shown.bs.modal' event which comes in bootstrap3
+				$(this).find('iframe').attr('src', $(this).attr('data-video'));
+			});
+
+			jQuery(window).bind('mousewheel DOMMouseScroll touchmove', function(event){
+				var slides = jQuery(".full-page-section");
+
+				if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+					jQuery('footer.page-footer').removeClass('scrolledTop');
+				}
+				else {
+					if(scrolledSection == slides.length) {
+						jQuery('footer.page-footer').addClass('scrolledTop');
+					} else {
+						jQuery('footer.page-footer').removeClass('scrolledTop');
+					}
+				}
+			});
+		}
+	}
+}
+
+/* viewport width */
+function viewport(){
+	var e = window, 
+		a = 'inner';
+	if ( !( 'innerWidth' in window ) )
+	{
+		a = 'client';
+		e = document.documentElement || document.body;
+	}
+	return { width : e[ a+'Width' ] , height : e[ a+'Height' ] }
+}
+/* viewport width */

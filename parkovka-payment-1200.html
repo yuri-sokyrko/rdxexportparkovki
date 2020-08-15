@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/novi.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div><script src="js/html5shiv.min.js"></script><![endif]-->
 </head>
 
@@ -144,13 +145,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-2">
-                  <div class="rdxpaymentactive">01.</div>
+                <a href="#" class="row first_">
+				<div class="col-md-2">
+                  <div class="rdxpaymentactive first_">01.</div>
                 </div>
                 <div class="col-md-10">
                   <p class="rdxhowtop rdxbulletbigactivestrong">Выберите парковку на карте</p>
                   <p class="rdxhowtop rdxbulletbigactivemini">Найдите нужную Вам парковку на карте или с помощью поиска по адресу </p>
-                </div>
+                </div></a>
                 <div class="col-md-2">
                   <div class="rdxpaymentpass">02.</div>
                 </div>
@@ -164,6 +166,15 @@
                   <p class="rdxhowtop rdxbulletbigactive">Нажмите "Старт" - Все! </p>
                 </div>
               </div>
+			  <script>
+				$(".first_").click(function(){
+					$(".first_").addClass("show");
+				});
+
+				$('html').click(function() {
+					$(".first_.show").removeClass("show");
+				});
+			  </script>
               <div class="row">
                 <div class="col">
                   <div class="rdxspacer50"></div><a class="btn btn-white-outline btn-lg  rdxyellowbuttonplay" href="#"><span>Смотреть видео<br>презентацию</span></a>
