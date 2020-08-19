@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>parkovka-all-future-map-1200</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:100,300,400,700,900">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/novi.css">
+  <!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div><script src="js/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+  <div class="page text-center">
+      <section class="section section-md rdx-bg-white text-left">
+        <div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ul class="c-breadcrumbs">
+					<li class="home"> 
+						<span>
+							<a property="item" typeof="WebPage" title="" href="#" class="home"><span property="name">Главная</span></a>
+						</span>
+					</li>
+					<li class="home">
+						<span>
+							<a property="item" typeof="WebPage" title="" href="#" class="home"><span property="name">Для городов</span></a>
+						</span>
+					</li>				 
+					<li class="post-root post post-post current-item"><span class="current-item">Процесс сотрудничества</span></li>
+				</ul>
+			</div>
+		</div>
+          <div class="row spacing-30">
+            <div class="col-md-8 my-auto pt-5">
+              <h3 class="rdxeadfour">Места расположение парковок</h3>
+            </div>
+            <div class="col-md-4 text-right my-auto pt-5">
+				<select class="select-city" id="city-select">
+					<option class="dropdown-item" value="dnipro"><span>Днепропетровск</span></option>
+					<option class="dropdown-item" value="odessa">Одесса</option>
+					<option class="sel_txt" value="lviv">Львов</option>
+					<option class="sel_txt" value="harkiv">Харьков</option>
+				</select>
+            </div>
+
+            <div class="row">
+				<div class="col-md-5 mb-5">
+					<input placeholder="Адрес/Номер паркинга" class="rdxinput101">
+				</div>
+				<div class="col-md-7">
+					<div class="">
+						<div class="rdxmmixed active"> Все </div>
+						<div class="rdxmmixed"> Закрытые паркинги </div>
+						<div class="rdxmmixed"> Открытые парковки </div>
+						<div class="rdxmmixed"> Зарядка электромобиля </div>
+					</div>
+				</div>
+				<div class="col-md-12">
+				  <figure style="width:100%;"><img src="images/annotation-2020-08-13-013457.png" width="100%"></figure>
+				</div>
+			</div>
+          </div>
+        </div>
+      </section>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script async="" src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script> 
+  <script>
+	$('.rdxmmixed').on('click', function(){
+		var $this = $(this);
+		$('.rdxmmixed').removeClass('active');
+		$(this).addClass('active');
+		
+	});
+  </script>
+</body>
+
+</html>
