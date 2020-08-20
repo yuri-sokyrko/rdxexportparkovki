@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:100,300,400,700,900">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CRoboto:100,300,400,700,900">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/novi.css">
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div class="page text-center">
+  <div class="page text-center" >
     <section class="section section-md bg-image context-dark" style="background-image: url(images/top-unip-22.jpg);height:100%">
       <section class="section section-md text-left">
         <div class="container">
@@ -36,10 +36,23 @@
     </section>
     <section class="section section-lg bg-default novi-background bg-image text-left">
       <div class="container">
-        <div class="rdxspacer50"></div>
-        <div class="rdxspacer50"></div><span class="rdxbreadcrumbs">Главная &nbsp; | &nbsp; Для городов &nbsp; | &nbsp; Как это работает?</span>
+        <div class="col-md-12">
+				<ul class="c-breadcrumbs">
+					<li class="home"> 
+						<span>
+							<a property="item" typeof="WebPage" title="" href="#" class="home"><span property="name">Главная</span></a>
+						</span>
+					</li>
+					<li class="home">
+						<span>
+							<a property="item" typeof="WebPage" title="" href="#" class="home"><span property="name">Для городов</span></a>
+						</span>
+					</li>				 
+					<li class="post-root post post-post current-item"><span class="current-item">Как это работает?</span></li>
+				</ul>
+			  </div>
         <div class="row spacing-40">
-          <div class="col-sm-12 col-md-7 rdxmission">
+          <div class="col-sm-12 col-md-7 rdxmission" style="padding-top:90px">
             <h3>Сделайте свою парковку удобной для клиентов, а не для посторонних!</h3>
           </div>
           <div class="col-sm-12 col-xl-6 rdxmissiontxt">
@@ -48,270 +61,380 @@
           <div class="col-sm-12 col-md-5 offset-md-1 rdxmissiontxt">
             <p>Parkt Service Group предлагает комплексное решение по обустройству корпоративного закрытого паркинга. Наши специалисты накопили огромный опыт успешной реализации таких проектов, так что они подберут конфигурацию, наиболее отвечающую Вашим требованиям. </p>
           </div>
-          <div class="col-sm-8 col-xl-8"><img src="images/video002.png"></div>
+		  <div class="col-sm-12 mt-md-5">
+					<a class="rdxblackbuttonpdf" href="#"><p>Скачать презентацию</p></a>
+			</div>
+			<div class="col-sm-8 col-xl-8 video_cont" style="margin-top:80px">
+				<div class="video_title">
+					<div class="video_button">
+						<button type="button" class="btn btn-primary video-button video-button--left" data-toggle="modal" data-target="#videoModal"	></button>
+					</div>
+				</div>
+			</div>
           <div class="col-sm-4 col-md-3 offset-md-1 pl-0 rdxmissiontxt">
-            <p>Смотреть видео-пример</p>
-            <p>Закрытые паркинги - популярное решение среди крупных компаний Украины. В этой видеопрезентации Вы можете ознакомиться с примерами реализации таких решений.</p>
+            <div>
+				<h4>Смотреть видео-пример</h4>
+				<p>Закрытые паркинги - популярное решение среди крупных компаний Украины. В этой видеопрезентации Вы можете ознакомиться с примерами реализации таких решений.</p>
+			</div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-lg bg-default novi-background bg-image text-left" style="background-color: rgb(255, 255, 255);">
-      <div class="container">
-        <div class="row spacing-40">
-          <div class="col-sm-10 col-xl-12">
-            <h3 class="rdxehadthreedots">Оборудование <br>закрытого паркинга</h3>
-          </div>
-        </div>
-      </div>
+    <section class="section section-xl bg-default novi-background bg-image text-left" style="background-color: rgb(255, 255, 255);">
+		<div class="container">
+			<div class="row spacing-40">
+				<div class="col-sm-10 col-xl-12 mt-0" style="padding-bottom:100px">
+					<h2 class="rdxehadthreedots d-inline-block">Оборудование <br>закрытого паркинга</h2>
+				</div>
+				<div class="col-md-6">
+					<div class="row bg_color_about ml-1 mr-4">
+						<div class="col-6 pl-0">
+							<img src="images/made1.png" style="width:100%; height:216px">
+						</div>
+						<div class="col-6 my-auto">
+							<div class="parking_title mb-3">Шлагбаумы</div>
+							<div class="parking_text">Автоматические шлагбаумы повышают безопасность парковки и движения, а также обладает высокой степенью надежности, работая при любых погодных условиях.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row bg_color_about ml-1 mr-4">
+						<div class="col-6 pl-0">
+							<img src="images/made1.png" style="width:100%; height:216px">
+						</div>
+						<div class="col-6 my-auto">
+							<div class="parking_title mb-3">Системы безопасности </div>
+							<div class="parking_text">Системы мониторинга, включая видеонаблюдение и сигнализацию, гарантируют наблюдение за машинами Ваших клиентов, сотрудников и служебных автомобилей как во время рабочего дня, так и ночью или в выходные. </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 mt-5">
+					<div class="row bg_color_about ml-1 mr-4">
+						<div class="col-6 pl-0">
+							<img src="images/made3.png" style="width:100%; height:216px">
+						</div>
+						<div class="col-6 my-auto">
+							<div class="parking_title mb-3">Системы контроля </div>
+							<div class="parking_text">Вы сможете контролировать, кто, когда и как долго пользовался закрытой парковкой. Это ценнейший инструмент контроля за паркингом и полезнейшее средство сбора данных о поведении клиентов и времени, которое они проводят в магазине.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 mt-5">
+					<div class="row bg_color_about ml-1 mr-4">
+						<div class="col-6 pl-0">
+							<img src="images/made4.png" style="width:100%; height:216px">
+						</div>
+						<div class="col-6 my-auto">
+							<div class="parking_title mb-3">Обслуживание </div>
+							<div class="parking_text">Все операции по обслуживанию закрытых паркингов, включая мониторинг их состояния, профилактические и срочные работы, берет на себя Parkt Service Group.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
-    <section class="section section-lg bg-default novi-background bg-image rdxnovibgpatch" style="background:#fff !important;">
-      <div class="container">
-        <div class="isotope-wrap">
-          <ul class="isotope-filters-responsive">
-            <li>
-              <p>Город</p>
-            </li>
-            <li class="block-top-level"><button class="isotope-filters-toggle btn btn-sm btn-primary" data-custom-toggle="#isotope-2" data-custom-toggle-hide-on-blur="true">Filter <span class="caret"></span></button>
-              <div class="isotope-filters" id="isotope-2">
-                <ul class="inline-list">
-                  <li><a data-isotope-filter="Category 1" data-isotope-group="gallery" href="#" class="active">Днепропетровск</a></li>
-                  <li><a data-isotope-filter="Category 2" data-isotope-group="gallery" href="#" class="">Киев</a></li>
-                  <li><a data-isotope-filter="Category 3" data-isotope-group="gallery" href="#" class="">Харьков</a></li>
-                  <li><a data-isotope-filter="Category 4" data-isotope-group="gallery" href="#" class="">Одесса</a></li>
-                  <li><a data-isotope-filter="Category 5" data-isotope-group="gallery" href="#" class="">Львов</a></li>
-                  <li><a class="" data-isotope-filter="*" data-isotope-group="gallery" href="#" style="display:none;">Все</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <div class="row isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 4"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">5000 </div>
-                  <div class="rdxachitxt">Кол-во обустроенных паркомест </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 4"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">300 </div>
-                  <div class="rdxachitxt">Кол-во парковок с шлагбаумом </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 4"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">5000 </div>
-                  <div class="rdxachitxt">Кол-во установленных паркоматов </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 4"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">300 </div>
-                  <div class="rdxachitxt">Обучено инспекторов </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 3"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">5000 </div>
-                  <div class="rdxachitxt">Кол-во обустроенных паркомест </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 3"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">300 </div>
-                  <div class="rdxachitxt">Кол-во парковок с шлагбаумом </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 3"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">5000 </div>
-                  <div class="rdxachitxt">Кол-во установленных паркоматов </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 3"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">300 </div>
-                  <div class="rdxachitxt">Обучено инспекторов </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 2"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">5000 </div>
-                  <div class="rdxachitxt">Кол-во обустроенных паркомест </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 2"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">300 </div>
-                  <div class="rdxachitxt">Кол-во парковок с шлагбаумом </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 2"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">5000 </div>
-                  <div class="rdxachitxt">Кол-во установленных паркоматов </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 2"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">300 </div>
-                  <div class="rdxachitxt">Обучено инспекторов </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 1"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritemz">
-                  <p><strong>Шлагбаумы</strong></p>
-                  <p style="font-size:12px;">Автоматические шлагбаумы повышают безопасность парковки и движения, а также обладает высокой степенью надежности, работая при любых погодных условиях.</p>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 1"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritemz">
-                  <p><strong>Системы безопасности</strong></p>
-                  <p style="font-size:12px;">Системы мониторинга, включая видеонаблюдение и сигнализацию, гарантируют наблюдение за машинами Ваших клиентов, сотрудников и служебных автомобилей как во время рабочего дня, так и ночью или в выходные. </p>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 1"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritemz">
-                  <p><strong>Системы контроля</strong></p>
-                  <p style="font-size:12px;" class="">Вы сможете контролировать, кто, когда и как долго пользовался закрытой парковкой. Это ценнейший инструмент контроля за паркингом и полезнейшее средство сбора данных о поведении клиентов и времени, которое они проводят в магазине.</p>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 1"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritemz">
-                  <p><strong>Обслуживание</strong></p>
-                  <p style="font-size:12px;">Все операции по обслуживанию закрытых паркингов, включая мониторинг их состояния, профилактические и срочные работы, берет на себя Parkt Service Group.</p>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 5"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">5000 </div>
-                  <div class="rdxachitxt">Кол-во обустроенных паркомест </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 5"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">300 </div>
-                  <div class="rdxachitxt">Кол-во парковок с шлагбаумом </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 5"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">5000 </div>
-                  <div class="rdxachitxt">Кол-во установленных паркоматов </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-            <div class="col-12 col-sm-6 col-lg-6 isotope-item" data-filter="Category 5"><a class="thumbnail-classic thumbnail-classic-rdxmod" href="images/grid-gallery-8-1200x800_original.jpg" data-lightgallery="item" style="">
-                <div class="rdxachilayeritem">
-                  <div class="rdxachitxth">300 </div>
-                  <div class="rdxachitxt">Обучено инспекторов </div>
-                </div>
-                <div style="width:50%;float:left;display:block;">
-                  <figure><img src="images/grid-gallery-8-640x426.jpg" alt="" width="100%">test</figure>
-                </div>
-              </a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section-md bg-gray-light bg-image" style="background:#FAD756;">
+    <style>
+		.parking_title{
+		font-weight: 500;
+			font-size: 18px;
+			line-height: 24px;
+			color:black;
+			}
+		.parking_text{
+			font-size: 12px;
+			line-height: 18px;
+		}
+		.bg_color_about{
+			box-shadow: 0px 1px 5px rgba(82, 82, 82, 0.303486);
+		}
+		.rdxmissiontxt h4{
+			color:black;
+			display:inline-block;
+		}
+	</style>
+	<section class="section section-xl bg-gray-light bg-image" style="background:#FAD756;">
       <div class="container">
         <div class="row justify-content-sm-center justify-content-lg-between spacing-55">
-          <div class="col-sm-10 col-lg-10 col-xl-6">
-            <form class="rd-mailform text-left rdxfancyfooterform" data-form-output="form-output-global" data-form-type="forms" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
+          <div class="col-sm-10 col-md-6">
+            <form class="rd-mailform text-left rdxfancyfooterform_white">
               <div class="row spacing-20">
                 <div class="col-sm-12">
-                  <div class="form-group form-wrap-validation rdxfancyfooterformhead">Оформить запрос на служебную парковку для компании </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml rd-input-label" for="forms-name2">Город</label><input class="form-control rdxpatchfooterform form-control-has-validation form-control-last-child" id="forms-name2" type="text" name="name" data-constraints="@Required"><span class="form-validation"></span></div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml rd-input-label" for="forms-last-name2">Название компании</label><input class="form-control rdxpatchfooterform form-control-has-validation form-control-last-child" id="forms-last-name2" type="text" name="last-name" data-constraints="@Required"><span class="form-validation"></span></div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml rd-input-label" for="forms-email2">ЕДРПОУ</label><input class="form-control rdxpatchfooterform form-control-has-validation form-control-last-child" id="forms-email2" type="email" name="email" data-constraints="@Email @Required"><span class="form-validation"></span></div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml rd-input-label" for="forms-email2">Адрес служебной парковки</label><input class="form-control rdxpatchfooterform form-control-has-validation form-control-last-child" id="forms-email2" type="email" name="email" data-constraints="@Email @Required"><span class="form-validation"></span></div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml rd-input-label" for="forms-phone2">ФИО</label><input class="form-control rdxpatchfooterform form-control-has-validation form-control-last-child" id="forms-phone2" type="text" name="phone" data-constraints="@Numeric @Required"><span class="form-validation"></span></div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml rd-input-label" for="forms-phone2">Контактный телефон</label><input class="form-control rdxpatchfooterform form-control-has-validation form-control-last-child" id="forms-phone2" type="text" name="phone" data-constraints="@Numeric @Required"><span class="form-validation"></span></div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml rd-input-label" for="forms-phone2">Email</label><input class="form-control rdxpatchfooterform form-control-has-validation form-control-last-child" id="forms-phone2" type="text" name="phone" data-constraints="@Numeric @Required"><span class="form-validation"></span></div>
-                </div>
-                <div class="col-sm-8 form-button"><button class="btn btn-primary btn-block btn-effect-ujarak rdxsubmitoffer" type="submit">Получить предложение</button></div>
-              </div>
+                  <div class="form-group form-wrap-validation rdxfancyfooterformhead text-dark">Сделаем расчет вашего проекта <b>бессплатно!</b></div>
+					
+					<div class="row">
+						<div class="pr-0 col-md-12 white_form_title">
+							Параметры вашей локации
+						</div>
+						<div class="pr-0 col-md-5 d-flex align-items-center">
+							<p>Длина площадки (м)</p>
+						</div>
+						<div class="col-md-3">
+							<input type="text" class="form-control" >
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="pr-0 col-md-5 d-flex align-items-center">
+							<p>Длина площадки (м)</p>
+						</div>
+						<div class="col-md-3">
+							<input type="text" class="form-control" >
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-md-5 pr-0 d-flex align-items-center text-left">
+							<p>Колличество выездов</p>
+						</div>
+						<div class="col-md-5">
+							<div class="input-group-prepend">								
+								<input type="number" id="qty_input" class="form-control form-control-sm" value="1" min="1">
+							</div>
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-md-4 pr-0">
+							<p>Вид ограждения</p>
+						</div>
+						<div class="col-md-5">
+							  <select id="inputState" class="form-control">
+								<option selected>Забор</option>
+								<option>Ежи</option>
+								<option>Палки</option>
+							  </select>
+						</div>
+					</div>
+					<div class="row d-flex align-items-center">
+						<div class="pr-0 col-md-12 white_form_title">
+							Работы, которые нужно выполнить
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="checkbox">
+								<div class="form-check text-left pl-0 pr-3">
+									<div class="checkbox">
+										<input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="1">
+										<label class="form-check-label" for="color-1">
+											Паркомат
+										</label>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="form-check text-left pl-0 pr-3">
+								<div class="checkbox">
+									<input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="2">
+									<label class="form-check-label" for="color-2">
+										Дорожная разметка
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="form-check text-left pl-0 pr-3">
+								<div class="checkbox">
+									<input class="custom-checkbox" type="checkbox" id="color-3" name="color-3" value="3">
+									<label class="form-check-label" for="color-3">
+										Информационный щит
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="form-check text-left pl-0 pr-3">
+								<div class="checkbox">
+									<input class="custom-checkbox" type="checkbox" id="color-4" name="color-4" value="4">
+									<label class="form-check-label" for="color-4">Indigo</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="form-check text-left pl-0 pr-3">
+								<div class="checkbox">
+									<input class="custom-checkbox" type="checkbox" id="color-5" name="color-5" value="5">
+									<label class="form-check-label" for="color-5">
+										Пульт охраны
+									</label>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8 form-button pl-0">
+					<button class="btn btn-primary btn-block btn-effect-ujarak rdxsubmitoffer" type="submit" style="background-color: black !important;color: white !important;">Получить предложение</button></div>
+				  </div>
+				  </div>
             </form>
-          </div>
-          <div class="col-sm-10 col-lg-10 col-xl-6">
+						  <style>
+						  .white_form_title{
+							font-weight: 600;
+							font-size: 14px;
+							line-height: 30px;
+							padding-bottom:20px;
+						  }
+						  .stepper-arrow.up:before {
+								content: '\f504';
+								color:black;
+								font-size: 18px;
+								line-height: 22px;
+							}
+							.stepper-arrow.down:before {
+								content: '\f465';
+								color:black;
+								font-size: 18px;
+								line-height: 22px;
+							}
+							.stepper-arrow.down {
+								left: 5px;
+								text-align: right;
+							}
+							.stepper-arrow.up {
+								right: 5px;
+								text-align: left;
+							}
+						  .stepper{
+							background:lightgray;
+							border: 1px solid lightgray;
+							border-radius:5px;
+							max-width: 100px;
+							width: 100px;
+
+						  }
+						  .stepper-arrow:hover {
+								color: lightgray;
+							}
+							.stepper input[type="number"]
+							{
+								font-family: Montserrat;
+								font-style: normal;
+								font-weight: normal;
+								font-size: 14px;
+								line-height: 17px;
+								background: lightgray;
+								width:100px;
+							}
+						  .checkbox, .checkbox-inline {
+								padding-left: 0px;
+							}
+							/* для элемента input c type="checkbox" */
+							.custom-checkbox {
+							  position: absolute;
+							  z-index: -1;
+							  opacity: 0;
+							}
+
+							/* для элемента label, связанного с .custom-checkbox */
+							.custom-checkbox+label {
+							  display: inline-flex;
+							  align-items: center;
+							  user-select: none;
+							  color:black;
+								width: 100%;
+								font-size: 14px;
+								line-height: 14px;
+							}
+
+							.custom-checkbox+label::after {
+							  content: '';
+							  display: inline-block;
+							  width: 20px;
+							  height: 20px;
+							  flex-shrink: 0;
+							  flex-grow: 0;
+							  border: 1px solid #000;
+							  border-radius: 0.25em;
+							  margin-right: 0.5em;
+							  background-repeat: no-repeat;
+							  background-position: center center;
+							  background-size: 50% 50%;
+							  position: absolute;
+								right: 0;
+							}
+
+							/* стили при наведении курсора на checkbox */
+							.custom-checkbox:not(:disabled):not(:checked)+label:hover::after {
+							  border-color: #000;
+							}
+
+							/* стили для активного чекбокса (при нажатии на него) */
+							.custom-checkbox:not(:disabled):active+label::after {
+							  background-color: #fff;
+							  border-color: #000;
+							}
+
+
+							/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+							.custom-checkbox:focus:not(:checked)+label::after {
+							  border-color: #000;
+							}
+
+							/* стили для чекбокса, находящегося в состоянии checked */
+							.custom-checkbox:checked+label::after {
+							  border-color: #000;
+							  background-color: #fff;
+							  background-image: url(images/small_check.svg);
+							}
+
+							/* стили для чекбокса, находящегося в состоянии disabled */
+							.custom-checkbox:disabled+label::after {
+							  background-color: #fff;
+							}
+			#inputState{
+			background-color:lightgray;
+			min-height:30px;
+			height:30px;
+			padding: 0.375rem 0.75rem;
+			appearance: auto;
+			}
+			input.form-control{
+			border: 1px solid black;
+			min-height: 30px !importnat;
+			min-height:30px; 
+			height:30px;
+			}
+			input.form-control:focus{
+			border: 1px solid black;
+			}
+			.form-check-input{
+			right:0;
+			}
+			.form-check{
+				max-width:200px;
+			}
+			.rdxfancyfooterform_white{
+			color:black;
+			}
+			.park.carousel-indicators{
+				right:10%;
+				margin:0;
+				left:inherit;
+			}
+			.park.carousel-indicators li{
+				width: 10px;
+				height: 10px;
+				border-radius:10px;
+				background:#0B0F21;
+				opacity:0.2;
+				border:none;
+			}
+			.park.carousel-indicators li.active{
+				background: #FAD756;
+				mix-blend-mode: normal;
+				opacity:1;
+			}
+			
+
+			
+			  </style>
+		  </div>
+          <div class="col-sm-10 col-md-5 offset-md-1">
             <div class="box-wrap-content-interactive">
               <div class="box-rdx-contacts">
                 <div class="rdxspacer50"></div>
                 <div class="rdxspacer50"></div>
                 <h2 class="rdxformhead">Предложение по обустройству вашей локации</h2>
                 <div class="rdxspacer40"></div>
-                <p>Оставьте заявку и наши специалисты в кратчайшие сроки сформируют несколько вариантов конфигурации закрытого паркинга, подходящий именно для Ваших условий, рассчитают их стоимость и сроки реализации.</p><a class="btn btn-white-outline btn-lg  rdxdwnprez" href="#"><span>Скачать презентацию</span></a>
+                <p>Оставьте заявку и наши специалисты в кратчайшие сроки сформируют несколько вариантов конфигурации закрытого паркинга, подходящий именно для Ваших условий, рассчитают их стоимость и сроки реализации.</p>
+				<a class="btn btn-white-outline btn-lg  rdxdwnprez" href="#"><span>Скачать презентацию</span></a>
               </div>
             </div>
           </div>
@@ -327,134 +450,69 @@
             <p></p>
           </div>
           <div class="col-sm-10 col-xl-8 rdxnopadding">
-            <div class="row">
-              <div class="col-sm-6 col-lg-2 rdxnopadding"></div>
-              <div class="col-sm-6 col-lg-3 rdxnopadding">
-                <div class="quote-center rdxaboutpartners"><img src="images/atb_logo.png" alt=""></div>
-                <div class="quote-center rdxaboutpartners"><img src="images/kr_logo.png" alt=""></div>
-              </div>
-              <div class="col-sm-6 col-lg-3 rdxnopadding">
-                <div class="quote-center rdxaboutpartners"><img src="images/kiev_logo.png" alt=""></div>
-                <div class="quote-center rdxaboutpartners"><img src="images/dnipro_logo.png" alt=""></div>
-              </div>
-              <div class="col-sm-6 col-lg-3 rdxnopadding">
-                <div class="quote-center rdxaboutpartners"><img src="images/lviv_logo.png" alt=""></div>
-              </div>
-            </div>
+				  <div id="partners" class="carousel slide" data-ride="carousel">
+				  <ol class="park carousel-indicators">
+					<li data-target="#partners" data-slide-to="0" class="active"></li>
+					<li data-target="#partners" data-slide-to="1"></li>
+					<li data-target="#partners" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+							<div class="row">
+							  <div class="col-sm-6 col-lg-2 rdxnopadding"></div>
+							  <div class="col-sm-6 col-lg-3 rdxnopadding">
+								<div class="quote-center rdxaboutpartners"><img src="images/atb_logo.png" alt=""></div>
+								<div class="quote-center rdxaboutpartners"><img src="images/kr_logo.png" alt=""></div>
+							  </div>
+							  <div class="col-sm-6 col-lg-3 rdxnopadding">
+								<div class="quote-center rdxaboutpartners"><img src="images/kiev_logo.png" alt=""></div>
+								<div class="quote-center rdxaboutpartners"><img src="images/dnipro_logo.png" alt=""></div>
+							  </div>
+							  <div class="col-sm-6 col-lg-3 rdxnopadding">
+								<div class="quote-center rdxaboutpartners"><img src="images/lviv_logo.png" alt=""></div>
+							  </div>
+							</div>
+					</div>
+					<div class="carousel-item">
+							<div class="row">
+							  <div class="col-sm-6 col-lg-2 rdxnopadding"></div>
+							  <div class="col-sm-6 col-lg-3 rdxnopadding">
+								<div class="quote-center rdxaboutpartners"><img src="images/atb_logo.png" alt=""></div>
+								<div class="quote-center rdxaboutpartners"><img src="images/kr_logo.png" alt=""></div>
+							  </div>
+							  <div class="col-sm-6 col-lg-3 rdxnopadding">
+								<div class="quote-center rdxaboutpartners"><img src="images/kiev_logo.png" alt=""></div>
+								<div class="quote-center rdxaboutpartners"><img src="images/dnipro_logo.png" alt=""></div>
+							  </div>
+							  <div class="col-sm-6 col-lg-3 rdxnopadding">
+								<div class="quote-center rdxaboutpartners"><img src="images/lviv_logo.png" alt=""></div>
+							  </div>
+							</div>
+					</div>
+					<div class="carousel-item">
+							<div class="row">
+							  <div class="col-sm-6 col-lg-2 rdxnopadding"></div>
+							  <div class="col-sm-6 col-lg-3 rdxnopadding">
+								<div class="quote-center rdxaboutpartners"><img src="images/atb_logo.png" alt=""></div>
+								<div class="quote-center rdxaboutpartners"><img src="images/kr_logo.png" alt=""></div>
+							  </div>
+							  <div class="col-sm-6 col-lg-3 rdxnopadding">
+								<div class="quote-center rdxaboutpartners"><img src="images/kiev_logo.png" alt=""></div>
+								<div class="quote-center rdxaboutpartners"><img src="images/dnipro_logo.png" alt=""></div>
+							  </div>
+							  <div class="col-sm-6 col-lg-3 rdxnopadding">
+								<div class="quote-center rdxaboutpartners"><img src="images/lviv_logo.png" alt=""></div>
+							  </div>
+							</div>
+					</div>
+				  </div>
+				</div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section"></section>
-    <footer class="page-footer">
-      <section class="section pre-footer-minimal bg-gray-dark-rdx-footer novi-background bg-image rdxfooterfix">
-        <div class="pre-footer-minimal-inner">
-          <div class="container text-center text-sm-left">
-            <div class="row justify-content-sm-center spacing-55">
-              <div class="col text-sm-center text-md-left  rdxfooter-menu col-lg-rdx"><img src="images/footer_logo.png">
-                <div class="rdxspacer50"></div>
-                <div class="rdxspacer50"></div>
-                <div class="rdxspacer40"></div><img class="rdxfootersocial1" src="images/social_instagram.png"><img class="rdxfootersocial1" src="images/social_fb.png">
-              </div>
-              <div class="col rdxfooter-menu col-lg-rdx rdxfootercolumnfix">
-                <h4>Для водителей</h4>
-                <dl class="terms-list-inline rdxmenubottomitems">
-                  <dd>Оплата парковки</dd>
-                </dl>
-                <dl class="terms-list-inline rdxmenubottomitems">
-                  <dd>Карта парковок</dd>
-                </dl>
-                <dl class="terms-list-inline  rdxmenubottomitems">
-                  <dd>Штрафы</dd>
-                </dl>
-              </div>
-              <div class="col rdxfooter-menu col-lg-rdx rdxfootercolumnfix">
-                <h4 class="">Для бизнес клиентов</h4>
-                <dl class="terms-list-inline rdxmenubottomitems">
-                  <dd>Для бизнес клиентов</dd>
-                </dl>
-                <dl class="terms-list-inline rdxmenubottomitems">
-                  <dd>Закрытый паркинг</dd>
-                </dl>
-                <dl class="terms-list-inline  rdxmenubottomitems">
-                  <dd>Абонементы для юр. лиц</dd>
-                </dl>
-                <dl class="terms-list-inline  rdxmenubottomitems">
-                  <dd>Служебная парковка</dd>
-                </dl>
-              </div>
-              <div class="col rdxfooter-menu col-lg-rdx rdxfootercolumnfix">
-                <h4 class="">Для города</h4>
-                <dl class="terms-list-inline rdxmenubottomitems">
-                  <dd>Как это работает?</dd>
-                </dl>
-                <dl class="terms-list-inline rdxmenubottomitems">
-                  <dd>Наши результаты</dd>
-                </dl>
-                <dl class="terms-list-inline  rdxmenubottomitems">
-                  <dd>Процесс сотрудничества</dd>
-                </dl>
-              </div>
-              <div class="col rdxfooter-menu col-lg-rdx rdxfootercolumnfix">
-                <h4 class="">Про компанию</h4>
-                <dl class="terms-list-inline rdxmenubottomitems">
-                  <dd>О проекте</dd>
-                </dl>
-                <dl class="terms-list-inline rdxmenubottomitems">
-                  <dd>Наши продукты</dd>
-                </dl>
-                <dl class="terms-list-inline  rdxmenubottomitems">
-                  <dd>Нормативные документы</dd>
-                </dl>
-                <dl class="terms-list-inline  rdxmenubottomitems">
-                  <dd>Новости</dd>
-                </dl>
-                <dl class="terms-list-inline  rdxmenubottomitems">
-                  <dd>F.A.Q.</dd>
-                </dl>
-                <dl class="terms-list-inline  rdxmenubottomitems">
-                  <dd>Контакты</dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section pre-footer-minimal2 bg-gray-dark-rdx-footer2 novi-background bg-image">
-        <div class="pre-footer-minimal-inner">
-          <div class="container text-center text-sm-left">
-            <div class="row justify-content-sm-center spacing-55">
-              <div class="col rdxfooter-menu col-lg-rdx">
-                <dl class="terms-list-inline rdxmenubottomitems2">
-                  <dd>©Park Service Groupe 2020</dd>
-                </dl>
-                <dl class="terms-list-inline rdxmenubottomitems2">
-                  <dd></dd>
-                </dl>
-                <dl class="terms-list-inline  rdxmenubottomitems">
-                  <dd></dd>
-                </dl>
-              </div>
-              <div class="col rdxfooter-menu col-lg-rdx">
-                <dl class="terms-list-inline rdxmenubottomitems2">
-                  <dd>Сделано в <span data-novi-id="0">Worth</span></dd>
-                </dl>
-              </div>
-              <div class="col rdxfooter-menu col-lg-rdx"></div>
-              <div class="col rdxfooter-menu col-lg-rdx"></div>
-              <div class="col rdxfooter-menu col-lg-rdx">
-                <dl class="terms-list-inline rdxmenubottomitems2"><span><a href="#" id="ui-to-top" class="rdxuppsy">&nbsp;<img src="images/toup.png"> &nbsp;ВВЕРХ</a></span>
-                  <dd></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
   </div>
-  <div class="snackbars" id="form-output-global"></div>
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
   <script async="" src="https://www.youtube.com/iframe_api"></script>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
