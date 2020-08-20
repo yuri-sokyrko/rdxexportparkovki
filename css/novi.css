@@ -3617,6 +3617,8 @@
 
 .driver-section__tabs .nav-link.active::before {
   background: transparent url(../images/icon-tab-active.svg) no-repeat center / contain;
+  width: 16px;
+  height: 16px;
 }
 
 .driver-section__tabs ~ .more-link {
@@ -3643,9 +3645,14 @@
 
 .driver-section__tabs-content .tab-item .img-wrapper {
   display: block;
-  max-width: 368px;
+  max-width: 418px;
   margin-top: -158px;
   margin-left: 100px;
+}
+
+.driver-section__tabs-content .tab-item .img-wrapper img {
+  display: block;
+  width: 100%;
 }
 
 .driver-section__download {
