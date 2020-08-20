@@ -2419,6 +2419,27 @@
 				jQuery('body').toggleClass('blocked-mobile');
 			});
 		}
+
+		if(jQuery('.how-it-works__tabs .nav-item .nav-link').length) {
+			jQuery('.how-it-works__tabs .nav-item .nav-link.active .text').show();
+
+			jQuery('.how-it-works__tabs .nav-item .nav-link').click(function() {
+				jQuery('.how-it-works__tabs .nav-item .nav-link .text').slideUp();
+				jQuery(this).find('.text').slideDown();
+			});
+		}
+
+		if(jQuery('.js-section-hero__button').length) {
+			jQuery(".js-section-hero__button").click(function(e) {
+				e.preventDefault();
+
+				var dest = jQuery(this).attr('href');
+
+				jQuery('html, body').animate({
+					scrollTop: jQuery(dest).offset().top
+				}, 700);
+			});
+		}
 	});
 }());
 
