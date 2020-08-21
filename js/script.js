@@ -2440,6 +2440,15 @@
 				}, 700);
 			});
 		}
+
+		if(jQuery('input.date-selection').length) {
+			$('input.date-selection').daterangepicker({
+				opens: 'left',
+				linkedCalendars: false
+			  }, function(start, end, label) {
+				console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+			  });
+		}
 	});
 }());
 

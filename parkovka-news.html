@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>parkovka-news</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700%7CRoboto:100,300,400,700,900">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/novi.css">
+  <!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div><script src="js/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+  <div class="page-loader">
+    <div class="brand-name"><img src="images/logo-default-100x28.png" alt="" width="100" height="28"></div>
+    <div class="page-loader-body">
+      <div class="cssload-jumping"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <div class="page text-center">
+    <section class="section">
+      <header class="site-header site-header--black site-header--static">
+          <div class="site-header__container">
+              <div class="site-header__logo site-header__logo--white">
+                  <a href="parkovka-home.html">
+                      <img src="images/new-logo.svg" alt="logo">
+                  </a>
+              </div>
+              <div class="site-header__logo site-header__logo--black">
+                  <a href="parkovka-home.html">
+                      <img src="images/new-logo-black.svg" alt="logo">
+                  </a>
+              </div>
+              <div class="header-mobile__trigger">
+                  <button class="nav-trigger js-nav-trigger">
+                      <span class="nav-trigger__text">Меню</span>
+                      <span class="nav-trigger__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </span>
+                  </button>
+              </div>
+              <div class="site-header__nav">
+                  <nav class="site-header__nav-item">
+                      <ul>
+                          <li class="menu-item-has-children">
+                              <a href="#">Водителям</a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Водителям</a></li>
+                                  <li><a href="#">Карта парковок</a></li>
+                                  <li><a href="#">Штрафы</a></li>
+                              </ul>
+                          </li>
+                          <li class="menu-item-has-children">
+                              <a href="#">Бизнес-клиентам</a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Парковочное оборудование</a></li>
+                                  <li><a href="#">Закрытый паркинг</a></li>
+                                  <li><a href="#">Абонементы для юр. лиц</a></li>
+                                  <li><a href="#">Служебная парковка</a></li>
+                              </ul>
+                          </li>
+                          <li class="menu-item-has-children">
+                              <a href="#">Для городов</a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Как это работает?</a></li>
+                                  <li><a href="#">Наши продукты</a></li>
+                                  <li><a href="#">Процесс сотрудничества</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </nav>
+                  <nav class="site-header__nav-item site-header__nav-item--left">
+                      <ul>
+                          <li class="menu-item-has-children">
+                              <a href="#">О компании</a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">О проекте</a></li>
+                                  <li><a href="#">Нормативные документы</a></li>
+                                  <li><a href="#">F.A.Q.</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#">Новости</a>
+                          </li>
+                          <li>
+                              <a href="#">Контакты</a>
+                          </li>
+                      </ul>
+                  </nav>
+                  <nav class="site-header__nav-item site-header__nav-item--lang">
+                      <ul>
+                          <li class="menu-item-has-children">
+                              <a href="#">RU</a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">EN</a></li>
+                                  <li><a href="#">UA</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </nav>
+                  <div class="site-header__phone">
+                      <a href="tel:+380664445423">+38 (066) 444 54 23</a>
+                  </div>
+
+                  <div class="site-header__footer">
+                      <nav class="site-header__socials">
+                          <ul>
+                              <li><a href="#"><img src="images/icon-socials-1.svg" alt=""></a></li>
+                              <li><a href="#"><img src="images/icon-socials-2.svg" alt=""></a></li>
+                          </ul>
+                      </nav>
+                      <nav class="site-header__nav-item site-header__nav-item--lang site-header__nav-item--lang-mobile">
+                          <ul>
+                              <li class="menu-item-has-children">
+                                  <a href="#">RU</a>
+                                  <ul class="sub-menu">
+                                      <li><a href="#">EN</a></li>
+                                      <li><a href="#">UA</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </header>
+    </section>
+    <section class="section parkovka-news text-left">
+      <div class="container">
+        <div class="parkovka-news__breadcrumbs d-block d-lg-none">
+          <span class="rdxbreadcrumbs">Главная &nbsp; | &nbsp; О компании&nbsp; &nbsp;| &nbsp; О нас</span>
+        </div>
+        <div class="parkovka-news__container">
+          <div class="parkovka-news__item">
+            <div class="parkovka-news__breadcrumbs d-none d-xl-block">
+              <span class="rdxbreadcrumbs">Главная &nbsp; | &nbsp; О компании&nbsp; &nbsp;| &nbsp; О нас</span>
+            </div>
+            <h1 class="parkovka-news__title">Новости</h1>
+            <p class="parkovka-news__text">В данном разделе Вы найдете все новости, касательно внедрения автоматизированных систем контроля оплаты парковки и обустройства парковочных мест в Ваших городах, а также изменения которые происходят в данной сфере.</p>
+            <div class="parkovka-news__search-form d-none d-md-block d-lg-block d-xl-block">
+              <form role="search" method="get" class="search-form" action="">
+                <div class="form-group form-group--inline">
+                  <label class="search-field__label">
+                    <span class="screen-reader-text d-none">Поиск:</span>
+                    <input type="search" class="form-control search-field" placeholder="Поиск" value="" name="s">
+                  </label>
+                  <input type="submit" class="search-submit" value="Search">
+                </div>
+                <div class="form-group form-group--inline">
+                  <label class="d-none" for="searchDate">Pickup A date</label>
+                  <input type="text" class="date-selection" id="searchDate" aria-describedby="searchDate">
+                  <small id="searchDateHelp" class="form-text text-muted d-none">Choose a date</small>
+                </div>
+                <div class="form-group form-group--check-list">
+                  <div class="form-group__title">Рубрики:</div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tagCheck1" checked>
+                    <label class="form-check-label" for="tagCheck1">Все новости</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tagCheck2" >
+                    <label class="form-check-label" for="tagCheck2">Новые парковки</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tagCheck3" >
+                    <label class="form-check-label" for="tagCheck3">Команда</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tagCheck4" >
+                    <label class="form-check-label" for="tagCheck4">Новые продукты</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tagCheck5" >
+                    <label class="form-check-label" for="tagCheck5">Новые продукты</label>
+                  </div>
+                </div>
+                <div class="form-group form-group--check-list">
+                  <div class="form-group__title">Города:</div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck1" checked>
+                    <label class="form-check-label" for="cityCheck1">Все</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck2" >
+                    <label class="form-check-label" for="cityCheck2">Одесса</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck3" >
+                    <label class="form-check-label" for="cityCheck3">Киев</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck4" >
+                    <label class="form-check-label" for="cityCheck4">Ровно</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck5" >
+                    <label class="form-check-label" for="cityCheck5">Днепр</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck6" >
+                    <label class="form-check-label" for="cityCheck6">Харьков</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="parkovka-news__mobile-search d-block d-md-none d-lg-none d-xl-none">
+              <form>
+                <div class="form-group">
+                  <label class="search-field__label">
+                    <span class="screen-reader-text d-none">Поиск:</span>
+                    <input type="search" class="form-control search-field" placeholder="Поиск" value="" name="s">
+                  </label>
+                  <input type="submit" class="search-submit" value="Search">
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option selected>Все рубрики</option>
+                    <option>Новые парковки</option>
+                    <option>Команда</option>
+                    <option>Новые продукты</option>
+                    <option>Новые продукты</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="parkovka-news__item parkovka-news__item--big">
+            <div class="news-list">
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-1.jpg" alt="">
+                </div>
+                <h4 class="title">Мерия Одессы утвердила наш проект по обустройствую парковок</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-2.jpg" alt="">
+                </div>
+                <h4 class="title">Установленно 300 новых паркоматов в центре Харькова</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-3.jpg" alt="">
+                </div>
+                <h4 class="title">Инвентаризация и обучение инспекторов в Харькове</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-4.jpg" alt="">
+                </div>
+                <h4 class="title">Установленно 300 новых паркоматов в центре Харькова</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-1.jpg" alt="">
+                </div>
+                <h4 class="title">Мерия Одессы утвердила наш проект по обустройствую парковок</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-2.jpg" alt="">
+                </div>
+                <h4 class="title">Установленно 300 новых паркоматов в центре Харькова</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section parkovka-news parkovka-news--subscribe text-left">
+      <div class="container">
+        <div class="parkovka-news__container">
+          <div class="parkovka-news__item"></div>
+          <div class="parkovka-news__item parkovka-news__item--big">
+            <div class="subscribe-box">
+              <h4 class="subscirbe-box__title">Хотите быть в курсе<br> новостей?</h4>
+              <form class="subscribe-box__form">
+                <p class="text">Подписывайтесь на рассылку, чтобы получать свежую информацию о новых продуктах.</p>
+                <div class="box-field">
+                  <input type="email" class="form-control" placeholder="Введите email" required>
+                  <input type="submit" class="subscribe-btn" value="Подписаться">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <section class="section pre-footer-minimal bg-gray-dark-rdx-footer novi-background bg-image">
+        <div class="pre-footer-minimal-inner">
+          <div class="container text-center text-sm-left">
+            <div class="row justify-content-sm-center spacing-55">
+              <div class="col text-sm-center text-md-left  rdxfooter-menu col-lg-rdx"><img src="images/footer_logo.png"></div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <h4>Для водителей</h4>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Оплата парковки</dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Карта парковок</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Штрафы</dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <h4 class="">Для бизнес клиентов</h4>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Для бизнес клиентов</dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Закрытый паркинг</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Абонементы для юр. лиц</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Служебная парковка</dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <h4 class="">Для города</h4>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Как это работает?</dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Наши результаты</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Процесс сотрудничества</dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <h4 class="">Про компанию</h4>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>О проекте</dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Наши продукты</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Нормативные документы</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Новости</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>F.A.Q.</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Контакты</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <hr class="gray">
+        </div>
+      </section>
+      <section class="section pre-footer-minimal2 bg-gray-dark-rdx-footer2 novi-background bg-image">
+        <div class="pre-footer-minimal-inner">
+          <div class="container text-center text-sm-left">
+            <div class="row justify-content-sm-center spacing-55">
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>©Park Service Groupe 2020</dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Сделано в <span data-novi-id="1">Worth</span></dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <hr class="gray">
+        </div>
+      </section>
+    </footer>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+
+  <!-- Modal -->
+  <div class="modal fade video-modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true" data-video="https://www.youtube.com/embed/LXb3EKWsInQ">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script async="" src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/core.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
