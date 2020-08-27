@@ -2,26 +2,26 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-  <title>parkovka-slujebnaya-1200</title>
+  <title>parkovka-news</title>
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CRoboto:100,300,400,700,900">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700%7CRoboto:100,300,400,700,900">
   <link rel="stylesheet" href="css/bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/novi.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div><script src="js/html5shiv.min.js"></script><![endif]-->
 </head>
 
 <body>
+  <div class="page text-center">
     <section class="section">
-      <header class="site-header site-header--white">
+      <header class="site-header site-header--black site-header--static">
           <div class="site-header__container">
               <div class="site-header__logo site-header__logo--white">
                   <a href="parkovka-home.html">
@@ -128,334 +128,176 @@
               </div>
           </div>
       </header>
-      <section id="aboutUs" class="section section-md text-left section-hero">
-          <div class="container">
-            <div class="row spacing-30">
-              <div class="flex-row section-hero__container col-lg-8 p-0 d-flex align-items-center">
-                <div class="">
-                  <h1 class="section-hero__title fxRotateInRight">Служебная парковка для юридических лиц</h1>
-                  <a href="#nextBlock" class="section-hero__button js-section-hero__button fxRotateInRight">Подробнее</a>
+    </section>
+    <section class="section parkovka-news text-left">
+      <div class="container">
+        <div class="parkovka-news__breadcrumbs d-block d-lg-none">
+          <span class="rdxbreadcrumbs">Главная &nbsp; | &nbsp; О компании&nbsp; &nbsp;| &nbsp; О нас</span>
+        </div>
+        <div class="parkovka-news__container">
+          <div class="parkovka-news__item">
+            <div class="parkovka-news__breadcrumbs d-none d-xl-block">
+              <span class="rdxbreadcrumbs">Главная &nbsp; | &nbsp; О компании&nbsp; &nbsp;| &nbsp; О нас</span>
+            </div>
+            <h1 class="parkovka-news__title">Новости</h1>
+            <p class="parkovka-news__text">В данном разделе Вы найдете все новости, касательно внедрения автоматизированных систем контроля оплаты парковки и обустройства парковочных мест в Ваших городах, а также изменения которые происходят в данной сфере.</p>
+            <div class="parkovka-news__search-form d-none d-md-block d-lg-block d-xl-block">
+              <form role="search" method="get" class="search-form" action="">
+                <div class="form-group form-group--inline">
+                  <label class="search-field__label">
+                    <span class="screen-reader-text d-none">Поиск:</span>
+                    <input type="search" class="form-control search-field" placeholder="Поиск" value="" name="s">
+                  </label>
+                  <input type="submit" class="search-submit" value="Search">
                 </div>
-              </div>
+                <div class="form-group form-group--inline">
+                  <label class="d-none" for="searchDate">Pickup A date</label>
+                  <input type="text" class="date-selection" id="searchDate" aria-describedby="searchDate">
+                  <small id="searchDateHelp" class="form-text text-muted d-none">Choose a date</small>
+                </div>
+                <div class="form-group form-group--check-list">
+                  <div class="form-group__title">Рубрики:</div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tagCheck1" checked>
+                    <label class="form-check-label" for="tagCheck1">Все новости</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tagCheck2" >
+                    <label class="form-check-label" for="tagCheck2">Новые парковки</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tagCheck3" >
+                    <label class="form-check-label" for="tagCheck3">Команда</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tagCheck4" >
+                    <label class="form-check-label" for="tagCheck4">Новые продукты</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tagCheck5" >
+                    <label class="form-check-label" for="tagCheck5">Новые продукты</label>
+                  </div>
+                </div>
+                <div class="form-group form-group--check-list">
+                  <div class="form-group__title">Города:</div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck1" checked>
+                    <label class="form-check-label" for="cityCheck1">Все</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck2" >
+                    <label class="form-check-label" for="cityCheck2">Одесса</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck3" >
+                    <label class="form-check-label" for="cityCheck3">Киев</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck4" >
+                    <label class="form-check-label" for="cityCheck4">Ровно</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck5" >
+                    <label class="form-check-label" for="cityCheck5">Днепр</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cityCheck6" >
+                    <label class="form-check-label" for="cityCheck6">Харьков</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="parkovka-news__mobile-search d-block d-md-none d-lg-none d-xl-none">
+              <form>
+                <div class="form-group">
+                  <label class="search-field__label">
+                    <span class="screen-reader-text d-none">Поиск:</span>
+                    <input type="search" class="form-control search-field" placeholder="Поиск" value="" name="s">
+                  </label>
+                  <input type="submit" class="search-submit" value="Search">
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option selected>Все рубрики</option>
+                    <option>Новые парковки</option>
+                    <option>Команда</option>
+                    <option>Новые продукты</option>
+                    <option>Новые продукты</option>
+                  </select>
+                </div>
+              </form>
             </div>
           </div>
-      </section>
-      <style>
-        #aboutUs {
-          background: transparent url('images/top-sluj.jpg') no-repeat center / cover;
-        }
-
-        @media screen and (max-width: 991px) {
-          #aboutUs {
-            background-image: url('images/top-sluj.jpg');
-          }
-        }
-
-        @media screen and (max-width: 767px) {
-          #aboutUs {
-            background-image: url('images/top-sluj.jpg');
-          }
-        }
-      </style>
-    </section>
-	<section class="section section-lg pt-0 text-left">
-		<div class="container">
-			<div class="col-md-12 p-0">
-				<ul class="c-breadcrumbs breadcrumbs_with_image">
-				<li class="home"> 
-					<span>
-						<a property="item" typeof="WebPage" title="" href="#" class="home"><span property="name">Главная</span></a>
-					</span>
-				</li>
-				<li class="home">
-					<span>
-						<a property="item" typeof="WebPage" title="" href="#" class="home"><span property="name">О компании</span></a>
-					</span>
-				</li>				 
-					<li class="post-root post post-post current-item"><span class="current-item">Нормативные документы</span></li>
-				</ul>
-			</div>
-			<div id="nextBlock" class="row section-sm section-mob-top mt-0 pb-0">
-				<div class="col-12 title_after_image">
-					<h3>Избавьте своих сотрудников от хлопот</h3>
-				</div>
-				<div class="col-sm-12 col-md-5">
-					<p >Служебная парковка, удобно расположенная рядом с Вашим офисом, существенно облегчит жизнь Вашим сотрудникам, что позволит им гораздо быстрее и проще добираться до своих рабочих мест. В результате они не только будут реже опаздывать, но и будут существенно более продуктивными. </p>
-				</div>
-				<div class="col-sm-12 col-md-6 offset-md-1">
-					<p>Parkt Service Group предлагает услугу обеспечения служебными парковками предприятий и компаний. Служебная парковка может быть как отдельной, так и частью обычной парковки, на которой будут предоставляться особые условия сотрудникам организации.</p>
-				</div>
-			</div>
-			<!--style>
-				.dll_small_indicators{
-					bottom:-50px;
-				}
-				.dll_small_indicators li{
-					    box-sizing: content-box;
-						
-						-ms-flex: 0 1 auto;
-						flex: 0 1 auto;
-						width: 15px;
-						height: 15px;
-						border-radius:50%;
-						margin-right: 10px;
-						margin-left: 10px;
-						text-indent: -999px;
-						cursor: pointer;
-						background-color: #0B0F21;
-						background-clip: padding-box;
-						opacity: 0.2;
-						transition: opacity 0.6s ease;
-				}
-				.carousel-indicators .active {
-					opacity: 1;
-					background-color: #FAD756;
-				}
-				.dll_small_indicators~.carousel-inner{
-					margin-bottom:40px;
-				}
-			</style-->
-			<div class="row section-sm section-mob-bottom pt-3 spacing-50">
-				<div class="col-sm-12 col-md-9 d-none d-md-block">
-					<div id="slideSw" class="carousel slide">
-						<ol class="carousel-indicators d-md-none dll_small_indicators">
-							<li data-target="#slideSw" data-slide-to="0" class="active"></li>
-							<li data-target="#slideSw" data-slide-to="1"></li>
-							<li data-target="#slideSw" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img class="d-block w-100" src="images/abonement.png" alt="First slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="images/abonement.png" alt="Second slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="images/abonement.png" alt="Third slide">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="pl-3 pr-0 col-12 d-block d-md-none">
-					<div class="multiple-items">
-
-								<img class="h-100" src="images/abonement.png" alt="First slide">
-
-								<img class="h-100" src="images/abonement.png" alt="Second slide">
-
-								<img class="h-100" src="images/abonement.png" alt="Third slide">
-					</div>
-				</div>
-<style>
-
-.slick-list{padding:0 10% 0 0;}
-.slick-slide {
-	margin-right:20px;
-}
-
-.multiple-items img{
-	border-radius:10px;
-}
-.slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
-}
-
-.slick-dots
-{
-    position: absolute;
-    bottom: -45px;
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-}
-.slick-dots li
-{
-    position: relative;
-
-    display: inline-block;
-
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-
-    cursor: pointer;
-}
-.slick-dots li button
-{
-    font-size: 0;
-    line-height: 0;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-
-    cursor: pointer;
-
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.slick-dots li button:hover,
-.slick-dots li button:focus
-{
-    outline: none;
-}
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before
-{
-    opacity: 0.2;
-}
-.slick-dots li button:before
-{
-    font-family: 'slick';
-    font-size: 48px;
-    line-height: 20px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 20px;
-    height: 20px;
-
-    content: '•';
-    text-align: center;
-
-    opacity: .2;
-    color: #0B0F21;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before
-{
-    opacity: 1;
-    color: #FAD756;
-}
-
-</style>
-				<div class="col-sm-12 col-md-2 offset-md-1 pl-md-0 pr-md-0 d-flex align-items-center">
-					<p>Модель организации и обустройства служебных парковок уже подтвердила свою эффективность в ранее реализованных проектах. Подробнее Вы можете ознакомиться с ней в видеопрезентации.</p>
-					<p class="dll_nav_arrows d-none d-md-block">
-						<a class="rdxselectslideszz" href="#slideSw" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
-						</a>
-						<span class="num">1/1</span>
-						<a class="rdxselectslideszz" href="#slideSw" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true">&gt;</span>
-						</a>
-					</p>	
-				</div>
-				<div class="col-sm-12 mt-md-5 d-none d-md-block">
-					<a class="rdxblackbuttonpdf" href="#"><p>Скачать презентацию</p></a>
-				</div>
-				<div class="col-sm-12 mt-md-5 d-block d-md-none">
-					<a class="btn_cooper text-center btn-lg black_but" href="#">Скачать презентацию</a>
-				</div>
-			</div>
-		</div>
-	</section>
-    <section class="section section-lg bg-COLOR context-dark text-center" style="background-COLOR: #FAD756;">
-      <div class="container">
-        <h2 class="rdxbenefitshead">Преимущества</h2>
-      </div>
-      <div class="container">
-        <div class="row spacing-30 justify-content-center justify-content-lg-start">
-          <div class="col-sm-10 col-md-4"><img src="images/benefit-check.png">
-            <h3 class="rdxbenefitspatchhead">Комфорт</h3>
-            <p class="rdxbenefitspatch">Компания сможет быть уверена, что они обеспечены местами для парковки, что повышает комфорт для сотрудников и руководства.  </p>
-          </div>
-          <div class="col-sm-10 col-md-4"><img src="images/benefit-check.png">
-            <h3 class="rdxbenefitspatchhead">Экономия</h3>
-            <p class="rdxbenefitspatch">Содержание служебной парковки существенно выгоднее, чем почасовая оплата на свободных местах</p>
-          </div>
-          <div class="col-sm-10 col-md-4">
-			<img src="images/benefit-check.png">
-            <h3 class="rdxbenefitspatchhead">Скорость</h3>
-            <p class="rdxbenefitspatch">Размещение служебной парковки рядом с офисом, сократит время для сотрудников по поиску места для паркования по утрам.</p>
+          <div class="parkovka-news__item parkovka-news__item--big">
+            <div class="news-list">
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-1.jpg" alt="">
+                </div>
+                <h4 class="title">Мерия Одессы утвердила наш проект по обустройствую парковок</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-2.jpg" alt="">
+                </div>
+                <h4 class="title">Установленно 300 новых паркоматов в центре Харькова</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-3.jpg" alt="">
+                </div>
+                <h4 class="title">Инвентаризация и обучение инспекторов в Харькове</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-4.jpg" alt="">
+                </div>
+                <h4 class="title">Установленно 300 новых паркоматов в центре Харькова</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-1.jpg" alt="">
+                </div>
+                <h4 class="title">Мерия Одессы утвердила наш проект по обустройствую парковок</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+              <a href="#" class="news-list__item">
+                <div class="img-wrapper">
+                  <img src="images/img-news-thumb-2.jpg" alt="">
+                </div>
+                <h4 class="title">Установленно 300 новых паркоматов в центре Харькова</h4>
+                <div class="date">13 мая, 2020</div>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="row spacing-30 justify-content-center justify-content-lg-start"></div>
       </div>
     </section>
-    <section class="section section-lg bg-gray-light novi-background bg-image mt-md-5">
+    <section class="section parkovka-news parkovka-news--subscribe text-left">
       <div class="container">
-        <div class="row spacing-50">
-			<div class="col-sm-12 col-md-5 d-block d-md-none">
-				<div class="box-wrap-content-interactive">
-					<div class="box-rdx-contacts">
-						<h2 class="rdxformhead pb-md-4">Ваша служебная парковка</h2>
-						<div class="row">
-							<div class="col-12">
-								<p>Оставьте заявку и наши специалисты помогут Вам подобрать конфигурацию служебной парковки, наиболее отвечающую Вашим требованиям и обладающую оптимальным соотношением стоимости и удобств.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6">
-				<form class="rd-mailform text-left rdxfancyfooterform">
-				  <div class="row spacing-20">
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation rdxfancyfooterformhead">Оформить запрос на служебную парковку для компании </div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation">
-						<input class="form-control rdxpatchfooterform" id="forms-city" type="text" name="city" placeholder="Город"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation"></label>
-						<input class="form-control rdxpatchfooterform" id="forms-company" type="text" name="company" placeholder="Название компании"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation">
-						<input class="form-control rdxpatchfooterform" id="forms-edrpoy" type="email" name="edrpoy" placeholder="ЕДРПОУ"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation">
-						<input class="form-control rdxpatchfooterform" id="forms-address" type="email" name="email" placeholder="Адрес служебной парковки"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation">
-						<input class="form-control rdxpatchfooterform" id="forms-name" type="text" name="name" placeholder="ФИО"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation">
-						<input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="phone" placeholder="Контактный телефон"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation">
-						<input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="phone" placeholder="Email"></div>
-					</div>
-					<div class="col-sm-8 form-button"><button class="btn btn-primary btn-block btn-effect-ujarak rdxsubmitoffer" type="submit">Получить предложение</button></div>
-				  </div>
-				</form>
-			</div>
-			<div class="col-sm-12 col-md-5 d-none d-md-block">
-				<div class="box-wrap-content-interactive">
-					<div class="box-rdx-contacts">
-						<h2 class="rdxformhead pb-4">Ваша служебная парковка</h2>
-						<div class="row">
-							<div class="col-12">
-								<p>Оставьте заявку и наши специалисты помогут Вам подобрать конфигурацию служебной парковки, наиболее отвечающую Вашим требованиям и обладающую оптимальным соотношением стоимости и удобств.</p>
-							</div>
-						<a class="btn btn-lg  rdxdwnprez" href="#"><p>Скачать презентацию</p></a>
-						</div>
-					</div>
-				</div>
-			</div>
+        <div class="parkovka-news__container">
+          <div class="parkovka-news__item"></div>
+          <div class="parkovka-news__item parkovka-news__item--big">
+            <div class="subscribe-box">
+              <h4 class="subscirbe-box__title">Хотите быть в курсе<br> новостей?</h4>
+              <form class="subscribe-box__form">
+                <p class="text">Подписывайтесь на рассылку, чтобы получать свежую информацию о новых продуктах.</p>
+                <div class="box-field">
+                  <input type="email" class="form-control" placeholder="Введите email" required>
+                  <input type="submit" class="subscribe-btn" value="Подписаться">
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-	<footer class="page-footer">
+	 </div>
+<footer class="page-footer">
       <section class="section pre-footer-minimal bg-gray-dark-rdx-footer novi-background bg-image rdxfooterfix">
         <div class="pre-footer-minimal-inner pt-0 pt-md-5">
           <div class="container text-center text-sm-left p-0">
@@ -610,6 +452,16 @@
           </div>
         </div>
       </section>
+	  <style>
+		h4{
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 17px;
+			}
+			#logo-footer{
+			margin-top:-20px;
+			}
+	  </style>
       <section class="section pre-footer-minimal2 bg-gray-dark-rdx-footer2 novi-background bg-image d-md-block d-none">
         <div class="pre-footer-minimal-inner">
           <div class="container p-0">
@@ -635,24 +487,32 @@
         </div>
       </section>
     </footer>
-	<script>			
-		$('.multiple-items').slick({
-		arrows:false,
-		  dots: true,
-		  infinite: true,
-		  speed: 300,
-		  slidesToShow: 1,
-		  adaptiveHeight: true
-		});
-		var totalItems = $('.carousel-item').length;
-		var currentIndex = $('div.active').index() + 1;
-		$('.num').html(''+currentIndex+'/'+totalItems+'');
-		$('#slideSw').on('slid.bs.carousel', function () {
-		currentIndex = $('div.active').index() + 1;
-		$('.num').html(''+currentIndex+'/'+totalItems+'');
-	});
-	</script>
+ 
+  <div class="snackbars" id="form-output-global"></div>
+
+  <!-- Modal -->
+  <div class="modal fade video-modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true" data-video="https://www.youtube.com/embed/LXb3EKWsInQ">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script async="" src="https://www.youtube.com/iframe_api"></script>
   <script src="js/core.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 

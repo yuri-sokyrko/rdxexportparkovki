@@ -399,40 +399,40 @@
                 <a class="nav-link" id="how-payment-tab-5" data-toggle="tab" href="#Odesa" role="tab" aria-controls="Odesa" aria-selected="false" data-sliden="sliden-5">Одесса</a>
               </li>
             </ul>
-            <div class="section-payment__info d-none d-block" id="sliden-1">
-              <div class="info-item">201 парковок</div>
+            <div class="section-payment__info show active" id="sliden-1" style="display:block">
+              <div class="info-item">200 парковок</div>
               <div class="info-item">Не надо стоять в очереди в паркомат</div>
               <div class="info-item">6 закрытых локаций 24\7</div>
               <div class="info-item">Не забываешь оплатить парковку</div>
               <div class="info-item">60% экономии в месяц</div>
               <div class="info-item">Нешевле чем почасово</div>
             </div>
-			<div class="section-payment__info d-none" id="sliden-2">
-              <div class="info-item">202 парковок</div>
+			<div class="section-payment__info" id="sliden-2" style="display:none">
+              <div class="info-item">200 парковок</div>
               <div class="info-item">Не надо стоять в очереди в паркомат</div>
               <div class="info-item">6 закрытых локаций 24\7</div>
               <div class="info-item">Не забываешь оплатить парковку</div>
               <div class="info-item">60% экономии в месяц</div>
               <div class="info-item">Нешевле чем почасово</div>
             </div>
-			<div class="section-payment__info d-none" id="sliden-3">
-              <div class="info-item">203 парковок</div>
+			<div class="section-payment__info" id="sliden-3" style="display:none">
+              <div class="info-item">200 парковок</div>
               <div class="info-item">Не надо стоять в очереди в паркомат</div>
               <div class="info-item">6 закрытых локаций 24\7</div>
               <div class="info-item">Не забываешь оплатить парковку</div>
               <div class="info-item">60% экономии в месяц</div>
               <div class="info-item">Нешевле чем почасово</div>
             </div>
-			<div class="section-payment__info d-none" id="sliden-4">
-              <div class="info-item">204 парковок</div>
+			<div class="section-payment__info" id="sliden-4" style="display:none">
+              <div class="info-item">200 парковок</div>
               <div class="info-item">Не надо стоять в очереди в паркомат</div>
               <div class="info-item">6 закрытых локаций 24\7</div>
               <div class="info-item">Не забываешь оплатить парковку</div>
               <div class="info-item">60% экономии в месяц</div>
               <div class="info-item">Нешевле чем почасово</div>
             </div>
-			<div class="section-payment__info d-none" id="sliden-5">
-              <div class="info-item">205 парковок</div>
+			<div class="section-payment__info" id="sliden-5" style="display:none">
+              <div class="info-item">200 парковок</div>
               <div class="info-item">Не надо стоять в очереди в паркомат</div>
               <div class="info-item">6 закрытых локаций 24\7</div>
               <div class="info-item">Не забываешь оплатить парковку</div>
@@ -442,10 +442,10 @@
 			<script>
 		$(document).ready(function(){
 			$('.nav-tabs a').on('shown.bs.tab', function (e) {
-				for(var i = 0; i<$(".section-payment__info").length; i++)
-					$(".section-payment__info").removeClass("d-block");
+				for(var i = 0; i < $(".section-payment__info").length; i++)
+					$(".section-payment__info").addClass("d-none");
 				$(this).data("sliden");
-				$('#'+$(this).data("sliden")+'').addClass("d-block");
+				$('#'+$(this).data("sliden")+'').toggleClass("d-block");
 				console.log($(this).data("sliden"));
 			});
 		});

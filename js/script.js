@@ -674,12 +674,12 @@
 		/**
 		 * Checkbox
 		 * @description Add custom styling options for input[type="checkbox"]
-		 */
+		 *
 		if (plugins.checkbox.length) {
 			var i;
 			for (i = 0; i < plugins.checkbox.length; i++) {
 				var $this = $(plugins.checkbox[i]);
-				//$this.addClass("checkbox-custom").after("<span class='checkbox-custom-dummy'></span>")
+				$this.addClass("checkbox-custom").after("<span class='checkbox-custom-dummy'></span>")
 			}
 		}
 
@@ -874,8 +874,8 @@
 		/**
 		 * Select2
 		 * @description Enables select2 plugin
-		 */
-		/*if (plugins.selectFilter.length) {
+		 *
+		if (plugins.selectFilter.length) {
 			var i;
 			for (i = 0; i < plugins.selectFilter.length; i++) {
 				var select = $(plugins.selectFilter[i]);
@@ -885,7 +885,7 @@
 				}).next().addClass(select.attr("class").match(/(input-sm)|(input-lg)|($)/i).toString().replace(new RegExp(",", 'g'), " "));
 			}
 		}
-*/
+
 		/**
 		 * RD Search
 		 * @description Enables search
@@ -1951,7 +1951,7 @@
 			var notCarouselItems = [];
 
 			for (var z = 0; z < plugins.lightGalleryItem.length; z++) {
-				if (!$(plugins.lightGalleryItem[z]).parents('.owl-carousel').length && !$(plugins.lightGalleryItem[z]).parents('.swiper-slider').length && !$(plugins.lightGalleryItem[z]).parents('.slick-slider').length) {
+				if (!$(plugins.lightGalleryItem[z]).parents('.owl-carousel').length && !$(plugins.lightGalleryItem[z]).parents('.swiper-slider').length && !$(plugins.lightGalleryItem[z]).parents('.slick-slider_old').length) {
 					notCarouselItems.push(plugins.lightGalleryItem[z]);
 				}
 			}
@@ -2439,6 +2439,15 @@
 					scrollTop: jQuery(dest).offset().top
 				}, 700);
 			});
+		}
+
+		if(jQuery('input.date-selection').length) {
+			$('input.date-selection').daterangepicker({
+				opens: 'left',
+				linkedCalendars: false
+			  }, function(start, end, label) {
+				console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+			  });
 		}
 	});
 }());

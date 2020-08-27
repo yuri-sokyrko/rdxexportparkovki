@@ -19,184 +19,493 @@
 </head>
 
 <body>
-	<div class="page text-center">
-	  <section id="paymentHero" class="section section-md text-left section-hero">
-          <div class="container">
-            <div class="row spacing-30">
-              <div class="col-lg-7">
-                <div class="section-hero__container">
-                  <h1 class="section-hero__title fxRotateInRight">Служебная парковка для юридических лиц</h1>
-                  <a href="#nextBlock" class="section-hero__button js-section-hero__button fxRotateInRight" style="font-weight:500">Подробнее</a>
-                </div>
-              </div>
+<section class="section">
+    <header class="site-header site-header--white">
+        <div class="site-header__container">
+            <div class="site-header__logo site-header__logo--white">
+                <a href="parkovka-home.html">
+            <img src="images/new-logo.svg" alt="logo">
+            </a>
             </div>
-          </div>
-      </section>
-      <style>
-        #paymentHero {
-          background: transparent url('images/abon1.jpg') no-repeat center / cover;
+            <div class="site-header__logo site-header__logo--black">
+                <a href="parkovka-home.html">
+            <img src="images/new-logo-black.svg" alt="logo">
+            </a>
+            </div>
+            <div class="header-mobile__trigger">
+                <button class="nav-trigger js-nav-trigger">
+            <span class="nav-trigger__text">Меню</span>
+            <span class="nav-trigger__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span>
+            </button>
+            </div>
+            <div class="site-header__nav">
+                <nav class="site-header__nav-item">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="#">Водителям</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Водителям</a></li>
+                                <li><a href="#">Карта парковок</a></li>
+                                <li><a href="#">Штрафы</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Бизнес-клиентам</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Парковочное оборудование</a></li>
+                                <li><a href="#">Закрытый паркинг</a></li>
+                                <li><a href="#">Абонементы для юр. лиц</a></li>
+                                <li><a href="#">Служебная парковка</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Для городов</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Как это работает?</a></li>
+                                <li><a href="#">Наши продукты</a></li>
+                                <li><a href="#">Процесс сотрудничества</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="site-header__nav-item site-header__nav-item--left">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="#">О компании</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">О проекте</a></li>
+                                <li><a href="#">Нормативные документы</a></li>
+                                <li><a href="#">F.A.Q.</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="site-header__nav-item site-header__nav-item--lang">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="#">RU</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">EN</a></li>
+                                <li><a href="#">UA</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="site-header__phone">
+                    <a href="tel:+380664445423">+38 (066) 444 54 23</a>
+                </div>
+                <div class="site-header__footer">
+                    <nav class="site-header__socials">
+                        <ul>
+                            <li><a href="#"><img src="images/icon-socials-1.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icon-socials-2.svg" alt=""></a></li>
+                        </ul>
+                    </nav>
+                    <nav class="site-header__nav-item site-header__nav-item--lang site-header__nav-item--lang-mobile">
+                        <ul>
+                            <li class="menu-item-has-children">
+                                <a href="#">RU</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">EN</a></li>
+                                    <li><a href="#">UA</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="aboutUs" class="section section-md text-left section-hero">
+        <div class="container">
+            <div class="row spacing-30">
+                <div class="flex-row section-hero__container col-lg-8 p-0 d-flex align-items-center">
+                    <div class="">
+                        <h1 class="section-hero__title fxRotateInRight">Служебная парковка для юридических лиц</h1>
+                        <a href="#nextBlock" class="section-hero__button js-section-hero__button fxRotateInRight">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .section-hero__button {
+            position: absolute;
+            bottom: 40px;
+        }
+
+        #aboutUs {
+            background: transparent url('images/abon1.jpg') no-repeat center / cover;
         }
 
         @media screen and (max-width: 991px) {
-          #paymentHero {
-            background-image: url('images/abon1.jpg');
-          }
+            #aboutUs {
+                background-image: url('images/abon1.jpg');
+            }
         }
 
         @media screen and (max-width: 767px) {
-          #paymentHero {
-            background-image: url('images/abon1.jpg');
-          }
+            #aboutUs {
+                background-image: url('images/abon1.jpg');
+            }
         }
-      </style>
-	<section class="section section-lg bg-default novi-background bg-image text-left">
-		<div class="container">
-			<div class="col-md-12">
-				<ul class="c-breadcrumbs">
-				<li class="home"> 
-					<span>
-						<a property="item" typeof="WebPage" title="" href="#" class="home"><span property="name">Главная</span></a>
-					</span>
-				</li>
-				<li class="home">
-					<span>
-						<a property="item" typeof="WebPage" title="" href="#" class="home"><span property="name">О компании</span></a>
-					</span>
-				</li>				 
-					<li class="post-root post post-post current-item"><span class="current-item">Нормативные документы</span></li>
-				</ul>
-			</div>
-			<div class="row section-lg mt-0 pb-0">
-				<div class="col-12" style="padding-bottom:100px;">
-					<h3>Избавьте своих сотрудников от хлопот</h3>
-				</div>
-				<div class="col-sm-12 col-md-5">
-					<p >Служебная парковка, удобно расположенная рядом с Вашим офисом, существенно облегчит жизнь Вашим сотрудникам, что позволит им гораздо быстрее и проще добираться до своих рабочих мест. В результате они не только будут реже опаздывать, но и будут существенно более продуктивными. </p>
-				</div>
-				<div class="col-sm-12 col-md-6 offset-md-1">
-					<p>Parkt Service Group предлагает услугу обеспечения служебными парковками предприятий и компаний. Служебная парковка может быть как отдельной, так и частью обычной парковки, на которой будут предоставляться особые условия сотрудникам организации.</p>
-				</div>
-			</div>
-			<div class="row section-lg">
-				<div class="col-sm-12 col-md-9">
-					<div id="slideSw" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators d-md-none">
-							<li data-target="#slideSw" data-slide-to="0" class="active"></li>
-							<li data-target="#slideSw" data-slide-to="1"></li>
-							<li data-target="#slideSw" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img class="d-block w-100" src="images/abonement.png" alt="First slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="images/abonement.png" alt="Second slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="images/abonement.png" alt="Third slide">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-2 offset-md-1 pl-0 pr-0 d-flex align-items-center">
-					<p>Модель организации и обустройства служебных парковок уже подтвердила свою эффективность в ранее реализованных проектах. Подробнее Вы можете ознакомиться с ней в видеопрезентации.</p>
-					<p class="dll_nav_arrows">
-						<a class="rdxselectslideszz" href="#slideSw" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
-						</a>
-						<span class="num">1/1</span>
-						<a class="rdxselectslideszz" href="#slideSw" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true">&gt;</span>
-						</a>
-					</p>
-				</div>
-				<div class="col-sm-12 mt-md-5">
-					<a class="rdxblackbuttonpdf" href="#"><p>Скачать презентацию</p></a>
-				</div>
-			</div>
-		</div>
-	</section>
-    <section class="section section-md bg-COLOR context-dark" style="background-COLOR: #FAD756;">
-      <div class="container">
+    </style>
+</section>
+<section class="section section-lg bg-default novi-background bg-image text-left">
+    <div class="container">
+        <div class="col-md-12">
+            <ul class="c-breadcrumbs">
+                <li class="home">
+                    <span>
+               <a property="item" typeof="WebPage" title="" href="#" class="home"><span property="name">Главная</span></a>
+                    </span>
+                </li>
+                <li class="home">
+                    <span>
+               <a property="item" typeof="WebPage" title="" href="#" class="home"><span property="name">О компании</span></a>
+                    </span>
+                </li>
+                <li class="post-root post post-post current-item"><span class="current-item">Нормативные документы</span></li>
+            </ul>
+        </div>
+        <div class="row section-lg mt-0 pb-0">
+            <div class="col-12" style="padding-bottom:100px;">
+                <h3>Избавьте своих сотрудников от хлопот</h3>
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <p>Служебная парковка, удобно расположенная рядом с Вашим офисом, существенно облегчит жизнь Вашим сотрудникам, что позволит им гораздо быстрее и проще добираться до своих рабочих мест. В результате они не только будут реже опаздывать, но
+                    и будут существенно более продуктивными. </p>
+            </div>
+            <div class="col-sm-12 col-md-6 offset-md-1">
+                <p>Parkt Service Group предлагает услугу обеспечения служебными парковками предприятий и компаний. Служебная парковка может быть как отдельной, так и частью обычной парковки, на которой будут предоставляться особые условия сотрудникам организации.</p>
+            </div>
+        </div>
+        <div class="row section-lg">
+            <div class="col-sm-12 col-md-9">
+                <div id="slideSw" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators d-md-none">
+                        <li data-target="#slideSw" data-slide-to="0" class="active"></li>
+                        <li data-target="#slideSw" data-slide-to="1"></li>
+                        <li data-target="#slideSw" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/abonement.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/abonement.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/abonement.png" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2 offset-md-1 pl-0 pr-0 d-flex align-items-center">
+                <p>Модель организации и обустройства служебных парковок уже подтвердила свою эффективность в ранее реализованных проектах. Подробнее Вы можете ознакомиться с ней в видеопрезентации.</p>
+                <p class="dll_nav_arrows">
+                    <a class="rdxselectslideszz" href="#slideSw" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true">&lt;</span>
+               </a>
+                    <span class="num">1/1</span>
+                    <a class="rdxselectslideszz" href="#slideSw" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true">&gt;</span>
+               </a>
+                </p>
+            </div>
+            <div class="col-sm-12 mt-md-5">
+                <a class="rdxblackbuttonpdf" href="#">
+                    <p>Скачать презентацию</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section-md bg-COLOR context-dark text-center" style="background-COLOR: #FAD756;">
+    <div class="container">
         <h2 class="rdxbenefitshead">Преимущества</h2>
-      </div>
-      <div class="container">
+    </div>
+    <div class="container">
         <div class="row spacing-30 justify-content-center justify-content-lg-start">
-          <div class="col-sm-10 col-lg-4"><img src="images/benefit-check.png">
-            <p class="rdxbenefitspatchhead"> Наглядность и <br>удобство выбора </p>
-            <p class="rdxbenefitspatch"> UNIP содержит цветовую градацию доступности паркингов и их типов с указанием стоимости </p>
-          </div>
-          <div class="col-sm-10 col-lg-4"><img src="images/benefit-check.png">
-            <p class="rdxbenefitspatchhead"> Наглядность и <br>удобство выбора </p>
-            <p class="rdxbenefitspatch"> UNIP содержит цветовую градацию доступности паркингов и их типов с указанием стоимости </p>
-          </div>
-          <div class="col-sm-10 col-lg-4"><img src="images/benefit-check.png">
-            <p class="rdxbenefitspatchhead"> Наглядность и <br>удобство выбора </p>
-            <p class="rdxbenefitspatch"> UNIP содержит цветовую градацию доступности паркингов и их типов с указанием стоимости </p>
-          </div>
+            <div class="col-sm-10 col-lg-4">
+                <img src="images/benefit-check.png">
+                <p class="rdxbenefitspatchhead"> Наглядность и <br>удобство выбора </p>
+                <p class="rdxbenefitspatch"> UNIP содержит цветовую градацию доступности паркингов и их типов с указанием стоимости </p>
+            </div>
+            <div class="col-sm-10 col-lg-4">
+                <img src="images/benefit-check.png">
+                <p class="rdxbenefitspatchhead"> Наглядность и <br>удобство выбора </p>
+                <p class="rdxbenefitspatch"> UNIP содержит цветовую градацию доступности паркингов и их типов с указанием стоимости </p>
+            </div>
+            <div class="col-sm-10 col-lg-4">
+                <img src="images/benefit-check.png">
+                <p class="rdxbenefitspatchhead"> Наглядность и <br>удобство выбора </p>
+                <p class="rdxbenefitspatch"> UNIP содержит цветовую градацию доступности паркингов и их типов с указанием стоимости </p>
+            </div>
         </div>
         <div class="row spacing-30 justify-content-center justify-content-lg-start"></div>
-      </div>
-    </section>
-    <section class="section section-md bg-gray-light novi-background bg-image" style="brcolor:##F7F7F7">
-      <div class="container">
+    </div>
+</section>
+<section class="section section-md bg-gray-light novi-background bg-image" style="brcolor:##F7F7F7">
+    <div class="container">
         <div class="row">
-				<div class="col-sm-12 col-md-6 p-0">
-				<form class="rd-mailform text-left rdxfancyfooterform">
-				  <div class="row spacing-20">
-					<div class="col-sm-12 mb-4">
-					  <div class="form-group form-wrap-validation rdxfancyfooterformhead">Оформить запрос на служебную парковку для компании </div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-name2">Город</label><input class="form-control rdxpatchfooterform" id="forms-name2" type="text" name="name" data-constraints="@Required"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-last-name2">Название компании</label><input class="form-control rdxpatchfooterform" id="forms-last-name2" type="text" name="last-name" data-constraints="@Required"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-email2">ЕДРПОУ</label><input class="form-control rdxpatchfooterform" id="forms-email2" type="email" name="email" data-constraints="@Email @Required"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-email2">Адрес служебной парковки</label><input class="form-control rdxpatchfooterform" id="forms-email2" type="email" name="email" data-constraints="@Email @Required"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">ФИО</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="phone" data-constraints="@Numeric @Required"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">Контактный телефон</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="phone" data-constraints="@Numeric @Required"></div>
-					</div>
-					<div class="col-sm-12">
-					  <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">Email</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="phone" data-constraints="@Numeric @Required"></div>
-					</div>
-					<div class="col-sm-8 form-button"><button class="btn btn-primary btn-block btn-effect-ujarak rdxsubmitoffer" type="submit">Получить предложение</button></div>
-				  </div>
-				</form>
-			</div>
-			<div class="col-sm-12 col-md-5 offset-md-1">
-				<div class="box-wrap-content-interactive">
-					<div class="box-rdx-contacts">
-						<h2 class="rdxformhead pb-4">Абонименты для Вашей компании</h2>
-						<p>Оставьте заявку и наши специалисты помогут Вам подобрать конфигурацию служебной парковки, наиболее отвечающую Вашим требованиям и обладающую оптимальным соотношением стоимости и удобств.</p>
-						<a class="btn btn-white-outline btn-lg  rdxdwnprez" href="#"><p>Скачать презентацию</p></a>
-					</div>
-				</div>
-			</div>
+            <div class="col-sm-12 col-md-6 p-0">
+                <form class="rd-mailform text-left rdxfancyfooterform">
+                    <div class="row spacing-20">
+                        <div class="col-sm-12 mb-4">
+                            <div class="form-group form-wrap-validation rdxfancyfooterformhead">Оформить запрос на служебную парковку для компании </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-name2">Город</label><input class="form-control rdxpatchfooterform" id="forms-name2" type="text" name="name" data-constraints="@Required"></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-last-name2">Название компании</label><input class="form-control rdxpatchfooterform" id="forms-last-name2" type="text" name="last-name" data-constraints="@Required"></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-email2">ЕДРПОУ</label><input class="form-control rdxpatchfooterform" id="forms-email2" type="email" name="email" data-constraints="@Email @Required"></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-email2">Адрес служебной парковки</label><input class="form-control rdxpatchfooterform" id="forms-email2" type="email" name="email" data-constraints="@Email @Required"></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">ФИО</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="phone" data-constraints="@Numeric @Required"></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">Контактный телефон</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="phone" data-constraints="@Numeric @Required"></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">Email</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="phone" data-constraints="@Numeric @Required"></div>
+                        </div>
+                        <div class="col-sm-8 form-button"><button class="btn btn-primary btn-block btn-effect-ujarak rdxsubmitoffer" type="submit">Получить предложение</button></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-5 offset-md-1">
+                <div class="box-wrap-content-interactive">
+                    <div class="box-rdx-contacts">
+                        <h2 class="rdxformhead pb-4">Абонименты для Вашей компании</h2>
+                        <p>Оставьте заявку и наши специалисты помогут Вам подобрать конфигурацию служебной парковки, наиболее отвечающую Вашим требованиям и обладающую оптимальным соотношением стоимости и удобств.</p>
+                        <a class="btn btn-white-outline btn-lg  rdxdwnprez" href="#">
+                            <p>Скачать презентацию</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+</section>
+<footer class="page-footer">
+    <section class="section pre-footer-minimal bg-gray-dark-rdx-footer novi-background bg-image rdxfooterfix">
+        <div class="pre-footer-minimal-inner pt-0 pt-md-5">
+            <div class="container text-center text-sm-left p-0">
+                <div class="d-md-block d-none">
+                    <div class="row">
+                        <div class="col-md-2 text-sm-center text-md-left col-lg-rdx p-0" id="logo-footer">
+                            <img src="images/footer_logo.png">
+                            <div class="d-md-block" style="margin-top:130px"></div>
+                            <a href="#"><img class="rdxfootersocial1" src="images/social_instagram.png"></a>
+                            <a href="#"><img class="rdxfootersocial1" src="images/social_fb.png"></a>
+                        </div>
+                        <div class="col-10">
+                            <div class="row justify-content-end">
+                                <div class="col-4 col-md-2 rdxfooter-menu col-lg-rdx p-0 pr-2">
+                                    <h4>Для водителей</h4>
+                                    <dl class="terms-list-inline rdxmenubottomitems">
+                                        <li><a href="#">Оплата парковки</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline rdxmenubottomitems">
+                                        <li><a href="#">Карта парковок</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline  rdxmenubottomitems">
+                                        <li><a href="#">Штрафы</a></li>
+                                    </dl>
+                                </div>
+                                <div class="col-4 col-md-2 offset-md-1 rdxfooter-menu col-lg-rdx p-0 pr-2">
+                                    <h4 class="">Для бизнес клиентов</h4>
+                                    <dl class="terms-list-inline rdxmenubottomitems">
+                                        <li><a href="#">Для бизнес клиентов</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline rdxmenubottomitems">
+                                        <li><a href="#">Закрытый паркинг</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline  rdxmenubottomitems">
+                                        <li><a href="#">Абонементы для юр. лиц</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline  rdxmenubottomitems">
+                                        <li><a href="#">Служебная парковка</a></li>
+                                    </dl>
+                                </div>
+                                <div class="col-4 col-md-2 offset-md-1 rdxfooter-menu col-lg-rdx p-0 pr-2">
+                                    <h4 class="">Для города</h4>
+                                    <dl class="terms-list-inline rdxmenubottomitems">
+                                        <li><a href="#">Как это работает?</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline rdxmenubottomitems">
+                                        <li><a href="#">Наши результаты</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline  rdxmenubottomitems">
+                                        <li><a href="#">Процесс сотрудничества</a></li>
+                                    </dl>
+                                </div>
+                                <div class="col col-md-2 offset-md-1 rdxfooter-menu col-lg-rdx p-0 pr-2">
+                                    <h4 class="">Про компанию</h4>
+                                    <dl class="terms-list-inline rdxmenubottomitems">
+                                        <li><a href="#">О проекте</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline rdxmenubottomitems">
+                                        <li><a href="#">Наши продукты</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline  rdxmenubottomitems">
+                                        <li><a href="#">Нормативные документы</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline  rdxmenubottomitems">
+                                        <li><a href="#">Новости</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline  rdxmenubottomitems">
+                                        <li><a href="#">F.A.Q.</a></li>
+                                    </dl>
+                                    <dl class="terms-list-inline  rdxmenubottomitems">
+                                        <li><a href="#">Контакты</a></li>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-md-none text-left pl-3">
+                    <img src="images/footer_logo.png" height="90px" style="margin-bottom:15px">
+                    <h4 data-toggle="collapse" href="#menu1" role="button" aria-expanded="false" aria-controls="menu1">Для водителей</h4>
+                    <div class="collapse" id="menu1">
+                        <dl class="terms-list-inline rdxmenubottomitems">
+                            <li><a href="#">Оплата парковки</a></li>
+                        </dl>
+                        <dl class="terms-list-inline rdxmenubottomitems">
+                            <li><a href="#">Карта парковок</a></li>
+                        </dl>
+                        <dl class="terms-list-inline  rdxmenubottomitems">
+                            <li><a href="#">Штрафы</a></li>
+                        </dl>
+                    </div>
+                    <h4 data-toggle="collapse" href="#menu2" role="button" aria-expanded="false" aria-controls="menu2">Для бизнес клиентов</h4>
+                    <div class="collapse" id="menu2">
+                        <dl class="terms-list-inline rdxmenubottomitems">
+                            <li><a href="#">Для бизнес клиентов</a></li>
+                        </dl>
+                        <dl class="terms-list-inline rdxmenubottomitems">
+                            <li><a href="#">Закрытый паркинг</a></li>
+                        </dl>
+                        <dl class="terms-list-inline  rdxmenubottomitems">
+                            <li><a href="#">Абонементы для юр. лиц</a></li>
+                        </dl>
+                        <dl class="terms-list-inline  rdxmenubottomitems">
+                            <li><a href="#">Служебная парковка</a></li>
+                        </dl>
+                    </div>
+                    <h4 data-toggle="collapse" href="#menu3" role="button" aria-expanded="false" aria-controls="menu3">Для города</h4>
+                    <div class="collapse" id="menu3">
+                        <dl class="terms-list-inline rdxmenubottomitems">
+                            <li><a href="#">Как это работает?</a></li>
+                        </dl>
+                        <dl class="terms-list-inline rdxmenubottomitems">
+                            <li><a href="#">Наши результаты</a></li>
+                        </dl>
+                        <dl class="terms-list-inline  rdxmenubottomitems">
+                            <li><a href="#">Процесс сотрудничества</a></li>
+                        </dl>
+                    </div>
+                    <h4 data-toggle="collapse" href="#menu4" role="button" aria-expanded="false" aria-controls="menu4">Про компанию</h4>
+                    <div class="collapse" id="menu4">
+                        <dl class="terms-list-inline rdxmenubottomitems">
+                            <li><a href="#">О проекте</a></li>
+                        </dl>
+                        <dl class="terms-list-inline rdxmenubottomitems">
+                            <li><a href="#">Наши продукты</a></li>
+                        </dl>
+                        <dl class="terms-list-inline  rdxmenubottomitems">
+                            <li><a href="#">Нормативные документы</a></li>
+                        </dl>
+                        <dl class="terms-list-inline  rdxmenubottomitems">
+                            <li><a href="#">Новости</a></li>
+                        </dl>
+                        <dl class="terms-list-inline  rdxmenubottomitems">
+                            <li><a href="#">F.A.Q.</a></li>
+                        </dl>
+                    </div>
+                    <h5 style="font-family:Montserrat;font-weight: 600;font-size: 14px;line-height: 17px;color: #FFFFFF;"><a href="#">Контакты</a></h5>
+                    <div class="row mb-5 mt-5 rdxmenubottomitems2">
+                        <div class="col-8">
+                            <p style="color:white; font-size: 11px;line-height: 13px;">©Park Service Groupe 2020</p>
+                        </div>
+                        <div class="col-4 p-0">
+                            <a href="#"><img class="rdxfootersocial1" src="images/social_instagram.png"></a>
+                            <a href="#"><img class="rdxfootersocial1" src="images/social_fb.png"></a>
+                        </div>
+                        <div class="col-12 mt-3 rdxmenubottomitems2">
+                            <p style="color:white;font-size: 11px;line-height: 13px;">Сделано в <a href="#" style="color:white; text-decoration:underline">Worth</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </div>
-  	<script>
-		var totalItems = $('.carousel-item').length;
-		var currentIndex = $('div.active').index() + 1;
-		$('.num').html(''+currentIndex+'/'+totalItems+'');
-		$('#slideSw').on('slid.bs.carousel', function () {
-		currentIndex = $('div.active').index() + 1;
-		$('.num').html(''+currentIndex+'/'+totalItems+'');
-	});
-	</script>
-  <script async="" src="https://www.youtube.com/iframe_api"></script>
-  <script src="js/core.min.js"></script>
-  <script src="js/script.js"></script>
+    <style>
+        h4 {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        #logo-footer {
+            margin-top: -20px;
+        }
+    </style>
+    <section class="section pre-footer-minimal2 bg-gray-dark-rdx-footer2 novi-background bg-image d-md-block d-none">
+        <div class="pre-footer-minimal-inner">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-2 rdxfooter-menu col-lg-rdx pl-0 mr-5">
+                        <dl class="terms-list-inline rdxmenubottomitems2">
+                            <dd>©Park Service Groupe 2020</dd>
+                        </dl>
+                    </div>
+                    <div class="col-2 rdxfooter-menu col-lg-rdx pl-4 ml-3 mr-4">
+                        <dl class="terms-list-inline rdxmenubottomitems2">
+                            <li>Сделано в <a href="#">Worth</a></li>
+                        </dl>
+                    </div>
+                    <div class="col-2 offset-5 rdxfooter-menu col-lg-rdx pl-5">
+                        <dl class="terms-list-inline rdxmenubottomitems2 ">
+                            <span><a href="#" id="ui-to-top" class="rdxuppsy pl-0">&nbsp;<img src="images/toup.png"> &nbsp;ВВЕРХ</a></span>
+                            <li><a href="#"></a></li>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<script>
+    var totalItems = $('.carousel-item').length;
+    var currentIndex = $('div.active').index() + 1;
+    $('.num').html('' + currentIndex + '/' + totalItems + '');
+    $('#slideSw').on('slid.bs.carousel', function () {
+        currentIndex = $('div.active').index() + 1;
+        $('.num').html('' + currentIndex + '/' + totalItems + '');
+    });
+</script>
+<script async="" src="https://www.youtube.com/iframe_api"></script>
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
