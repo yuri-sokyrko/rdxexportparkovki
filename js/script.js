@@ -2496,6 +2496,13 @@
 				}
 			});
 		}
+		
+		if(jQuery('.section-payment__tabs').length) {
+			jQuery('.section-payment__tabs .nav-item').click(function() {
+				jQuery('.section-payment__info').removeClass('active');
+				jQuery('.section-payment__info').eq(jQuery(this).index()).addClass('active');
+			});
+		}
 	});
 }());
 

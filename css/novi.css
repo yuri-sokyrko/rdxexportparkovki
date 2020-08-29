@@ -4040,7 +4040,7 @@ body.scrolledTop {
   }
 
   .hero-section {
-    padding: 100px 5px 35px;
+    padding: 130px 5px 35px;
   }
 
   .hero-section__title {
@@ -4100,6 +4100,8 @@ body.scrolledTop {
   .business-section__mobile-tabs.nav-tabs {
     border-bottom: none;
     display: flex;
+    margin: -10px;
+    width: auto;
   }
 
   .business-section__mobile-tabs.nav-tabs .nav-item {
@@ -4112,7 +4114,7 @@ body.scrolledTop {
     transition: all .3s ease-in;
     background: transparent;
     padding: 0 0 5px;
-    margin: 0 10px;
+    margin: 10px;
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -4730,9 +4732,13 @@ body.scrolledTop {
 }
 
 .section-payment__info {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   margin: 36px -7px -7px;
+}
+
+.section-payment__info.active {
+  display: flex;
 }
 
 .section-payment__info .info-item {
