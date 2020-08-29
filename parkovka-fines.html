@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>parkovka-fines</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700%7CRoboto:100,300,400,700,900">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/novi.css">
+  <!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div><script src="js/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+  <div class="page-loader">
+    <div class="brand-name"><img src="images/logo-default-100x28.png" alt="" width="100" height="28"></div>
+    <div class="page-loader-body">
+      <div class="cssload-jumping"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <div class="page text-center">
+    <section class="section">
+      <header class="site-header site-header--white">
+          <div class="site-header__container">
+              <div class="site-header__logo site-header__logo--white">
+                  <a href="parkovka-home.html">
+                      <img src="images/new-logo.svg" alt="logo">
+                  </a>
+              </div>
+              <div class="site-header__logo site-header__logo--black">
+                  <a href="parkovka-home.html">
+                      <img src="images/new-logo-black.svg" alt="logo">
+                  </a>
+              </div>
+              <div class="header-mobile__trigger">
+                  <button class="nav-trigger js-nav-trigger">
+                      <span class="nav-trigger__text">Меню</span>
+                      <span class="nav-trigger__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </span>
+                  </button>
+              </div>
+              <div class="site-header__nav">
+                  <nav class="site-header__nav-item">
+                      <ul>
+                          <li class="menu-item-has-children">
+                              <a href="#">Водителям</a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Водителям</a></li>
+                                  <li><a href="#">Карта парковок</a></li>
+                                  <li><a href="#">Штрафы</a></li>
+                              </ul>
+                          </li>
+                          <li class="menu-item-has-children">
+                              <a href="#">Бизнес-клиентам</a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Парковочное оборудование</a></li>
+                                  <li><a href="#">Закрытый паркинг</a></li>
+                                  <li><a href="#">Абонементы для юр. лиц</a></li>
+                                  <li><a href="#">Служебная парковка</a></li>
+                              </ul>
+                          </li>
+                          <li class="menu-item-has-children">
+                              <a href="#">Для городов</a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Как это работает?</a></li>
+                                  <li><a href="#">Наши продукты</a></li>
+                                  <li><a href="#">Процесс сотрудничества</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </nav>
+                  <nav class="site-header__nav-item site-header__nav-item--left">
+                      <ul>
+                          <li class="menu-item-has-children">
+                              <a href="#">О компании</a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">О проекте</a></li>
+                                  <li><a href="#">Нормативные документы</a></li>
+                                  <li><a href="#">F.A.Q.</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#">Новости</a>
+                          </li>
+                          <li>
+                              <a href="#">Контакты</a>
+                          </li>
+                      </ul>
+                  </nav>
+                  <nav class="site-header__nav-item site-header__nav-item--lang">
+                      <ul>
+                          <li class="menu-item-has-children">
+                              <a href="#">RU</a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">EN</a></li>
+                                  <li><a href="#">UA</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </nav>
+                  <div class="site-header__phone">
+                      <a href="tel:+380664445423">+38 (066) 444 54 23</a>
+                  </div>
+
+                  <div class="site-header__footer">
+                      <nav class="site-header__socials">
+                          <ul>
+                              <li><a href="#"><img src="images/icon-socials-1.svg" alt=""></a></li>
+                              <li><a href="#"><img src="images/icon-socials-2.svg" alt=""></a></li>
+                          </ul>
+                      </nav>
+                      <nav class="site-header__nav-item site-header__nav-item--lang site-header__nav-item--lang-mobile">
+                          <ul>
+                              <li class="menu-item-has-children">
+                                  <a href="#">RU</a>
+                                  <ul class="sub-menu">
+                                      <li><a href="#">EN</a></li>
+                                      <li><a href="#">UA</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <section id="paymentHero" class="section section-md text-left section-hero">
+          <div class="container">
+            <div class="row spacing-30">
+              <div class="col-lg-6">
+                <div class="section-hero__container">
+                  <h1 class="section-hero__title fxRotateInRight">Обработка штрафов в три клика с PSG</h1>
+                  <p class="section-hero__mobile-text">PGS поможет проверить Вам авто на наличие штрафов. Введите пожалуйста госномер и город, в котором Вы проживаете.</p>
+                  <a href="#nextBlock" class="section-hero__button js-section-hero__button fxRotateInRight">Оплатить штраф</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <style>
+        #paymentHero {
+          background: transparent url('images/bg-fines-hero.jpg') no-repeat center / cover;
+        }
+
+        @media screen and (max-width: 991px) {
+          #paymentHero {
+            background-image: url('images/bg-fines-hero__tablet.jpg');
+          }
+        }
+
+        @media screen and (max-width: 767px) {
+          #paymentHero {
+            background-image: url('images/bg-fines-hero__mobile.jpg');
+          }
+        }
+      </style>
+    </section>
+    <div id="nextBlock" class="rdxbreadcrumbs__container text-left">
+      <div class="container">
+        <div class="row spacing-30">
+          <div class="col-md-12">
+            <div class="rdxspacer50"></div>
+            <div class="rdxspacer50 d-none d-lg-block d-xl-block"></div><span class="rdxbreadcrumbs">Главная &nbsp; | &nbsp; Водителям&nbsp; &nbsp;| &nbsp; Штрафы</span>
+            <div class="rdxspacer50 d-none d-lg-block d-xl-block"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="section text-left check-fines check-fines--search check-fines--captcha">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-7 col-xl-6">
+                    <h2 class="check-fines__title">Проверить свой автомобиль</h2>
+                    <p class="check-fines__subtitle">PGS поможет проверить Вам авто на наличие штрафов. Введите пожалуйста госномер и город, в котором Вы проживаете.</p>
+                    <form class="check-fines__form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="carNum" placeholder="Гос. номер" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="carCity" required>
+                                <option selected value="">Регион</option>
+                                <option value="1">Киев</option>
+                                <option value="2">Днепр</option>
+                                <option value="3">Одесса</option>
+                                <option value="4">Харьков</option>
+                                <option value="5">Львов</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Поиск" class="check-fines__submit">
+                        <div class="form-captcha">
+                            <img src="images/img-captcha.jpg" alt="">
+                        </div>
+                        <div class="form-captcha__mobile">
+                          <img src="images/img-captcha-mobile.jpg" alt="">
+                        </div>
+                    </form>
+                    <div class="fines-message-ok">Поздравляем, по вашему авто в выбранном городе штрафов не обнаружено!</div>
+                </div>
+                <div class="col-md-12 col-lg-5 col-xl-6">
+                    <div class="check-fines__message"></div>
+                </div>
+                <div class="col-md-12">
+                  <div class="check-fines__list">
+                      <div class="fines-head">
+                          <h5 class="title">Ваше авто оштрафовано!</h5>
+                          <p class="text">Найдено 3 постановления:</p>
+                      </div>
+                      <div class="fines-slider js-fines-slider">
+                          <div class="fines-slider__item">
+                              <ul class="info-list">
+                                  <li>
+                                      <div class="title">Номер авто:</div>
+                                      <div class="text">EA4568AA</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Причина правонарушения:</div>
+                                      <div class="text">Стоянка в месте для общественного транспорта</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Локация:</div>
+                                      <div class="text">г. Днепр, ул. Троицкая 9</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Дата и время совершения правонарушения:</div>
+                                      <div class="text">12.11.2020, 14:00</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Сумма штрафа:</div>
+                                      <div class="text">232 грн</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Льготный период:</div>
+                                      <div class="text">Действителен до 12.12.2022</div>
+                                  </li>
+                              </ul>
+                              <div class="buttons">
+                                  <a class="btn rdx-big-black-btn" href="#">Оплатить</a>
+                                  <a class="buttons__link" href="#">Смотреть детали</a>
+                              </div>
+                          </div>
+                          <div class="fines-slider__item">
+                              <ul class="info-list">
+                                  <li>
+                                      <div class="title">Номер авто:</div>
+                                      <div class="text">EA4568AA</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Причина правонарушения:</div>
+                                      <div class="text">Стоянка в месте для общественного транспорта</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Локация:</div>
+                                      <div class="text">г. Днепр, ул. Троицкая 9</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Дата и время совершения правонарушения:</div>
+                                      <div class="text">12.11.2020, 14:00</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Сумма штрафа:</div>
+                                      <div class="text">232 грн</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Льготный период:</div>
+                                      <div class="text">Действителен до 12.12.2022</div>
+                                  </li>
+                              </ul>
+                              <div class="buttons">
+                                  <a class="btn rdx-big-black-btn" href="#">Оплатить</a>
+                                  <a class="buttons__link" href="#">Смотреть детали</a>
+                              </div>
+                          </div>
+                          <div class="fines-slider__item">
+                              <ul class="info-list">
+                                  <li>
+                                      <div class="title">Номер авто:</div>
+                                      <div class="text">EA4568AA</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Причина правонарушения:</div>
+                                      <div class="text">Стоянка в месте для общественного транспорта</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Локация:</div>
+                                      <div class="text">г. Днепр, ул. Троицкая 9</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Дата и время совершения правонарушения:</div>
+                                      <div class="text">12.11.2020, 14:00</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Сумма штрафа:</div>
+                                      <div class="text">232 грн</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Льготный период:</div>
+                                      <div class="text">Действителен до 12.12.2022</div>
+                                  </li>
+                              </ul>
+                              <div class="buttons">
+                                  <a class="btn rdx-big-black-btn" href="#">Оплатить</a>
+                                  <a class="buttons__link" href="#">Смотреть детали</a>
+                              </div>
+                          </div>
+                          <div class="fines-slider__item">
+                              <ul class="info-list">
+                                  <li>
+                                      <div class="title">Номер авто:</div>
+                                      <div class="text">EA4568AA</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Причина правонарушения:</div>
+                                      <div class="text">Стоянка в месте для общественного транспорта</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Локация:</div>
+                                      <div class="text">г. Днепр, ул. Троицкая 9</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Дата и время совершения правонарушения:</div>
+                                      <div class="text">12.11.2020, 14:00</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Сумма штрафа:</div>
+                                      <div class="text">232 грн</div>
+                                  </li>
+                                  <li>
+                                      <div class="title">Льготный период:</div>
+                                      <div class="text">Действителен до 12.12.2022</div>
+                                  </li>
+                              </ul>
+                              <div class="buttons">
+                                  <a class="btn rdx-big-black-btn" href="#">Оплатить</a>
+                                  <a class="buttons__link" href="#">Смотреть детали</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section text-left section-mistake">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-mistake__container">
+                        <form class="rd-mailform text-left rdxfancyfooterform section-mistake__form" data-form-output="form-output-global" data-form-type="forms" method="post" action="bat/rd-mailform.php">
+                            <div class="row spacing-20">
+                                <div class="col-sm-12">
+                                    <div class="form-group form-wrap-validation rdxfancyfooterformhead">Оформить заявку на<br> проверку штрафа</div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-name2">Город</label><input class="form-control rdxpatchfooterform" id="forms-name2" type="text" name="name" data-constraints="@Required"></div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-last-name2">Дата</label><input class="form-control rdxpatchfooterform" id="forms-last-name2" type="text" name="last-name" data-constraints="@Required"></div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-email2">Номер машины</label><input class="form-control rdxpatchfooterform" id="forms-email2" type="text" name="email" data-constraints="@Required"></div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-email3">Контактное лицо</label><input class="form-control rdxpatchfooterform" id="forms-email3" type="text" name="email" data-constraints="@Required"></div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">Номер телефона</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="tel" name="phone" data-constraints="@Numeric @Required"></div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">Описание</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="text" data-constraints="@Required"></div>
+                                </div>
+                                <div class="col-sm-6 form-button"><button class="btn btn-primary btn-block btn-effect-ujarak rdxsubmitoffer" type="submit">Отправить</button></div>
+                                <div class="col-sm-6 form-button"><input class="form-control-file rdxpatchfooterforml" type="file" name="file"></div>
+                            </div>
+                        </form>
+                        <div class="section-mistake__text">
+                            <h2 class="title">Если произошла ошибка</h2>
+                            <ul class="list">
+                                <li>
+                                    <h4 class="list__title">Проверьте номер авто в базе</h4>
+                                    <p class="list__text">Если Вам пришло уведомление о штрафе, которое, по Вашему мнению ошибочно, проверьте сначала есть ли номер Вашего автомобиля в базе данных инспекции. Ознакомьтесь с подробностями правонарушения и если после этого Вы пожелаете его оспорить, то переходите на шаг 2.</p>
+                                </li>
+                                <li>
+                                    <h4 class="list__title">Оформите заявку</h4>
+                                    <p class="list__text">Оформите заявку на выяснение ситуации со штрафом, заполнив простую контактную форму. Она будет отправлена в инспекцию выбранного Вами города для дальнейшей связи.</p>
+                                </li>
+                                <li>
+                                    <h4 class="list__title">Ждите звонка</h4>
+                                    <p class="list__text">Сотрудники инспекции в кратчайшие сроки свяжутся с Вами для установления всех обстоятельств.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section-mistake__footer d-block d-md-block d-lg-none d-xl-none">
+                          <button type="button" class="section-mistake__button" data-toggle="modal" data-target="#applianceModal" data-whatever="@getbootstrap">Оформить заявку</button>
+                          <div class="modal fade" id="applianceModal" tabindex="-1" aria-labelledby="applianceModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                    <form class="rd-mailform text-left rdxfancyfooterform" data-form-output="form-output-global" data-form-type="forms" method="post" action="bat/rd-mailform.php">
+                                      <div class="row spacing-20">
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation rdxfancyfooterformhead">Оформить заявку на<br> проверку штрафа</div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-name2">Город</label><input class="form-control rdxpatchfooterform" id="forms-name2" type="text" name="name" data-constraints="@Required"></div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-last-name2">Дата</label><input class="form-control rdxpatchfooterform" id="forms-last-name2" type="text" name="last-name" data-constraints="@Required"></div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-email2">Номер машины</label><input class="form-control rdxpatchfooterform" id="forms-email2" type="text" name="email" data-constraints="@Required"></div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-email3">Контактное лицо</label><input class="form-control rdxpatchfooterform" id="forms-email3" type="text" name="email" data-constraints="@Required"></div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">Номер телефона</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="tel" name="phone" data-constraints="@Numeric @Required"></div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">Описание</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="text" data-constraints="@Required"></div>
+                                          </div>
+                                          <div class="col-sm-6 form-button"><input class="form-control-file rdxpatchfooterforml" type="file" name="file"></div>
+                                          <div class="col-sm-6 form-button"><button class="btn btn-primary btn-block btn-effect-ujarak rdxsubmitoffer" type="submit">Отправить</button></div>
+                                      </div>
+                                    </form>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+      <section class="section pre-footer-minimal bg-gray-dark-rdx-footer novi-background bg-image">
+        <div class="pre-footer-minimal-inner">
+          <div class="container text-center text-sm-left">
+            <div class="row justify-content-sm-center spacing-55">
+              <div class="col text-sm-center text-md-left  rdxfooter-menu col-lg-rdx"><img src="images/footer_logo.png"></div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <h4>Для водителей</h4>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Оплата парковки</dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Карта парковок</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Штрафы</dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <h4 class="">Для бизнес клиентов</h4>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Для бизнес клиентов</dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Закрытый паркинг</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Абонементы для юр. лиц</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Служебная парковка</dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <h4 class="">Для города</h4>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Как это работает?</dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Наши результаты</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Процесс сотрудничества</dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <h4 class="">Про компанию</h4>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>О проекте</dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Наши продукты</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Нормативные документы</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Новости</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>F.A.Q.</dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd>Контакты</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <hr class="gray">
+        </div>
+      </section>
+      <section class="section pre-footer-minimal2 bg-gray-dark-rdx-footer2 novi-background bg-image">
+        <div class="pre-footer-minimal-inner">
+          <div class="container text-center text-sm-left">
+            <div class="row justify-content-sm-center spacing-55">
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>©Park Service Groupe 2020</dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd>Сделано в <span data-novi-id="1">Worth</span></dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+              </div>
+              <div class="col rdxfooter-menu col-lg-rdx">
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+                <dl class="terms-list-inline  rdxmenubottomitems">
+                  <dd></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <hr class="gray">
+        </div>
+      </section>
+    </footer>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+
+  <!-- Modal -->
+  <div class="modal fade video-modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true" data-video="https://www.youtube.com/embed/LXb3EKWsInQ">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script async="" src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/core.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
