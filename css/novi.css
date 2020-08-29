@@ -6619,3 +6619,88 @@ color: #3E3E40;
 /*---------------------------------------------------------------------*/
 /*                           Fines Page EOF                            */
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*                        Appliance form BEGIN                         */
+/*---------------------------------------------------------------------*/
+.rdxfancyfooterform .select2-container {
+  display: block;
+  width: 100% !important;
+  background-color: transparent !important;
+  height: 40px !important;
+}
+
+.rdxfancyfooterformhead {
+  margin-bottom: 22px;
+}
+
+.rdxfancyfooterform .select2-container--bootstrap.select2-container--focus .select2-selection {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, .5);
+}
+
+.rdxfancyfooterform .select2-container--bootstrap .select2-selection--single {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, .5);
+  transition: all .3s ease-in;
+  line-height: 30px;
+  height: 40px;
+}
+
+.rdxfancyfooterform .select2-container .select2-selection--single .select2-selection__rendered {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: rgba(255,255,255,.5);
+  transition: all .3s ease-in;
+  
+}
+
+/* .rdxfancyfooterform .select2-container--bootstrap.select2-container--focus .select2-selection--single .select2-selection__rendered {
+  color: #fff;
+} */
+
+.rdxfancyfooterform .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b:before {
+  color: #fff;
+  opacity: 0.5;
+  transition: all .3s ease-in;
+}
+
+.rdxfancyfooterform .form-button {
+  max-height: 100%;
+}
+
+.rdxfancyfooterform .form-control-file {
+  opacity: 1;
+  margin-top: 57px;
+}
+
+@media screen and (max-width: 767px) {
+  .rdxfancyfooterform .form-control-file {
+    margin-top: 0;
+  }
+
+  .rdxfancyfooterform .select2-container .select2-selection--single .select2-selection__rendered {
+    color: #fff;
+  }
+
+  .rdxfancyfooterform .select2-container--bootstrap .select2-selection--single {
+    /* border-bottom-color: #fff; */
+  }
+
+  .rdxfancyfooterform .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b:before {
+    opacity: 1;
+  }
+}
+/*---------------------------------------------------------------------*/
+/*                         Appliance form EOF                          */
+/*---------------------------------------------------------------------*/
