@@ -2465,6 +2465,25 @@
 				slidesToScroll: 1,
 				arrows: true,
 				dots: false,
+
+				responsive: [
+					{
+					  breakpoint: 992,
+					  settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+					  }
+					},
+					{
+						breakpoint: 768,
+						settings: {
+						  slidesToShow: 2,
+						  slidesToScroll: 1,
+						  arrows: false,
+						  dots: true,
+						}
+					  },
+				],
 			});
 
 			jQuery('.js-fines-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){

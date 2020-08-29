@@ -140,6 +140,7 @@
               <div class="col-lg-6">
                 <div class="section-hero__container">
                   <h1 class="section-hero__title fxRotateInRight">Обработка штрафов в три клика с PSG</h1>
+                  <p class="section-hero__mobile-text">PGS поможет проверить Вам авто на наличие штрафов. Введите пожалуйста госномер и город, в котором Вы проживаете.</p>
                   <a href="#nextBlock" class="section-hero__button js-section-hero__button fxRotateInRight">Оплатить штраф</a>
                 </div>
               </div>
@@ -179,7 +180,7 @@
     <section class="section text-left check-fines check-fines--has-fines">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-7 col-xl-6">
                     <h2 class="check-fines__title">Проверить свой автомобиль</h2>
                     <p class="check-fines__subtitle">PGS поможет проверить Вам авто на наличие штрафов. Введите пожалуйста госномер и город, в котором Вы проживаете.</p>
                     <form class="check-fines__form">
@@ -200,10 +201,13 @@
                         <div class="form-captcha">
                             <img src="images/img-captcha.jpg" alt="">
                         </div>
+                        <div class="form-captcha__mobile">
+                            <img src="images/img-captcha-mobile.jpg" alt="">
+                        </div>
                     </form>
                     <div class="fines-message-ok">Поздравляем, по вашему авто в выбранном городе штрафов не обнаружено!</div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-5 col-xl-6">
                     <div class="check-fines__message-ok"></div>
                 </div>
                 <div class="col-md-12">
@@ -396,6 +400,47 @@
                                     <p class="list__text">Сотрудники инспекции в кратчайшие сроки свяжутся с Вами для установления всех обстоятельств.</p>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="section-mistake__footer d-block d-md-block d-lg-none d-xl-none">
+                          <button type="button" class="section-mistake__button" data-toggle="modal" data-target="#applianceModal" data-whatever="@getbootstrap">Оформить заявку</button>
+                          <div class="modal fade" id="applianceModal" tabindex="-1" aria-labelledby="applianceModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                    <form class="rd-mailform text-left rdxfancyfooterform" data-form-output="form-output-global" data-form-type="forms" method="post" action="bat/rd-mailform.php">
+                                      <div class="row spacing-20">
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation rdxfancyfooterformhead">Оформить заявку на<br> проверку штрафа</div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-name2">Город</label><input class="form-control rdxpatchfooterform" id="forms-name2" type="text" name="name" data-constraints="@Required"></div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-last-name2">Дата</label><input class="form-control rdxpatchfooterform" id="forms-last-name2" type="text" name="last-name" data-constraints="@Required"></div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-email2">Номер машины</label><input class="form-control rdxpatchfooterform" id="forms-email2" type="text" name="email" data-constraints="@Required"></div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-email3">Контактное лицо</label><input class="form-control rdxpatchfooterform" id="forms-email3" type="text" name="email" data-constraints="@Required"></div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">Номер телефона</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="tel" name="phone" data-constraints="@Numeric @Required"></div>
+                                          </div>
+                                          <div class="col-sm-12">
+                                              <div class="form-group form-wrap-validation"><label class="form-label rdxpatchfooterforml" for="forms-phone2">Описание</label><input class="form-control rdxpatchfooterform" id="forms-phone2" type="text" name="text" data-constraints="@Required"></div>
+                                          </div>
+                                          <div class="col-sm-6 form-button"><input class="form-control-file rdxpatchfooterforml" type="file" name="file"></div>
+                                          <div class="col-sm-6 form-button"><button class="btn btn-primary btn-block btn-effect-ujarak rdxsubmitoffer" type="submit">Отправить</button></div>
+                                      </div>
+                                    </form>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
