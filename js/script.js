@@ -2449,6 +2449,34 @@
 				console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 			  });
 		}
+
+		if(jQuery('.js-fines-slider').length) {
+			jQuery('.js-fines-slider').on('init', function(event, slick){
+				for(var i = 0; i < jQuery('.js-fines-slider .slick-active').length; i++) {
+					if(i < 2) {
+						jQuery('.js-fines-slider .slick-active').eq(i).addClass('slick-visible');
+					}
+				}
+			});
+
+			jQuery('.js-fines-slider').slick({
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				arrows: true,
+				dots: false,
+			});
+
+			jQuery('.js-fines-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+				jQuery('.js-fines-slider .slick-slide').removeClass('slick-visible');
+
+				for(var i = 0; i < jQuery('.js-fines-slider .slick-active').length; i++) {
+					if(i < 2) {
+						jQuery('.js-fines-slider .slick-active').eq(i).addClass('slick-visible');
+					}
+				}
+			});
+		}
 	});
 }());
 
