@@ -2437,7 +2437,7 @@
 
 				jQuery('html, body').animate({
 					scrollTop: jQuery(dest).offset().top
-				}, 700);
+				}, 400);
 			});
 		}
 
@@ -2529,7 +2529,7 @@ function handler() {
 				verticalCentered: true,
 				sectionsColor: [],
 				anchors: [],
-				scrollingSpeed: 700,
+				scrollingSpeed: 400,
 				easing: 'swing',
 				loopBottom: false,
 				loopTop: false,
@@ -2674,13 +2674,18 @@ function handler() {
 			});
 
 			menuItem.mouseleave(function() {
-				jQuery(this).removeClass('opened');
-				jQuery(this).find('.sub-menu').removeClass('opened');
-				jQuery(this).find('.sub-menu').hide();
+				// jQuery(this).removeClass('opened');
+				// jQuery(this).find('.sub-menu').removeClass('opened');
+				// jQuery(this).find('.sub-menu').hide();
 
-				setTimeout(function() {
-					jQuery('.menu-item-has-children .sub-menu').css({'display':'none'});
-				}, 10);
+				jQuery('.menu-item-has-children').removeClass('opened')
+				jQuery('.menu-item-has-children .sub-menu').hide();
+				jQuery('.menu-item-has-children .sub-menu').removeClass('opened');
+
+				// setTimeout(function() {
+				// 	jQuery('.menu-item-has-children .sub-menu').css({'display':'none'});
+				// 	jQuery('.menu-item-has-children .sub-menu').hide();
+				// }, 10);
 			});
 
 			menuItem.click(function(e) {
