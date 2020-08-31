@@ -2512,7 +2512,7 @@
 }
 
 .site-header__nav .sub-menu {
-  display: none;
+  display: none !important;
   position: absolute;
   overflow: hidden;
   top: 100%;
@@ -2524,6 +2524,10 @@
   border-radius: 0px 11px 11px 11px;
   margin-top: 10px;
   transition: all .3s ease-in;
+}
+
+.site-header__nav .sub-menu.opened {
+  display: block !important;
 }
 
 .site-header__nav .sub-menu:after {
@@ -3864,7 +3868,7 @@
 }
 
 footer.page-footer {
-  transition: all .7s ease-in;
+  transition: all .4s ease-in;
   position: relative;
   z-index: 999;
 }
@@ -3874,7 +3878,7 @@ footer.page-footer.scrolledTop {
 }
 
 body {
-  transition: all .7s ease-in;
+  transition: all .4s ease-in;
 }
 
 body.scrolledTop {
