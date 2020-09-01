@@ -2424,8 +2424,12 @@
 			jQuery('.how-it-works__tabs .nav-item .nav-link.active .text').show();
 
 			jQuery('.how-it-works__tabs .nav-item .nav-link').click(function() {
-				jQuery('.how-it-works__tabs .nav-item .nav-link .text').slideUp();
-				jQuery(this).find('.text').slideDown();
+				jQuery('.how-it-works__tabs .nav-item .nav-link .text').hide();
+				jQuery(this).find('.text').fadeIn();
+
+				$('html, body').animate({
+					scrollTop: $(".how-it-works").offset().top
+				}, 1);
 			});
 		}
 
@@ -2518,13 +2522,23 @@
 			});
 
 			carouselImage.slick({
-				slidesToShow: 2,
+				slidesToShow: 3,
 				slidesToScroll: 1,
 				arrows: false,
 				dots: true,
 				infinite: true,
 				asNavFor: carouselText,
-				focusOnSelect: true
+				focusOnSelect: true,
+
+				responsive: [
+					{
+					  breakpoint: 768,
+					  settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+					  }
+					},
+				],
 			});
 		}
 	});
