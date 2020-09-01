@@ -2503,6 +2503,14 @@
   transition: all .3s ease-in;
 }
 
+.site-header__nav ul li.menu-item-has-children a {
+  font-weight: 700;
+}
+
+.site-header__nav ul li.menu-item-has-children ul li a {
+  font-weight: 500;
+}
+
 .site-header__nav ul li a:hover::after {
   width: 100%;
 }

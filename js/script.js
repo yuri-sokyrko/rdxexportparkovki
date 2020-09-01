@@ -2672,19 +2672,23 @@ function handler() {
 			menuItem.click(function(e) {
 				e.preventDefault();
 
-				jQuery('.menu-item-has-children').removeClass('opened');
-				jQuery('.menu-item-has-children .sub-menu').removeClass('opened');
-				jQuery('.menu-item-has-children .sub-menu').hide();
+				// jQuery('.menu-item-has-children').removeClass('opened');
+				// jQuery('.menu-item-has-children .sub-menu').removeClass('opened');
+				// jQuery('.menu-item-has-children .sub-menu').hide();
 
-				if(jQuery(this).hasClass('opened')) {
-					jQuery(this).removeClass('opened');
-					jQuery(this).find('.sub-menu').removeClass('opened');
-					jQuery(this).find('.sub-menu').hide();
-				} else {
-					jQuery(this).find('.sub-menu').fadeIn();
-					jQuery(this).addClass('opened');
-					jQuery(this).find('.sub-menu').addClass('opened');
-				}
+				// if(jQuery(this).hasClass('opened')) {
+				// 	jQuery(this).removeClass('opened');
+				// 	jQuery(this).find('.sub-menu').removeClass('opened');
+				// 	jQuery(this).find('.sub-menu').hide();
+				// } else {
+				// 	jQuery(this).find('.sub-menu').fadeIn();
+				// 	jQuery(this).addClass('opened');
+				// 	jQuery(this).find('.sub-menu').addClass('opened');
+				// }
+
+				jQuery(this).find('.sub-menu').fadeToggle();
+				jQuery(this).toggleClass('opened');
+				jQuery(this).find('.sub-menu').toggleClass('opened');
 			});
 		}
 	} else {
