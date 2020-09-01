@@ -3175,6 +3175,7 @@
 .hero-section__title {
   display: block;
   margin-bottom: 40px;
+  padding-top: 45px;
 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -3202,6 +3203,7 @@
   display: block;
   max-width: 320px;
   margin-left: auto;
+  padding-top: 45px;
 }
 
 .hero-infographic__list {
@@ -3903,6 +3905,7 @@ body.scrolledTop {
   }
 
   .hero-section__title {
+    padding-top: 0;
     margin-bottom: 30px;
   }
 
@@ -3912,6 +3915,7 @@ body.scrolledTop {
 
   .hero-infographic {
     max-width: 100%;
+    padding-top: 0;
   }
 
   .hero-infographic__list li {
