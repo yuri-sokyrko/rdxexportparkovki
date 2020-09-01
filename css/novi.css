@@ -2408,7 +2408,7 @@
   height: 126px;
   max-width: 1630px;
   margin: 0 auto;
-  padding: 30px 30px;
+  padding: 30px 87px 30px 30px;
 }
 
 .site-header__logo {
@@ -2589,7 +2589,7 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  margin-top: 15px;
+  margin-top: 28px;
 }
 
 .site-header__phone a {
@@ -2735,6 +2735,10 @@
 }
 
 @media screen and (max-width: 1278px) {
+  .site-header__container {
+    padding: 30px;
+  }
+
   .site-header__logo {
     margin-right: 28px;
   }
