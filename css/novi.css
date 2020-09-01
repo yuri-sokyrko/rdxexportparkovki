@@ -4947,42 +4947,58 @@ body.scrolledTop {
     margin-bottom: 0;
   }
 
-  .how-it-works__carousel .carousel-indicators{
-    position: relative;
-    top: initial;
-    left: initial;
-    display: flex;
-    justify-content: flex-start;
-    margin: 0;
-    padding-bottom: 40px;
-    margin: -16px;
-  }
-
-  .how-it-works__carousel .carousel-indicators li {
+  .how-it-works__carousel {
     display: block;
-    width: auto;
-    height: auto;
-    text-indent: initial;
+    width: 100%;
+  }
+
+  .how-it-works__carousel .carousel-text {
+    display: block;
+    padding-top: 56px;
+    margin-bottom: 15px;
+  }
+
+  .how-it-works__carousel .carousel-text__item {
+    display: block !important;
+
+    font-family: 'Montserrat' , sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0B0F21;
+  }
+
+  .how-it-works__carousel .carousel-text .slick-dots {
+    bottom: initial;
+    top: 0;
+    justify-content: flex-start;
+    width: 100%;
+    margin: -16px;
+    counter-reset: howSliderWorks;
+  }
+
+  .how-it-works__carousel .carousel-text .slick-dots li {
     margin: 16px;
-    position: static;
   }
-
-  .how-it-works__carousel .carousel-indicators li::before {
-    display: none;
-  }
-
-  .how-it-works__carousel .carousel-indicators li .num {
+  
+  .how-it-works__carousel .carousel-text .slick-dots li button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: #fff;
+    background: #FFFFFF;
     box-shadow: 0px 1px 5px rgba(82, 82, 82, 0.303486);
     opacity: 1;
     transition: all .3s ease-in;
+  }
 
+  .how-it-works__carousel .carousel-text .slick-dots li button::after {
+    counter-increment: howSliderWorks;
+    content:  "0" counters(howSliderWorks, ".") ". ";
+    
+    display: block;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -4990,58 +5006,39 @@ body.scrolledTop {
     line-height: 24px;
     text-align: center;
     color: #FAD756;
-  }
-
-  .how-it-works__carousel .carousel-indicators li .title {
-    display: block;
-    position: absolute;
-    top: 70px;
-    left: 15px;
     transition: all .3s ease-in;
-
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #0B0F21;
-    opacity: 0;
   }
 
-  .how-it-works__carousel .carousel-indicators li.active .num {
-    background-color: #0B0F21;
+  .how-it-works__carousel .carousel-text .slick-dots li.slick-active button {
+      background-color: #0B0F21;
+  }
+
+  .how-it-works__carousel .carousel-text .slick-dots li.slick-active button::after {
     font-weight: 600;
   }
 
-  .how-it-works__carousel .carousel-indicators li.active .title {
+  .how-it-works__carousel .carousel-image {
+    display: block;
+    padding-bottom: 40px;
+  }
+
+  .how-it-works__carousel .carousel-image .slick-list {
+    margin-right: -40vw;
+  }
+
+  .how-it-works__carousel .carousel-image__item {
+    display: block !important;
+    opacity: 0.5;
+    transition: all .3s ease-in;
+  }
+
+  .how-it-works__carousel .carousel-image__item.slick-current {
     opacity: 1;
   }
 
-  .how-it-works__carousel .carousel-item img {
+  .how-it-works__carousel .carousel-image__item img {
     display: block;
     width: 100%;
-    max-width: 210px;
-    margin: 0 auto;
-  }
-
-  .how-it-works .carousel-indicators__dots {
-    margin-top: 22px;
-    position: static;
-  }
-
-  .how-it-works .carousel-indicators__dots li {
-    width: 10px;
-    height: 10px;
-    background: #0B0F21;
-    opacity: 0.2;
-    transition: all .3s ease-in;
-    margin: 0 10px;
-    border-radius: 50%;
-  }
-
-  .how-it-works .carousel-indicators__dots li.active {
-    background: #FAD756;
-    opacity: 1;
   }
 
   .how-it-works__buttons {
