@@ -3061,6 +3061,7 @@
   max-width: 1600px !important;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
 }
 
 .full-page-section {
@@ -3574,6 +3575,10 @@
   padding: 0 75px !important;
 }
 
+.driver-section .container-fluid {
+  padding-top: 108px !important;
+}
+
 .driver-section .text-container,
 .results-section .text-container {
   padding-right: 75px;
@@ -3648,6 +3653,7 @@
 .driver-section__tabs-content .tab-item .text {
   display: block;
   max-width: 180px;
+  transform: translateY(40px);
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -3675,7 +3681,7 @@
   /* justify-content: center; */
   align-items: center;
   margin-top: 16px;
-  padding-left: 90px;
+  padding-left: 75px;
 }
 
 .driver-section__download .text {
@@ -3712,6 +3718,11 @@
 
 .driver-section__download .market-link:hover {
   opacity: 0.5;
+}
+
+.results-section .more-link {
+  margin-top: 228px;
+  margin-bottom: -140px;
 }
 
 .results-section__infographic {
@@ -3755,7 +3766,7 @@
 }
 
 .partners-section {
-  padding: 0 75px;
+  padding: 100px 75px 0;
 }
 
 .partners-section .text-container {
@@ -3764,6 +3775,10 @@
 
 .partners-section .more-link {
   margin-top: 178px;
+}
+
+.partners-section__slider {
+  padding-top: 60px;
 }
 
 .partners-section__slider .carousel-inner {
@@ -3896,6 +3911,10 @@ body.scrolledTop {
     transform: translateY(-56px);
   }
 
+  .full-page .container-fluid {
+    padding-top: 0;
+  }
+
   .full-page-section__subtitle {
     margin-bottom: 36px;
   }
@@ -4006,6 +4025,7 @@ body.scrolledTop {
 
   .driver-section__tabs-content .tab-item .text {
     display: none;
+    transform: translateY(0);
   }
 
   .driver-section__download {
@@ -4022,6 +4042,10 @@ body.scrolledTop {
 
   .partners-section {
     padding: 0 55px;
+  }
+
+  .partners-section__slider {
+    padding-top: 0;
   }
 
   .partners-section .more-link {
