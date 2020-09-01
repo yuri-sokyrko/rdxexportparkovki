@@ -4144,13 +4144,15 @@ body.scrolledTop {
 
   .business-section__mobile-tabs.nav-tabs {
     border-bottom: none;
-    display: flex;
+    display: block;
     margin: -10px;
+    height: 40px;
     width: auto;
   }
 
   .business-section__mobile-tabs.nav-tabs .nav-item {
     flex: 0 0 auto;
+    display: inline-block;
   }
 
   .business-section__mobile-tabs.nav-tabs .nav-link {
@@ -6783,3 +6785,10 @@ color: #3E3E40;
 /*---------------------------------------------------------------------*/
 /*                         Appliance form EOF                          */
 /*---------------------------------------------------------------------*/
+ul.inline_scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 56px;
+  display: block;
+  transition: all 0.5s ease;
+}
