@@ -2448,7 +2448,10 @@
 		if(jQuery('input.date-selection').length) {
 			$('input.date-selection').daterangepicker({
 				opens: 'left',
-				linkedCalendars: false
+				linkedCalendars: false,
+				buttonClasses: 'calendar-btn',
+				applyButtonClasses: 'calendar-apply',
+				cancelButtonClasses: 'calendar-cancel',
 			  }, function(start, end, label) {
 				console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 			  });
@@ -2519,6 +2522,17 @@
 				dots: true,
 				infinite: true,
 				asNavFor: carouselImage,
+
+				responsive: [
+					{
+						breakpoint: 576,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							infinite: false,
+						}
+					},
+				],
 			});
 
 			carouselImage.slick({
@@ -2538,10 +2552,43 @@
 						slidesToScroll: 1,
 					  }
 					},
+					{
+						breakpoint: 576,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							infinite: false,
+						}
+					},
 				],
 			});
 		}
 	});
+
+	if(jQuery('.carousel').length) {
+		$(".carousel").carousel({
+			interval: false,
+			pause: true
+		});
+	
+		$( ".carousel .carousel-inner" ).swipe( {
+		swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
+			this.parent( ).carousel( 'next' );
+		},
+		swipeRight: function ( ) {
+			this.parent( ).carousel( 'prev' );
+		},
+		threshold: 0,
+		tap: function(event, target) {
+			window.location = $(this).find('.carousel-item.active a').attr('href');
+		},
+		excludedElements:"label, button, input, select, textarea, .noSwipe"
+		} );
+	
+		$('.carousel .carousel-inner').on('dragstart', 'a', function () {
+			return false;
+		});
+	}
 }());
 
 function handler() {	
