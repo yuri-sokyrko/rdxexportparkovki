@@ -3067,8 +3067,8 @@
 
 .full-page .container-fluid {
   max-width: 1600px !important;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   padding-top: 20px;
 }
 
@@ -3121,7 +3121,7 @@
 .full-page-section__subtitle {
   display: block;
   margin-bottom: 46px;
-  padding-left: 15px;
+  padding-left: 0;
 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -3600,6 +3600,7 @@
 .driver-section .text-container,
 .results-section .text-container {
   padding-right: 75px;
+  padding-left: 12px;
 }
 
 .driver-section__tabs {
@@ -3789,6 +3790,7 @@
 
 .partners-section .text-container {
   max-width: 360px;
+  padding-left: 12px;
 }
 
 .partners-section .more-link {
@@ -3931,6 +3933,8 @@ body.scrolledTop {
 
   .full-page .container-fluid {
     padding-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .full-page-section__subtitle {
@@ -4017,6 +4021,7 @@ body.scrolledTop {
 
   .driver-section__tabs {
     margin-top: 55px;
+    padding-left: 0;
   }
 
   .driver-section .text-container,
@@ -4060,6 +4065,10 @@ body.scrolledTop {
 
   .partners-section {
     padding: 0 55px;
+  }
+
+  .partners-section .text-container {
+    padding-left: 0;
   }
 
   .partners-section__slider {
@@ -4325,8 +4334,8 @@ body.scrolledTop {
 
   .results-section__infographic ul li .text {
     margin-top: 5px;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 18px;
     font-weight: normal;
   }
 
@@ -4349,6 +4358,22 @@ body.scrolledTop {
 }
 
 @media screen and (max-width: 767px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-section .container-fluid,
+  .hero-section .container-fluid .row {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .hero-section .col-xl-6:nth-child(2) {
+    margin-top: auto;
+  }
+
   .hero-section .decor-button {
     max-width: 100%;
   }
@@ -5057,6 +5082,7 @@ body.scrolledTop {
     width: 100%;
     max-width: 280px;
     margin-bottom: 12px;
+    padding: 10px 25px;
   }
 
   .how-it-works__buttons .how-it-works__btn:last-child {
@@ -5263,6 +5289,19 @@ body.scrolledTop {
 
   .section-payment__how .how-it-works__btn {
     margin: 40px auto 0;
+    max-width: 290px;
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .how-it-works__carousel .carousel-image .slick-list {
+    margin-right: 0;
+  }
+
+  .how-it-works__carousel .carousel-image__item img {
+    max-width: 210px;
+    margin: 0 auto; 
   }
 }
 
@@ -5280,6 +5319,10 @@ body.scrolledTop {
 /*---------------------------------------------------------------------*/
 .parkovka-news {
   padding: 64px 0;
+}
+
+.parkovka-news .container {
+  max-width: 1275px;
 }
 
 .parkovka-news--subscribe {
@@ -5468,7 +5511,34 @@ body.scrolledTop {
 }
 
 .daterangepicker.show-calendar .drp-buttons {
-  display: none;
+  /* display: none; */
+  display: block;
+  height: 0;
+  padding: 0;
+  border: none;
+}
+
+.daterangepicker.show-calendar .drp-buttons .calendar-btn {
+  display: block;
+  position: absolute;
+  top: 0;
+  border: none;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  font-size: 0;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.daterangepicker.show-calendar .drp-buttons .calendar-btn.calendar-apply {
+  left: 0;
+  background: transparent url(../images/icon-apply-calendar.svg) no-repeat center / 16px;
+}
+
+.daterangepicker.show-calendar .drp-buttons .calendar-btn.calendar-cancel {
+  right: 0;
+  background: transparent url(../images/icon-close-calendar.svg) no-repeat center / 16px;
 }
 
 .daterangepicker .drp-calendar.left {
@@ -5481,11 +5551,36 @@ body.scrolledTop {
 
 .daterangepicker .calendar-table table thead tr:first-child th {
   height: 48px;
-  border-bottom: 0.5px solid #868787;
+  border-bottom: none;
+}
+
+.daterangepicker .calendar-table table thead tr:first-child th.available {
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border: none;
+  font-size: 0;
+  background: transparent url(../images/icon-arrow-calendar.svg) no-repeat center / 12px 10px;
+}
+
+.daterangepicker .calendar-table table thead tr:first-child th.available.prev {
+  left: 48px;
+}
+
+.daterangepicker .calendar-table table thead tr:first-child th.available.next {
+  right: 48px;
+  transform: scale(-1, 1);
+}
+
+.daterangepicker .calendar-table table thead tr:first-child th.available span {
+  display: none;
 }
 
 .daterangepicker .calendar-table table thead tr:last-child th {
   padding: 17px 13px 15px ;
+  border-top: 0.5px solid #868787;
+
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -5793,15 +5888,15 @@ color: #3E3E40;
     margin-bottom: 20px;
 
     font-weight: 500;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 36px;
   }
 
   .parkovka-news__text {
     margin: 20px 0 33px;
 
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .parkovka-news__item {
@@ -6551,9 +6646,9 @@ color: #3E3E40;
   }
 
   .check-fines__title {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 
-    font-size: 24px;
+    font-size: 28px;
     line-height: 36px;
   }
 
@@ -6597,7 +6692,7 @@ color: #3E3E40;
     border-radius: 0;
     border-left: none;
     border-right: none;
-    border-color: #F7F7F7;
+    border-color: #e2e2e2;
     height: 60px;
 
     font-size: 13px;
@@ -6613,7 +6708,7 @@ color: #3E3E40;
   .check-fines__form .select2-container--bootstrap .select2-selection {
     border-left: none;
     border-right: none;
-    border-color: #f7f7f7;
+    border-color: #e2e2e2;
     padding: 0 40px 0 20px;
     line-height: 60px;
     height: 60px;
