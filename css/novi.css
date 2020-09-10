@@ -4111,8 +4111,8 @@ body.scrolledTop {
     margin-bottom: 25px;
     
     font-weight: 500;
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .hero-section__subtitle {
@@ -4376,6 +4376,10 @@ body.scrolledTop {
 
   .hero-section .decor-button {
     max-width: 100%;
+  }
+
+  .decor-button {
+    font-size: 14px;
   }
 }
 /*---------------------------------------------------------------------*/
@@ -5304,7 +5308,7 @@ body.scrolledTop {
   }
 
   .how-it-works__carousel .carousel-image__item img {
-    max-width: 210px;
+    max-width: 244px;
     margin: 0 auto; 
   }
 }
