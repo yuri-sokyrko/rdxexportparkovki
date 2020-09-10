@@ -5141,6 +5141,10 @@ body.scrolledTop {
     line-height: 24px;
   }
 
+  .section-hero__button {
+    font-weight: 400;
+  }
+
   .section-benefits {
     padding: 40px 0;
   }
