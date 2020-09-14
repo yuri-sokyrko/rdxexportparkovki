@@ -2747,7 +2747,7 @@ function handler() {
 				// 	jQuery(this).find('.sub-menu').addClass('opened');
 				// }
 
-				jQuery(this).find('.sub-menu').fadeToggle();
+				jQuery(this).find('.sub-menu').fadeToggle(100);
 				jQuery(this).toggleClass('opened');
 				jQuery(this).find('.sub-menu').toggleClass('opened');
 			});
