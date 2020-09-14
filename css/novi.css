@@ -2527,7 +2527,7 @@
   box-shadow: 0px 1px 5px rgba(82, 82, 82, 0.303486);
   border-radius: 0px 11px 11px 11px;
   margin-top: 10px;
-  transition: all .3s ease-in;
+  transition: all .1s ease-in;
 }
 
 .site-header__nav .sub-menu.opened {
@@ -2543,7 +2543,7 @@
   top: 0;
   left: 0;
   background-color: #0B0F21;
-  transition: all .3s ease-in;
+  transition: all .1s ease-in;
 }
 
 .site-header__nav .sub-menu.opened {
