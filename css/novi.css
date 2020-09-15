@@ -4819,6 +4819,11 @@ body.scrolledTop {
 
 .section-payment__tabs .nav-item {
   margin: 12px;
+  display: inline-block;
+}
+
+.section-payment__tabs.inline_scroll {
+  height: 63px;
 }
 
 .section-payment__tabs .nav-item .nav-link {
