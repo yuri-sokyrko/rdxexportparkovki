@@ -2424,11 +2424,13 @@
 			jQuery('.how-it-works__tabs .nav-item .nav-link.active .text').show();
 
 			jQuery('.how-it-works__tabs .nav-item .nav-link').click(function() {
+				var yOffset = window.pageYOffset;
+
 				jQuery('.how-it-works__tabs .nav-item .nav-link .text').hide();
 				jQuery(this).find('.text').fadeIn();
 
 				$('html, body').animate({
-					scrollTop: $(".how-it-works").offset().top
+					scrollTop: yOffset
 				}, 1);
 			});
 		}
