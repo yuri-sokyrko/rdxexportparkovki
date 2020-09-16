@@ -4737,6 +4737,10 @@ body.scrolledTop {
 .section-benefits .rdx-big-black-btn {
   border-color: #FAD756;
   margin-top: 50px;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 272px;
+  border-radius: 10px;
 }
 
 .section-benefits .rdx-big-black-btn:hover {
@@ -4945,7 +4949,18 @@ body.scrolledTop {
   margin-left: auto;
 }
 
-.section-payment__img img {
+.section-payment__img .img-item {
+  display: none;
+  width: 100%;
+}
+
+.section-payment__img .img-item.active {
+  display: block;
+}
+
+.section-payment__img .img-item img,
+.section-payment__img .img-item video,
+.section-payment__img .img-item iframe {
   display: block;
   width: 100%;
 }
@@ -5131,6 +5146,15 @@ body.scrolledTop {
   #priceBox .priceBoxImg img {
     width: 100%;
   }
+
+  #priceBox .priceBoxImg .img-item {
+    display: none;
+    width: 100%;
+  }
+  
+  #priceBox .priceBoxImg .img-item.active {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5271,6 +5295,8 @@ body.scrolledTop {
 
   #priceBox .priceBoxImg {
     position: static;
+    width: 100%;
+    max-width: 100%;
   }
 
   .section-payment__info {
