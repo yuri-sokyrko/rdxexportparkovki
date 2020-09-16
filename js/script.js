@@ -2510,6 +2510,12 @@
 			jQuery('.section-payment__tabs .nav-item').click(function() {
 				jQuery('.section-payment__info').removeClass('active');
 				jQuery('.section-payment__info').eq(jQuery(this).index()).addClass('active');
+
+				jQuery('.section-payment__img .img-item').removeClass('active');
+				jQuery('.section-payment__img .img-item').eq(jQuery(this).index()).addClass('active');
+
+				jQuery('.priceBoxImg .img-item').removeClass('active');
+				jQuery('.priceBoxImg .img-item').eq(jQuery(this).index()).addClass('active');
 			});
 		}
 
