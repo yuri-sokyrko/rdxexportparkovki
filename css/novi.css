@@ -3122,6 +3122,7 @@
   display: block;
   margin-bottom: 46px;
   padding-left: 0;
+  margin-top: -28px;
 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -3188,7 +3189,7 @@
 .hero-section__title {
   display: block;
   margin-bottom: 40px;
-  padding-top: 45px;
+  padding-top: 3.3vh;
 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -3590,7 +3591,7 @@
 .driver-section .container-fluid,
 .results-section .container-fluid {
   max-width: 100% !important;
-  padding: 0 75px !important;
+  padding: 0 132px !important;
 }
 
 .driver-section .container-fluid {
@@ -3601,6 +3602,7 @@
 .results-section .text-container {
   padding-right: 75px;
   padding-left: 12px;
+  padding-top: 4px;
 }
 
 .driver-section__tabs {
@@ -3786,6 +3788,10 @@
 
 .partners-section {
   padding: 100px 75px 0;
+}
+
+.full-page .partners-section .container-fluid {
+  padding-top: 44px;
 }
 
 .partners-section .text-container {
@@ -4379,7 +4385,8 @@ body.scrolledTop {
   }
 
   .decor-button {
-    font-size: 14px;
+    font-size: 13px;
+    min-width: 200px;
   }
 }
 /*---------------------------------------------------------------------*/
