@@ -2597,6 +2597,31 @@
 			return false;
 		});
 	}
+
+	if(jQuery('.parkovka-news__search-form').length) {
+		jQuery('.tagCheck .form-check-label').click(function () {
+			var thisID = jQuery(this).attr('for');
+
+			if(thisID == 'tagCheck1') {
+				jQuery('.tagCheck .form-check-input').prop('checked', false);
+				jQuery('#tagCheck1').attr('checked', true);
+			} else {
+				jQuery('#tagCheck1').prop('checked', false);
+			}
+		});
+
+		jQuery('.cityCheck .form-check-label').click(function () {
+			var thisID = jQuery(this).attr('for');
+			console.log(thisID);
+
+			if(thisID == 'cityCheck1') {
+				jQuery('.cityCheck .form-check-input').prop('checked', false);
+				jQuery('#cityCheck1').attr('checked', true);
+			} else {
+				jQuery('#cityCheck1').prop('checked', false);
+			}
+		});
+	}
 }());
 
 function handler() {	
